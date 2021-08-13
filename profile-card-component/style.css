@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #19a2ae;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .img-profile {
+  height: auto;
+  width: 105px;
+  border-radius: 50%;
+  border: solid 5px white;
+  background-color: white;
+  margin-top: -52.5px;
+}
+
+.card .profile {
+  margin: 22.5px auto 25px auto;
+}
+
+.card h1 {
+  color: #2d3248;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.card p {
+  margin-top: 11px;
+  font-size: 14px;
+  color: #6a6f81;
+}
+
+.card span {
+  font-weight: 400;
+  margin-left: 3px;
+  color: #969696;
+  letter-spacing: 0;
+}
+
+.pattern-top {
+  position: absolute;
+  bottom: 39%;
+  right: 51%;
+  z-index: -1;
+}
+
+.pattern-bottom {
+  position: absolute;
+  top: 52%;
+  left: 48%;
+  z-index: -1;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 27.25px 50px 25px;
+  border-top: 0.5px solid #e3e3e3;
+}
+
+.stats h2 {
+  padding-bottom: 7.5px;
+  text-align: center;
+  color: #2d3248;
+}
+
+.stats p {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #6a6f81;
+}
+
+.followers,
+.likes,
+.photos {
+  font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .pattern-top {
+    bottom: 40%;
+    right: 47%;
+  }
+  .pattern-bottom {
+    top: 46%;
+    left: 36%;
+    position: fixed;
+    overflow: hidden;
+  }
+  body {
+    width: 90%;
+    margin: auto;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  main {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 319px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .stats .followers,
+  .stats .likes,
+  .stats .photos {
+    margin-top: 10px;
+  }
+}

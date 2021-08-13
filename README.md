@@ -1,5 +1,16 @@
-# FEM_Solutions
+# Frontend Mentor Solutions 
 
-[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/)
+## Welcome! 👋
 
-[<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/) [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+Below are solutions to [frontend mentor challenges](https://www.frontendmentor.io/challenges). <br/>
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+### Gallery
+
+Click on an image to view live site :rocket::rocket:
+
+[<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) [<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/)
+
+[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+
+More solutions coming soon :computer:

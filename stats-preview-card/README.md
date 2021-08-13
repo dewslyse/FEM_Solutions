@@ -13,12 +13,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot.png)
+<img src="./design/desktop-preview.jpg" alt="screenshot" width="400"/>
 
 ### Links
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/stats-preview-card/](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/stats-preview-card](https://github.com/dewslyse/FEM_Solutions/tree/main/stats-preview-card)
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/stats-preview-component-solution-wKULbGuc8) :fire:
+
 
 ## My process
 

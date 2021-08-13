@@ -17,5 +17,5 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/order-summary-component/](https://dewslyse.github.io/FEM_Solutions/order-summary-component/)
-- Solution URL: [https://github.com/dewslyse/FEM_Solutions/order-summary-component](https://github.com/dewslyse/FEM_Solutions/order-summary-component)
+- Solution URL: [https://github.com/dewslyse/FEM_Solutions/order-summary-component](https://github.com/dewslyse/FEM_Solutions/tree/main/order-summary-component)
 - View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/order-summary-component-with-sass-GlP4zQdBP) :fire:

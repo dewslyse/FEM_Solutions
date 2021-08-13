@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://dewslyse.github.io/stats-preview-card-FEM/](https://dewslyse.github.io/stats-preview-card-FEM/)
-- Solution URL: [https://github.com/dewslyse/stats-preview-card-FEM](https://github.com/dewslyse/stats-preview-card-FEM)
+- Live Site URL: [https://dewslyse.github.io/FEM_Solutions/stats-preview-card/](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+- Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/stats-preview-card](https://github.com/dewslyse/FEM_Solutions/tree/main/stats-preview-card)
 
 ## My process
 

@@ -1,0 +1,335 @@
+/* Primary colours */
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+/* Neutral colours */
+$very-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.9375rem;
+    background-color: $light-grayish-magenta;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/bg-pattern-top-mobile.svg") no-repeat left top, url("./images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 85px 22.5px;
+    max-width: 360px;
+}
+
+/* INTRO SECTION */
+
+.upper-section {
+    text-align: center;
+
+    .caption {
+        text-align: center;
+        font-size: 1.87rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $very-dark-magenta;
+    }
+
+    .intro-text {
+        color: $very-grayish-magenta;
+        font-size: 0.855rem;
+        line-height: 1.7;
+        font-weight: 500;
+        margin: 20px 0px 40px;
+        overflow: hidden;
+    }
+}
+
+/* RATINGS SECTION */
+
+.ratings {
+    
+    .rating-1,
+    .rating-2,
+    .rating-3,
+    .rating-4 {
+        background-color: $light-grayish-magenta;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        border-radius: 10px;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+
+        .stars {
+            margin-bottom: -8px;
+        }
+
+        img {
+            margin: 0 1px;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: $very-dark-magenta;
+        }
+    }
+
+    .rating-4 {
+        display: none;
+    }
+}
+
+/* FEEDBACK SECTION */
+ 
+.feedbacks {
+    margin-top: 32px;
+
+    .feedback-1,
+    .feedback-2,
+    .feedback-3,
+    .feedback-4 {
+        border-radius: 10px;
+        background-color: $very-dark-magenta;
+        color: $white; 
+        min-height: 248px;
+        padding: 40px 33px 40px 30px;
+        margin-bottom: 16px;
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            h2 {
+                font-size: 0.75rem;
+                font-weight: 700; 
+                margin-bottom: 5px;               
+            }
+
+            h3 {
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: $soft-pink;
+            }
+        }   
+
+        blockquote {
+            font-size: 0.75rem;
+            line-height: 1.7;
+        }
+    }
+    
+    .feedback-4 {
+        display: none;
+    }
+}
+
+/* MID-SIZED DEVICES */
+
+@media (min-width: 768px) {
+
+    .container {
+        margin: 85px 40px;
+        max-width: 900px;
+    }
+
+    .upper-section {
+        text-align: center;
+    
+        .caption {
+            font-size: 2.25rem;
+            margin: 0 100px;
+        }
+    
+        .intro-text {
+            font-size: 1rem;
+            margin: 25px 80px 50px;
+        }
+    }
+
+    .ratings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        
+        .rating-1,
+        .rating-2,
+        .rating-3,
+        .rating-4 {
+            margin-bottom: -8px;
+        }
+    
+        .rating-4 {
+            display: flex;
+        }
+    }
+ 
+    .feedbacks {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+
+        .feedback-1,
+        .feedback-2,
+        .feedback-3,
+        .feedback-4 {
+            margin-bottom: 0px;
+        }
+        
+        .feedback-4 {
+            display: flow-root;
+        }
+    }
+}
+
+@media (min-width: 1140px) {
+    body {
+        background: url("./images/bg-pattern-top-desktop.svg") no-repeat left top, url("./images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+    }
+
+    .container {
+        margin: 108px 30px 100px;
+        max-width: 1110px;
+    }
+
+    .upper-section {
+        display: flex;
+        justify-content: space-between;
+
+        .intro-section {
+            width: 50%;
+            padding-right: 100px;
+            margin-bottom: 0;
+        }
+    
+        .caption {
+            text-align: left;
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: -1.5px;
+            margin: 0 0 13px;
+        }
+    
+        .intro-text {
+            text-align: left;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            margin: 20px 0px 0px;
+        }
+    }
+
+    .ratings {
+        display: block;
+        width: 540px;
+        margin: 16px 0 0 0;
+        
+        .rating-1,
+        .rating-2,
+        .rating-3,
+        .rating-4 {
+            flex-direction: row;
+            height: 56px;
+            width: 445px;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 16px;
+    
+            .stars {
+                margin: 0;
+                padding: 0 30.75px 0 32px;
+            }
+    
+            img {
+                margin: 0 1.25px;
+            }            
+    
+            h2 {
+                font-size: 0.8125rem;
+            }
+        }
+
+        .rating-2 {
+            margin-left: 46px;
+        }
+
+        .rating-3 {
+            margin-left: 92px;
+        }
+    
+        .rating-4 {
+            display: none;
+        }
+    }
+
+    .feedbacks {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -16px;
+    
+        .feedback-1,
+        .feedback-2,
+        .feedback-3,
+        .feedback-4 {
+            min-height: 232px;
+            max-width: 350px;
+            padding: 40px 25px 25px 30px;
+    
+            .header {
+                margin-bottom: 26px;
+    
+                img {
+                    margin-right: 23px;
+                }
+    
+                h2 {
+                    font-size: 0.8125rem;
+                }
+    
+                h3 {
+                    font-size: 0.8125rem;
+                }
+            }   
+    
+            blockquote {
+                font-size: 0.8125rem;
+                font-weight: 500;
+            }
+        }
+
+        .feedback-1 {
+            margin-bottom: 32px;
+        }
+
+        .feedback-2 {
+            margin: 16px 0;
+        }
+
+        .feedback-3 {
+            margin-top: 32px;
+        }
+        
+        .feedback-4 {
+            display: none;
+        }
+    }
+}

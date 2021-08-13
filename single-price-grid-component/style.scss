@@ -1,0 +1,175 @@
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: hsl(178, 47%, 55%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: $light-gray;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "caption caption"
+        "subscription why-us";
+    max-width: 635px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.07);
+
+    .caption {
+        color: black;
+        background-color: white;
+        grid-area: caption;
+
+        h1 {
+            font-size: 1.469rem;
+            color: $cyan;
+        }
+
+        h2 {
+            font-size: 1.094rem;
+            color: $bright-yellow;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            font-size: 0.968rem;
+            color: $grayish-blue;
+            line-height: 1.5;
+        }        
+    }
+
+    .subscription-fee {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .fee {
+        font-size: 1.938rem;
+        font-weight: 700;
+    }
+
+    #fee-text {
+        color: $light-gray;
+        padding-left: 10px;
+    }
+
+    .subscription {
+        background-color: $cyan;
+        grid-area: subscription;
+
+        h2 {
+            font-size: 1.125rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 0.968rem;
+            margin-bottom: 25px;
+        }
+
+        button {
+            height: 49px;
+            width: 237px;
+            border-radius: 5px;
+            border: none;
+            background-color: $bright-yellow;
+            box-shadow: 2px 2px 5px lighten($color: black, $amount: 50);
+            color: white;
+            font-size: 0.968rem;
+
+            &:hover {
+                cursor: pointer;
+                border: solid $bright-yellow 2px;
+                background-color: white;
+                color: $cyan;
+            }
+        }
+    }
+    
+    .why-us {
+        background-color: $light-cyan;
+        grid-area: why-us;
+
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        ul {
+            margin-top: 15px;
+        }        
+        
+        li {
+            list-style: none;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+    }
+
+    .caption,
+    .subscription,
+    .why-us {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "caption"
+            "subscription"
+            "why-us";
+        max-width: 480px;
+        border-radius: 5px;
+        margin: 30px;
+
+        .caption {
+            h1 {
+                font-size: 1.25rem;
+            }
+    
+            h2 {
+                font-size: 0.938rem;
+                line-height: 1.4;
+            }
+    
+            p {
+                font-size: 0.844rem;
+            }        
+        }
+
+        .subscription {
+            button {
+                width: 100%;
+            }
+        }
+
+        .caption,
+        .subscription,
+        .why-us {
+            padding: 30px 25px;
+        }
+    }    
+}

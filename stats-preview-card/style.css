@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 327px;
+    height: 780px;
+    max-width: 375px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.img-card {
+    height: 240px;
+    width: 327px;
+    background: hsl(277, 64%, 61%) url(./images/image-header-mobile.jpg) no-repeat center center/contain;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+}
+
+.card-section {
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.stats-section {
+    padding: 45px 30px;    
+}
+
+.caption {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.65rem;
+}
+
+#insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.body-copy {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 23px 0 40px 0;
+    line-height: 1.6;
+}
+
+.stat-heading {
+    color: hsl(0, 0%, 100%);  
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.stats {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.stats-card-mobile {
+    margin-top: 30px;
+}
+
+.desktop { 
+    display: none;
+}
+
+
+@media (min-width: 1160px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1110px;
+        width: 100%;
+        height: 446px;
+    }
+
+    .card-section {
+        background: hsl(244, 38%, 16%);
+        border-radius: 8px 0 0 8px;    
+        max-width: 570px;    
+        display: flex;
+        text-align: left;
+    }
+
+    .stats-section {
+        padding: 75px 75px 70px 75px;    
+    }
+
+    .caption {
+        font-size: 2.25rem;
+    }
+    
+    .body-copy {
+        margin: 23px 0 75px 0;
+        line-height: 1.6;
+        width: 90%
+    }
+
+    .stats-card {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+    .stat-heading {
+        font-size: 1.5rem;
+    }
+ 
+    .stats-card-mobile {
+        margin-top: 0;
+    }
+
+    .img-card {
+        display: flex;
+        width: 540px;
+        height: 446px;
+        background: hsl(277, 64%, 61%);
+        border-radius: 0 8px 8px 0;    
+    }
+    
+    .img {
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

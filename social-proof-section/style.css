@@ -1,0 +1,379 @@
+/* Primary colours */
+/* Neutral colours */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.9375rem;
+  background-color: #f7f2f7;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("./images/bg-pattern-top-mobile.svg") no-repeat left top, url("./images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 85px 22.5px;
+  max-width: 360px;
+}
+
+/* INTRO SECTION */
+.upper-section {
+  text-align: center;
+}
+
+.upper-section .caption {
+  text-align: center;
+  font-size: 1.87rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #502050;
+}
+
+.upper-section .intro-text {
+  color: #937b92;
+  font-size: 0.855rem;
+  line-height: 1.7;
+  font-weight: 500;
+  margin: 20px 0px 40px;
+  overflow: hidden;
+}
+
+/* RATINGS SECTION */
+.ratings .rating-1,
+.ratings .rating-2,
+.ratings .rating-3,
+.ratings .rating-4 {
+  background-color: #f7f2f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  border-radius: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.ratings .rating-1 .stars,
+.ratings .rating-2 .stars,
+.ratings .rating-3 .stars,
+.ratings .rating-4 .stars {
+  margin-bottom: -8px;
+}
+
+.ratings .rating-1 img,
+.ratings .rating-2 img,
+.ratings .rating-3 img,
+.ratings .rating-4 img {
+  margin: 0 1px;
+}
+
+.ratings .rating-1 h2,
+.ratings .rating-2 h2,
+.ratings .rating-3 h2,
+.ratings .rating-4 h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #502050;
+}
+
+.ratings .rating-4 {
+  display: none;
+}
+
+/* FEEDBACK SECTION */
+.feedbacks {
+  margin-top: 32px;
+}
+
+.feedbacks .feedback-1,
+.feedbacks .feedback-2,
+.feedbacks .feedback-3,
+.feedbacks .feedback-4 {
+  border-radius: 10px;
+  background-color: #502050;
+  color: white;
+  min-height: 248px;
+  padding: 40px 33px 40px 30px;
+  margin-bottom: 16px;
+}
+
+.feedbacks .feedback-1 .header,
+.feedbacks .feedback-2 .header,
+.feedbacks .feedback-3 .header,
+.feedbacks .feedback-4 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.feedbacks .feedback-1 .header img,
+.feedbacks .feedback-2 .header img,
+.feedbacks .feedback-3 .header img,
+.feedbacks .feedback-4 .header img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.feedbacks .feedback-1 .header h2,
+.feedbacks .feedback-2 .header h2,
+.feedbacks .feedback-3 .header h2,
+.feedbacks .feedback-4 .header h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.feedbacks .feedback-1 .header h3,
+.feedbacks .feedback-2 .header h3,
+.feedbacks .feedback-3 .header h3,
+.feedbacks .feedback-4 .header h3 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ee68a4;
+}
+
+.feedbacks .feedback-1 blockquote,
+.feedbacks .feedback-2 blockquote,
+.feedbacks .feedback-3 blockquote,
+.feedbacks .feedback-4 blockquote {
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.feedbacks .feedback-4 {
+  display: none;
+}
+
+/* MID-SIZED DEVICES */
+@media (min-width: 768px) {
+  .container {
+    margin: 85px 40px;
+    max-width: 900px;
+  }
+  .upper-section {
+    text-align: center;
+  }
+  .upper-section .caption {
+    font-size: 2.25rem;
+    margin: 0 100px;
+  }
+  .upper-section .intro-text {
+    font-size: 1rem;
+    margin: 25px 80px 50px;
+  }
+  .ratings {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .ratings .rating-1,
+  .ratings .rating-2,
+  .ratings .rating-3,
+  .ratings .rating-4 {
+    margin-bottom: -8px;
+  }
+  .ratings .rating-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feedbacks {
+    margin-top: 64px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .feedbacks .feedback-1,
+  .feedbacks .feedback-2,
+  .feedbacks .feedback-3,
+  .feedbacks .feedback-4 {
+    margin-bottom: 0px;
+  }
+  .feedbacks .feedback-4 {
+    display: flow-root;
+  }
+}
+
+@media (min-width: 1140px) {
+  body {
+    background: url("./images/bg-pattern-top-desktop.svg") no-repeat left top, url("./images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+  }
+  .container {
+    margin: 108px 30px 100px;
+    max-width: 1110px;
+  }
+  .upper-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .upper-section .intro-section {
+    width: 50%;
+    padding-right: 100px;
+    margin-bottom: 0;
+  }
+  .upper-section .caption {
+    text-align: left;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -1.5px;
+    margin: 0 0 13px;
+  }
+  .upper-section .intro-text {
+    text-align: left;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 20px 0px 0px;
+  }
+  .ratings {
+    display: block;
+    width: 540px;
+    margin: 16px 0 0 0;
+  }
+  .ratings .rating-1,
+  .ratings .rating-2,
+  .ratings .rating-3,
+  .ratings .rating-4 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 56px;
+    width: 445px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+  }
+  .ratings .rating-1 .stars,
+  .ratings .rating-2 .stars,
+  .ratings .rating-3 .stars,
+  .ratings .rating-4 .stars {
+    margin: 0;
+    padding: 0 30.75px 0 32px;
+  }
+  .ratings .rating-1 img,
+  .ratings .rating-2 img,
+  .ratings .rating-3 img,
+  .ratings .rating-4 img {
+    margin: 0 1.25px;
+  }
+  .ratings .rating-1 h2,
+  .ratings .rating-2 h2,
+  .ratings .rating-3 h2,
+  .ratings .rating-4 h2 {
+    font-size: 0.8125rem;
+  }
+  .ratings .rating-2 {
+    margin-left: 46px;
+  }
+  .ratings .rating-3 {
+    margin-left: 92px;
+  }
+  .ratings .rating-4 {
+    display: none;
+  }
+  .feedbacks {
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -16px;
+  }
+  .feedbacks .feedback-1,
+  .feedbacks .feedback-2,
+  .feedbacks .feedback-3,
+  .feedbacks .feedback-4 {
+    min-height: 232px;
+    max-width: 350px;
+    padding: 40px 25px 25px 30px;
+  }
+  .feedbacks .feedback-1 .header,
+  .feedbacks .feedback-2 .header,
+  .feedbacks .feedback-3 .header,
+  .feedbacks .feedback-4 .header {
+    margin-bottom: 26px;
+  }
+  .feedbacks .feedback-1 .header img,
+  .feedbacks .feedback-2 .header img,
+  .feedbacks .feedback-3 .header img,
+  .feedbacks .feedback-4 .header img {
+    margin-right: 23px;
+  }
+  .feedbacks .feedback-1 .header h2,
+  .feedbacks .feedback-2 .header h2,
+  .feedbacks .feedback-3 .header h2,
+  .feedbacks .feedback-4 .header h2 {
+    font-size: 0.8125rem;
+  }
+  .feedbacks .feedback-1 .header h3,
+  .feedbacks .feedback-2 .header h3,
+  .feedbacks .feedback-3 .header h3,
+  .feedbacks .feedback-4 .header h3 {
+    font-size: 0.8125rem;
+  }
+  .feedbacks .feedback-1 blockquote,
+  .feedbacks .feedback-2 blockquote,
+  .feedbacks .feedback-3 blockquote,
+  .feedbacks .feedback-4 blockquote {
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+  .feedbacks .feedback-1 {
+    margin-bottom: 32px;
+  }
+  .feedbacks .feedback-2 {
+    margin: 16px 0;
+  }
+  .feedbacks .feedback-3 {
+    margin-top: 32px;
+  }
+  .feedbacks .feedback-4 {
+    display: none;
+  }
+}

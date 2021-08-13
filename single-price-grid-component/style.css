@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+  color: white;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: "caption caption" "subscription why-us";
+  max-width: 635px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto 50px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
+}
+
+.container .caption {
+  color: black;
+  background-color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: caption;
+}
+
+.container .caption h1 {
+  font-size: 1.469rem;
+  color: #2ab2af;
+}
+
+.container .caption h2 {
+  font-size: 1.094rem;
+  color: #c0df34;
+  margin: 25px 0 15px 0;
+}
+
+.container .caption p {
+  font-size: 0.968rem;
+  color: #98a6bd;
+  line-height: 1.5;
+}
+
+.container .subscription-fee {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .fee {
+  font-size: 1.938rem;
+  font-weight: 700;
+}
+
+.container #fee-text {
+  color: #e5eff5;
+  padding-left: 10px;
+}
+
+.container .subscription {
+  background-color: #2ab2af;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subscription;
+}
+
+.container .subscription h2 {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.container .subscription p {
+  font-size: 0.968rem;
+  margin-bottom: 25px;
+}
+
+.container .subscription button {
+  height: 49px;
+  width: 237px;
+  border-radius: 5px;
+  border: none;
+  background-color: #c0df34;
+  -webkit-box-shadow: 2px 2px 5px gray;
+          box-shadow: 2px 2px 5px gray;
+  color: white;
+  font-size: 0.968rem;
+}
+
+.container .subscription button:hover {
+  cursor: pointer;
+  border: solid #c0df34 2px;
+  background-color: white;
+  color: #2ab2af;
+}
+
+.container .why-us {
+  background-color: #56c2bf;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: why-us;
+}
+
+.container .why-us h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.container .why-us ul {
+  margin-top: 15px;
+}
+
+.container .why-us li {
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.container .caption,
+.container .subscription,
+.container .why-us {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "caption" "subscription" "why-us";
+    max-width: 480px;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  .container .caption h1 {
+    font-size: 1.25rem;
+  }
+  .container .caption h2 {
+    font-size: 0.938rem;
+    line-height: 1.4;
+  }
+  .container .caption p {
+    font-size: 0.844rem;
+  }
+  .container .subscription button {
+    width: 100%;
+  }
+  .container .caption,
+  .container .subscription,
+  .container .why-us {
+    padding: 30px 25px;
+  }
+}

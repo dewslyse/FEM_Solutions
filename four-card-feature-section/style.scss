@@ -1,0 +1,222 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: $very-light-gray;
+}
+
+.container {
+    max-width: 375px;
+    height: 1198px;
+    margin: 85px 31px 75px;
+}
+
+.intro {
+    margin-bottom: 75px;
+    text-align: center;
+    line-height: 33px;
+
+    h1 {
+        font-weight: 200;
+        line-height: 33px;
+        margin-bottom: 4px;
+        color: $grayish-blue;
+    }
+
+    h2 {
+        color: $very-dark-blue;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 0.9375rem;
+        color: $grayish-blue;
+        margin: 16px 0 0 0;
+        line-height: 25px;
+    }
+}
+
+.cards {
+    h2 {
+        display: none;
+    }
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 221px;
+    margin-top: 25px;
+    padding: 27px 28px 28px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px rgba(0,0,100,0.1);
+    // max-width: 312px;
+
+    h3 {
+        color: $very-dark-blue;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 0.8125rem;
+        color: $grayish-blue;
+        margin: 4px auto auto;
+        text-align: left;
+    }
+
+    img {
+        width: 57px;
+        align-self: flex-end;
+    }    
+}
+
+.supervisor {
+    border-top: 4px solid $cyan;
+}
+
+.team-builder {
+    border-top: 4px solid $red;
+}
+
+.karma {
+    border-top: 4px solid $Orange;
+}
+
+.calculator {
+    border-top: 4px solid $blue;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+        height: unset;
+    }
+
+    .intro {
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 33px;
+        width: 70%;
+        margin: 0 auto ;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+        margin: 50px 31px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .container {
+        max-width: 1110px;
+        height: unset;
+        margin: 80px auto 75px;
+
+    }
+    
+    .intro {
+        margin-bottom: 64px;
+        width: 47.5%;
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.25rem;
+            line-height: 50px;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        p {
+            margin: 24px 0 0 0;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 30px;
+        grid-template-areas: 
+            "supervisor team-builder calculator"
+            "supervisor karma calculator";
+        margin: 0 auto;
+    }
+
+    .supervisor {
+        grid-area: supervisor;
+        align-self: center;
+    }
+
+    .team-builder {
+        grid-area: team-builder;
+    }
+
+    .karma {
+        grid-area: karma;
+    }
+
+    .calculator {
+        grid-area: calculator;
+        align-self: center;
+    }
+
+    .supervisor,
+    .team-builder,
+    .karma,
+    .calculator {
+        padding: 28px 32px 32px;
+        margin-top: 0; 
+        height: 250px;
+        
+        p {
+            margin: 8px auto 0;
+        }
+
+        img {
+            width: 64px;
+        } 
+
+        &:hover {
+            img {
+                animation: rotation 1.5s;
+                @keyframes rotation {
+                    from {
+                        transform: rotateY(0deg);
+                    }
+                    to {
+                        transform: rotateY(360deg);
+                    }
+                }
+            }
+        }
+    }
+}

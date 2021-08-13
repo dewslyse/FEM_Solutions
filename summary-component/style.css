@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  background: #e0e8ff url("./images/pattern-background-mobile.svg") no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 20.4375rem;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
+}
+
+article {
+  margin: 2.25rem;
+}
+
+article .caption {
+  font-weight: 900;
+  font-size: 1.375rem;
+  color: #1f2f56;
+}
+
+article .text {
+  margin: 1rem 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #7280a7;
+}
+
+.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  background-color: #f5f7ff;
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
+.subscription img {
+  padding-right: 1.25rem;
+}
+
+.subscription button {
+  font-size: 0.8125rem;
+  text-decoration: underline;
+  border: none;
+  color: #3829e0;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.subscription button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.plan {
+  margin-left: -2.5rem;
+}
+
+.plan h2 {
+  font-size: 0.875rem;
+  color: #1f2f56;
+  margin-bottom: 0.1875rem;
+  font-weight: 900;
+}
+
+.plan p {
+  font-size: 0.875rem;
+  color: #7280a7;
+}
+
+ul {
+  list-style: none;
+}
+
+.payment {
+  margin: 1.4375rem 0 1.5625rem;
+  background-color: #3829e0;
+  border-radius: 0.625rem;
+  padding: 0.9375rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  -webkit-box-shadow: 0px 20px 20px #c9c5f7;
+          box-shadow: 0px 20px 20px #c9c5f7;
+}
+
+.payment:hover {
+  cursor: pointer;
+  background-color: #6e63e9;
+}
+
+.payment a {
+  color: white;
+  text-decoration: none;
+}
+
+.cancel {
+  font-size: 0.9375rem;
+  border: none;
+  color: #7280a7;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: #1f2f56;
+}
+
+@media (min-width: 960px) {
+  body {
+    background: #e0e8ff url("./images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
+  }
+  .container {
+    max-width: 28.125rem;
+  }
+  article {
+    margin: 2.8125rem;
+  }
+  article .caption {
+    font-size: 1.75rem;
+  }
+  article .text {
+    margin: 1.06rem 0.9375rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  .subscription {
+    background-color: #f5f7ff;
+    border-radius: 0.6875rem;
+    padding: 1.5625rem;
+  }
+  .subscription button {
+    font-size: 0.875rem;
+  }
+  .plan {
+    margin-left: -5rem;
+  }
+  .plan h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem 6px;
+  }
+  .plan p {
+    font-size: 1rem;
+  }
+  .payment {
+    margin: 1.88rem 0;
+    border-radius: 0.6875rem;
+  }
+}

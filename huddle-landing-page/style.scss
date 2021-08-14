@@ -1,0 +1,247 @@
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $violet;
+    color: white;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 35px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+header {
+    align-self: flex-start;
+    margin-bottom: 50px;
+    
+    .logo {
+            width: 125px;
+    }
+}    
+
+main {
+    
+    .hero {
+        width: 100%
+    }
+
+    .text {
+        margin-top: 50px;
+        text-align: center;
+    
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem; 
+        }
+        
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem; 
+            line-height: 1.5;
+            margin: 25px auto 30px;
+        }
+    }   
+        
+    button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        color: $violet;
+        border-radius: 50px;
+        background-color: white;
+        border: white solid 1px;
+        padding: 12px 0;
+        box-shadow: 2.5px 2.5px 10px lighten($color: black, $amount: 20);
+        width: 66%;
+
+        &:hover {
+            color: white;
+            background-color: $soft-magenta;
+            border: $soft-magenta solid 1px;
+            cursor: pointer;
+        }
+    }      
+}
+
+footer {
+    margin: 80px auto 35px;
+    
+    .socials {
+        a {
+            color: white; 
+            border: white solid 2px;
+            border-radius: 50%;
+
+            &:hover {
+                color: $soft-magenta;
+                border: $soft-magenta solid 2px;
+            }  
+        }
+    
+        .facebook {
+            padding: 7px 10px;
+        }
+  
+        .twitter {
+            padding: 7px 8px;
+            margin: 0 5px;
+        }
+    
+        .instagram {
+            padding: 7px 9px;
+        }
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    body {
+        max-width: 750px;
+        padding: 65px 70px;
+    }
+
+    header {
+        margin-bottom: 116px;
+        
+        .logo {
+                width: 255px;
+        }
+    }    
+    
+    main {
+        margin: 0 4px;
+
+        .text {
+            margin-top: 116px;
+        
+            h1 {
+                font-size: 2.97rem; 
+            }
+            
+            p {
+                font-size: 2rem;
+                margin: 25px auto 50px;
+            }
+        }   
+            
+        button {
+            font-size: 1.43rem; 
+            padding: 22px 0;
+        }      
+    }
+    
+    footer {
+        margin: 146px auto 35px;
+        
+        .socials {
+        
+            .facebook {
+                padding: 15px 18px;
+            }
+      
+            .twitter {
+                padding: 15px 16px;
+                margin: 0 20px;
+            }
+        
+            .instagram {
+                padding: 15px 17px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        max-width: 1440px;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 52px 70px;
+    }
+
+    header {
+        margin-bottom: 83px;
+        
+        .logo {
+                width: 215px;
+        }
+    }    
+    
+    main {
+        display: flex;
+        flex-direction: row;
+
+        .hero {
+            height: 50%;
+        }
+
+        .text {
+            margin: 45px 25px 0px 50px;
+            text-align: left;
+        
+            h1 {
+                font-size: 2.5rem; 
+            }
+            
+            p {
+                font-size: 1.12rem; 
+                margin: 20px auto 25px;
+            }
+        }   
+            
+        button {
+            font-size: 1.1rem; 
+            padding: 15px 0; 
+            width: 40%;
+        }      
+    }
+
+    footer {
+        float: right;
+        align-self: flex-end;
+        margin: 34px 12px;
+        
+        .socials {
+            a {
+                color: white; 
+                border: white solid 2px;
+                border-radius: 50%;
+    
+                &:hover {
+                    color: $soft-magenta;
+                    border: $soft-magenta solid 2px;
+                }  
+            }
+        
+            .facebook {
+                padding: 7px 10px;
+            }
+      
+            .twitter {
+                padding: 7px 8px;
+                margin: 0 15px;
+            }
+        
+            .instagram {
+                padding: 7px 9px;
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674baf;
+  color: white;
+  max-width: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 65px 35px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+header {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 50px;
+}
+
+header .logo {
+  width: 125px;
+}
+
+main .hero {
+  width: 100%;
+}
+
+main .text {
+  margin-top: 50px;
+  text-align: center;
+}
+
+main .text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+main .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 25px auto 30px;
+}
+
+main button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #674baf;
+  border-radius: 50px;
+  background-color: white;
+  border: white solid 1px;
+  padding: 12px 0;
+  -webkit-box-shadow: 2.5px 2.5px 10px #333333;
+          box-shadow: 2.5px 2.5px 10px #333333;
+  width: 66%;
+}
+
+main button:hover {
+  color: white;
+  background-color: #e882e8;
+  border: #e882e8 solid 1px;
+  cursor: pointer;
+}
+
+footer {
+  margin: 80px auto 35px;
+}
+
+footer .socials a {
+  color: white;
+  border: white solid 2px;
+  border-radius: 50%;
+}
+
+footer .socials a:hover {
+  color: #e882e8;
+  border: #e882e8 solid 2px;
+}
+
+footer .socials .facebook {
+  padding: 7px 10px;
+}
+
+footer .socials .twitter {
+  padding: 7px 8px;
+  margin: 0 5px;
+}
+
+footer .socials .instagram {
+  padding: 7px 9px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  body {
+    max-width: 750px;
+    padding: 65px 70px;
+  }
+  header {
+    margin-bottom: 116px;
+  }
+  header .logo {
+    width: 255px;
+  }
+  main {
+    margin: 0 4px;
+  }
+  main .text {
+    margin-top: 116px;
+  }
+  main .text h1 {
+    font-size: 2.97rem;
+  }
+  main .text p {
+    font-size: 2rem;
+    margin: 25px auto 50px;
+  }
+  main button {
+    font-size: 1.43rem;
+    padding: 22px 0;
+  }
+  footer {
+    margin: 146px auto 35px;
+  }
+  footer .socials .facebook {
+    padding: 15px 18px;
+  }
+  footer .socials .twitter {
+    padding: 15px 16px;
+    margin: 0 20px;
+  }
+  footer .socials .instagram {
+    padding: 15px 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    max-width: 1440px;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 52px 70px;
+  }
+  header {
+    margin-bottom: 83px;
+  }
+  header .logo {
+    width: 215px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .hero {
+    height: 50%;
+  }
+  main .text {
+    margin: 45px 25px 0px 50px;
+    text-align: left;
+  }
+  main .text h1 {
+    font-size: 2.5rem;
+  }
+  main .text p {
+    font-size: 1.12rem;
+    margin: 20px auto 25px;
+  }
+  main button {
+    font-size: 1.1rem;
+    padding: 15px 0;
+    width: 40%;
+  }
+  footer {
+    float: right;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 34px 12px;
+  }
+  footer .socials a {
+    color: white;
+    border: white solid 2px;
+    border-radius: 50%;
+  }
+  footer .socials a:hover {
+    color: #e882e8;
+    border: #e882e8 solid 2px;
+  }
+  footer .socials .facebook {
+    padding: 7px 10px;
+  }
+  footer .socials .twitter {
+    padding: 7px 8px;
+    margin: 0 15px;
+  }
+  footer .socials .instagram {
+    padding: 7px 9px;
+  }
+}

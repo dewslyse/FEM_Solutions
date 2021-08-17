@@ -18,4 +18,42 @@ $light-grayish-blue: hsl(240, 6%, 50%);
     box-sizing: border-box;
 }
 
-// font-family: 'Kumbh Sans', sans-serif;
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+.container {
+    border: 1px solid red;
+    background-color: white;
+    // max-width: 375px;
+    max-width: 20.4375rem;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.825rem;
+}
+
+.accordion {
+    // text-decoration: none;
+    list-style: none;
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input {
+        display: none;
+    }
+}

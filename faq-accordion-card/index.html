@@ -18,76 +18,77 @@
 <body>
 
     <main class="container">
-        <figure>
-            <img class="top" src="./images/illustration-woman-online-mobile.svg" alt="">
-            <img class="bottom" src="./images/bg-pattern-mobile.svg" alt="">
+        <figure class="bg-img">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="" aria-hidden="true">
         </figure>
 
-        <section>
+        <article class="accordion-section">
 
             <h1>FAQ</h1>
 
-            <ul class="accordion">
-                <li class="faqs">
-                    <details>
-                        <summary>
-                            How many team members can I invite?
-                        </summary>
-                        <p>
-                            You can invite up to 2 additional users on the Free plan. There is no limit on team members
-                            for
-                            the Premium plan.
-                        </p>
-                    </details>
-                </li>
+            <section class="accordion">
 
-                <li class="faqs">
-                    <details>
-                        <summary>
-                            What is the maximum file upload size?
-                        </summary>
-                        <p>
-                            No more than 2GB. All files in your account must fit your allotted storage space.
-                        </p>
-                    </details>
-                </li>
+                <details class="faqs">
+                    <summary>
+                        How many team members can I invite?
+                    </summary>
+                    <p>
+                        You can invite up to 2 additional users on the Free plan. There is no limit on team members
+                        for
+                        the Premium plan.
+                    </p>
+                </details>
 
-                <li class="faqs">
-                    <details>
-                        <summary>
-                            How do I reset my password?
-                        </summary>
-                        <p>
-                            Click “Forgot password” from the login page or “Change password” from your profile page. A
-                            reset
-                            link will be emailed to you.
-                        </p>
-                    </details>
-                </li>
+                <hr class="divider">
 
-                <li class="faqs">
-                    <details>
-                        <summary>
-                            Can I cancel my subscription?
-                        </summary>
-                        <p>
-                            Yes! Send us a message and we’ll process your request no questions asked.
-                        </p>
-                    </details>
-                </li>
+                <details class="faqs" open>
+                    <summary>
+                        What is the maximum file upload size?
+                    </summary>
+                    <p>
+                        No more than 2GB. All files in your account must fit your allotted storage space.
+                    </p>
+                </details>
 
-                <li class="faqs">
-                    <details>
-                        <summary>
-                            Do you provide additional support?
-                        </summary>
-                        <p>
-                            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                        </p>
-                    </details>
-                </li>
-            </ul>
-        </section>
+                <hr class="divider">
+
+                <details class="faqs">
+                    <summary>
+                        How do I reset my password?
+                    </summary>
+                    <p>
+                        Click “Forgot password” from the login page or “Change password” from your profile page. A
+                        reset
+                        link will be emailed to you.
+                    </p>
+                </details>
+
+                <hr class="divider">
+
+                <details class="faqs">
+                    <summary>
+                        Can I cancel my subscription?
+                    </summary>
+                    <p>
+                        Yes! Send us a message and we’ll process your request no questions asked.
+                    </p>
+                </details>
+
+                <hr class="divider">
+
+                <details class="faqs">
+                    <summary>
+                        Do you provide additional support?
+                    </summary>
+                    <p>
+                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                    </p>
+                </details>
+
+                <hr class="divider">
+
+            </section>
+        </article>
     </main>
 
 </body>

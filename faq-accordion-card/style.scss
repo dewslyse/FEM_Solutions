@@ -22,7 +22,6 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 0.75rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -30,30 +29,90 @@ body {
 }
 
 .container {
-    border: 1px solid red;
-    background-color: white;
-    // max-width: 375px;
-    max-width: 20.4375rem;
-    margin: 50px;
-    padding: 25px;
-    border-radius: 20px;
+    // border: 1px solid red;
+    max-width: 375px;
+    // max-width: 20.4375rem;
+    // margin: 50px;
+    // padding: 25px;
+    // height: 645px;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
 }
 
-h1 {
-    text-align: center;
-    font-size: 1.825rem;
+.bg-img {
+    // border: solid 2px greenyellow;
+    position: relative;
+    left: 15px;
+    z-index: 10;
+}
+
+.accordion-section {
+    padding: 0 45px;
+    background-color: white;
+    height: 536px;
+    width: 327px;
+    border-radius: 22px;
+    position: relative;
+    margin-top: -90px;
+    // height: 350px;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: url(./images/bg-pattern-mobile.svg);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.94rem;
+        margin: 25px 0 0;
+    }
 }
 
 .accordion {
-    // text-decoration: none;
-    list-style: none;
+    // height: 350px;
+    margin: 30px -20px;
+    justify-content: space-between;
+    overflow: auto;
 
-    .question {
-        display: flex;
-        justify-content: space-between;
-    }
+    .faqs {
+    
+        summary {
+            list-style: none;
+            // margin-bottom: 15px;
+            font-size: 0.82rem;
+            display: flex;
+            justify-content: space-between;
 
-    input {
-        display: none;
+            &::after {
+                content: url(./images/icon-arrow-down.svg);
+            }
+        }
+
+        &[open] summary {
+                font-weight: 700;
+                color: black;
+
+                &::after {
+                    content: url(./images/icon-arrow-down.svg);
+                    transform: rotate(180deg);
+                }
+        }
+
+        p {
+            padding: 12px 28px 0 0;
+            line-height: 18px;
+        }
     }
 }
+
+.divider {
+    height: 1px;
+    border: 0px;
+    background-color: $light-grayish-blue;
+    margin: 17px 0;
+}
+
+
+

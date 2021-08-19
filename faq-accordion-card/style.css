@@ -11,10 +11,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -27,24 +23,61 @@ body {
 }
 
 .container {
-  border: 1px solid red;
-  background-color: white;
-  max-width: 20.4375rem;
-  margin: 50px;
-  padding: 25px;
-  border-radius: 20px;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
 }
 
-h1 {
+.bg-img {
+  position: relative;
+  left: 15px;
+  z-index: 10;
+}
+
+.accordion-section {
+  padding: 0 45px;
+  background-color: white;
+  height: 536px;
+  width: 327px;
+  border-radius: 22px;
+  position: relative;
+  margin-top: -90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.accordion-section::before {
+  content: url(./images/bg-pattern-mobile.svg);
+}
+
+.accordion-section h1 {
   text-align: center;
-  font-size: 1.825rem;
+  font-size: 1.94rem;
+  margin: 25px 0 0;
 }
 
 .accordion {
-  list-style: none;
+  margin: 30px -20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
 }
 
-.accordion .question {
+.accordion .faqs summary {
+  list-style: none;
+  font-size: 0.82rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +86,29 @@ h1 {
           justify-content: space-between;
 }
 
-.accordion input {
-  display: none;
+.accordion .faqs summary::after {
+  content: url(./images/icon-arrow-down.svg);
+}
+
+.accordion .faqs[open] summary {
+  font-weight: 700;
+  color: black;
+}
+
+.accordion .faqs[open] summary::after {
+  content: url(./images/icon-arrow-down.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion .faqs p {
+  padding: 12px 28px 0 0;
+  line-height: 18px;
+}
+
+.divider {
+  height: 1px;
+  border: 0px;
+  background-color: #787887;
+  margin: 17px 0;
 }

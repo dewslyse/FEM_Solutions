@@ -18,11 +18,6 @@ $light-grayish-blue: hsl(240, 5%, 91%);
     box-sizing: border-box;
 }
 
-// html {
-//     scrollbar-width: thin;
-//     scrollbar-color: light;
-// }
-
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 0.75rem;
@@ -34,22 +29,20 @@ body {
 }
 
 .container {
-    // border: 1px solid red;
     max-width: 375px;
-    // max-width: 20.4375rem;
-    // margin: 50px;
-    // padding: 25px;
-    // height: 645px;
     display: flex;
     flex-direction: column;
-    overflow: visible;
+}
+
+.desktop,
+    .box {
+        display: none;
 }
 
 .bg-img {
-    // border: solid 2px greenyellow;
     position: relative;
     left: 15px;
-    z-index: 10;
+    z-index: 10;    
 }
 
 .accordion-section {
@@ -60,7 +53,6 @@ body {
     border-radius: 22px;
     position: relative;
     margin-top: -90px;
-    // height: 350px;
     display: flex;
     flex-direction: column;
 
@@ -76,7 +68,6 @@ body {
 }
 
 .accordion {
-    // height: 350px;
     margin: 30px -20px;
     justify-content: space-between;
     overflow: auto;
@@ -86,7 +77,6 @@ body {
     
         summary {
             list-style: none;
-            // margin-bottom: 15px;
             font-size: 0.82rem;
             display: flex;
             justify-content: space-between;
@@ -127,6 +117,93 @@ body {
     border: 0px;
     background-color: $light-grayish-blue;
     margin: 17px 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1110px;
+        width: 960px;// 963px;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        border-radius: 25px;
+
+        .box {
+            display: block;
+            position: absolute;
+            z-index: 100;
+            margin-left: -52px;
+            top: 43.5%;
+        }
+    }
+
+    .bg-img {
+        left: 0;
+        margin-left: 40px;
+        padding-top: 64px;
+        width: 600px;
+        background-color: white;
+        border-radius: 25px 0 0 25px;
+        overflow: hidden;
+        
+        &::after {
+            content: url(./images/bg-pattern-desktop.svg);
+            background-repeat: no-repeat;
+            position: relative;
+            left: -575px;
+            top: -161%;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+            position: relative;
+            top: 6px;
+            left: -82px;
+            z-index: 100;
+        }
+    }
+
+    .accordion-section {
+        padding-top: 64px;
+        padding-left: 55px;
+        width: 565px;
+        margin: 0;
+        border-radius: 0;
+        
+        &::before {
+            content: "";
+        }
+    
+        h1 {
+            text-align: left;
+            margin: 0 0 38px -40px;
+        }
+    }
+    
+    .accordion {
+        margin: 0 15px 0 -90px;
+        padding: 0 50px;
+        height: 330px;
+    
+        .faqs {
+        
+            summary {
+                letter-spacing: 0.5px;    
+            }
+    
+            p {
+                padding: 12px 0 0 0;
+            }
+        }
+    }
 }
 
 

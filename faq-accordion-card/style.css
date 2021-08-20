@@ -31,7 +31,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: visible;
+}
+
+.desktop,
+.box {
+  display: none;
 }
 
 .bg-img {
@@ -121,4 +125,80 @@ body {
   border: 0px;
   background-color: #e7e7e9;
   margin: 17px 0;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1110px;
+    width: 960px;
+    height: 510px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .container .box {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    margin-left: -52px;
+    top: 43.5%;
+  }
+  .bg-img {
+    left: 0;
+    margin-left: 40px;
+    padding-top: 64px;
+    width: 600px;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+  }
+  .bg-img::after {
+    content: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: -575px;
+    top: -161%;
+  }
+  .bg-img .mobile {
+    display: none;
+  }
+  .bg-img .desktop {
+    display: block;
+    position: relative;
+    top: 6px;
+    left: -82px;
+    z-index: 100;
+  }
+  .accordion-section {
+    padding-top: 64px;
+    padding-left: 55px;
+    width: 565px;
+    margin: 0;
+    border-radius: 0;
+  }
+  .accordion-section::before {
+    content: "";
+  }
+  .accordion-section h1 {
+    text-align: left;
+    margin: 0 0 38px -40px;
+  }
+  .accordion {
+    margin: 0 15px 0 -90px;
+    padding: 0 50px;
+    height: 330px;
+  }
+  .accordion .faqs summary {
+    letter-spacing: 0.5px;
+  }
+  .accordion .faqs p {
+    padding: 12px 0 0 0;
+  }
 }

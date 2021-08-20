@@ -75,12 +75,6 @@ body {
     }
 }
 
-.accordion::-webkit-scrollbar {
-    width: 1px;
-    // scrollbar-width: none;
-    // scrollbar-color: light;
-}
-
 .accordion {
     // height: 350px;
     margin: 30px -20px;
@@ -125,8 +119,6 @@ body {
 
     &::-webkit-scrollbar {
         width: 1px;
-        // scrollbar-width: none;
-        // scrollbar-color: light;
     }
 }
 

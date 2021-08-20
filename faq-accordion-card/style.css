@@ -149,6 +149,28 @@ body {
     z-index: 100;
     margin-left: -52px;
     top: 43.5%;
+    -webkit-animation: rotation 12s infinite linear;
+            animation: rotation 12s infinite linear;
+  }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(359deg);
+              transform: rotateY(359deg);
+    }
+  }
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(359deg);
+              transform: rotateY(359deg);
+    }
   }
   .bg-img {
     left: 0;

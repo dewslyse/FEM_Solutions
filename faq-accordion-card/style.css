@@ -67,12 +67,17 @@ body {
   margin: 25px 0 0;
 }
 
+.accordion::-webkit-scrollbar {
+  width: 1px;
+}
+
 .accordion {
   margin: 30px -20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 .accordion .faqs summary {
@@ -90,6 +95,11 @@ body {
   content: url(./images/icon-arrow-down.svg);
 }
 
+.accordion .faqs summary:hover {
+  cursor: pointer;
+  color: #f47c57;
+}
+
 .accordion .faqs[open] summary {
   font-weight: 700;
   color: black;
@@ -104,6 +114,10 @@ body {
 .accordion .faqs p {
   padding: 12px 28px 0 0;
   line-height: 18px;
+}
+
+.accordion::-webkit-scrollbar {
+  width: 1px;
 }
 
 .divider {

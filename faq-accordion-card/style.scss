@@ -18,6 +18,11 @@ $light-grayish-blue: hsl(240, 5%, 91%);
     box-sizing: border-box;
 }
 
+// html {
+//     scrollbar-width: thin;
+//     scrollbar-color: light;
+// }
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 0.75rem;
@@ -70,11 +75,18 @@ body {
     }
 }
 
+.accordion::-webkit-scrollbar {
+    width: 1px;
+    // scrollbar-width: none;
+    // scrollbar-color: light;
+}
+
 .accordion {
     // height: 350px;
     margin: 30px -20px;
     justify-content: space-between;
     overflow: auto;
+    scrollbar-width: none;
 
     .faqs {
     
@@ -87,6 +99,11 @@ body {
 
             &::after {
                 content: url(./images/icon-arrow-down.svg);
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: $soft-red;
             }
         }
 
@@ -104,6 +121,12 @@ body {
             padding: 12px 28px 0 0;
             line-height: 18px;
         }
+    }
+
+    &::-webkit-scrollbar {
+        width: 1px;
+        // scrollbar-width: none;
+        // scrollbar-color: light;
     }
 }
 

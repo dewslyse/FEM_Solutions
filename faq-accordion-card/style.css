@@ -69,16 +69,22 @@ body {
   text-align: center;
   font-size: 1.94rem;
   margin: 25px 0 0;
+  color: #1d1e35;
 }
 
 .accordion {
-  margin: 30px -20px;
+  margin: 30px -25px 30px -20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: #f47c57 #e7e7e9;
+  scrollbar-color: #af67e9 #e7e7e9;
+}
+
+.accordion .faqs {
+  margin-right: 10px;
+  color: #787887;
 }
 
 .accordion .faqs summary {
@@ -90,6 +96,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #4a4b5e;
 }
 
 .accordion .faqs summary::after {
@@ -118,12 +125,12 @@ body {
 }
 
 .accordion::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   background-color: #e7e7e9;
 }
 
 .accordion::-webkit-scrollbar-thumb {
-  background: #f47c57;
+  background: #af67e9;
   border-radius: 15px;
 }
 
@@ -223,11 +230,21 @@ body {
     margin: 0 15px 0 -90px;
     padding: 0 50px;
     height: 330px;
+    scrollbar-color: #f47c57 #e7e7e9;
+  }
+  .accordion .faqs {
+    margin-right: 0;
   }
   .accordion .faqs summary {
     letter-spacing: 0.5px;
   }
   .accordion .faqs p {
     padding: 12px 0 0 0;
+  }
+  .accordion::-webkit-scrollbar {
+    width: 5px;
+  }
+  .accordion::-webkit-scrollbar-thumb {
+    background: #f47c57;
   }
 }

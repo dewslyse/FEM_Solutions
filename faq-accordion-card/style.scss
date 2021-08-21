@@ -64,24 +64,28 @@ body {
         text-align: center;
         font-size: 1.94rem;
         margin: 25px 0 0;
+        color: $very-dark-desaturated-blue;
     }
 }
 
 .accordion {
-    margin: 30px -20px;
+    margin: 30px -25px 30px -20px;
     justify-content: space-between;
     overflow: auto;
     // scrollbar-width: none;
     scrollbar-width: thin;
-    scrollbar-color: $soft-red $light-grayish-blue;
+    scrollbar-color: $soft-violet $light-grayish-blue;
 
     .faqs {
-    
+        margin-right: 10px;
+        color: $dark-grayish-blue;
+
         summary {
             list-style: none;
             font-size: 0.82rem;
             display: flex;
             justify-content: space-between;
+            color: $very-dark-grayish-blue;
 
             &::after {
                 content: url(./images/icon-arrow-down.svg);
@@ -110,12 +114,12 @@ body {
     }
 
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 3px;
         background-color: $light-grayish-blue;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $soft-red;
+        background: $soft-violet;
         border-radius: 15px;
     }
 }
@@ -210,8 +214,11 @@ body {
         margin: 0 15px 0 -90px;
         padding: 0 50px;
         height: 330px;
+        scrollbar-color: $soft-red $light-grayish-blue;
+
     
         .faqs {
+            margin-right: 0;
         
             summary {
                 letter-spacing: 0.5px;    
@@ -220,6 +227,14 @@ body {
             p {
                 padding: 12px 0 0 0;
             }
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background: $soft-red;
         }
     }
 }

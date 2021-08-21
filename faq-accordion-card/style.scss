@@ -71,7 +71,9 @@ body {
     margin: 30px -20px;
     justify-content: space-between;
     overflow: auto;
-    scrollbar-width: none;
+    // scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: $soft-red $light-grayish-blue;
 
     .faqs {
     
@@ -108,7 +110,13 @@ body {
     }
 
     &::-webkit-scrollbar {
-        width: 1px;
+        width: 5px;
+        background-color: $light-grayish-blue;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $soft-red;
+        border-radius: 15px;
     }
 }
 

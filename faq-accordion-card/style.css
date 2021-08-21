@@ -77,7 +77,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #f47c57 #e7e7e9;
 }
 
 .accordion .faqs summary {
@@ -117,7 +118,13 @@ body {
 }
 
 .accordion::-webkit-scrollbar {
-  width: 1px;
+  width: 5px;
+  background-color: #e7e7e9;
+}
+
+.accordion::-webkit-scrollbar-thumb {
+  background: #f47c57;
+  border-radius: 15px;
 }
 
 .divider {

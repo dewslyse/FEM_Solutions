@@ -89,6 +89,7 @@ body {
 
             &::after {
                 content: url(./images/icon-arrow-down.svg);
+                transition: all 0.3s;
             }
 
             &:hover {
@@ -99,11 +100,12 @@ body {
 
         &[open] summary {
                 font-weight: 700;
-                color: black;
 
                 &::after {
                     content: url(./images/icon-arrow-down.svg);
                     transform: rotate(180deg);
+
+                    transition: all 0.3s;
                 }
         }
 

@@ -101,6 +101,8 @@ body {
 
 .accordion .faqs summary::after {
   content: url(./images/icon-arrow-down.svg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .accordion .faqs summary:hover {
@@ -110,13 +112,14 @@ body {
 
 .accordion .faqs[open] summary {
   font-weight: 700;
-  color: black;
 }
 
 .accordion .faqs[open] summary::after {
   content: url(./images/icon-arrow-down.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .accordion .faqs p {

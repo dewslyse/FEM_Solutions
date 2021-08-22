@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 375px;
+}
+
+.solutions-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.solution {
+  padding: 0;
+  margin: 20px 20px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.screenshot {
+  width: 100%;
+  border-top: 2px solid #14c2c8;
+  border-bottom: 3px solid #14c2c8;
+}
+
+.solution-details {
+  margin: 20px 20px 30px;
+}
+
+.technology {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.technology .html {
+  margin-right: 5px;
+  color: #6abced;
+}
+
+.technology .css {
+  margin-right: 5px;
+  color: #3e54a3;
+}
+
+.technology .javascript {
+  margin-right: 5px;
+  color: #e13784;
+}
+
+.technology .api {
+  margin-right: 5px;
+  color: #85c20a;
+}
+
+.solution-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.solution-btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: 1px solid #14c2c8;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #14c2c8;
+}
+
+.solution-btn:hover {
+  background-color: #14c2c8;
+  color: white;
+}
+
+.repo {
+  color: #14c2c8;
+}
+
+.repo:hover {
+  color: black;
+}
+
+.show {
+  display: block;
+}

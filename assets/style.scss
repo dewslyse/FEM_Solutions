@@ -1,0 +1,128 @@
+//font-family: 'Montserrat', sans-serif;
+
+$light-color: #fff;
+$html: #6abced; 
+$css: #3e54a3;
+$javascript: #e13784;
+$api: #85c20a;
+$newbie: #14c2c8;
+$junior: #aad742;
+$intermediate: #f1b604;
+$advanced: #f48925;
+$guru: #eb5252;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.solutions-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.solution {    
+    padding: 0;
+    margin: 20px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+// .solutionnnn {
+//     text-align: center;
+// }
+
+.screenshot {
+    width: 100%;
+    border-top: 2px solid $newbie;
+    border-bottom: 3px solid $newbie;
+}
+
+.solution-details {
+    margin: 20px 20px 30px;
+}
+
+.technology {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    .html {
+        margin-right: 5px;
+        color: $html;
+    }
+    
+    .css {
+        margin-right: 5px;
+        color: $css;
+    }
+
+    .javascript {
+        margin-right: 5px;
+        color: $javascript;
+    }
+    
+    .api {
+        margin-right: 5px;
+        color: $api;
+    }
+}
+
+.solution-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.solution-btn {
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 10px;
+    border: 1px solid $newbie;
+    border-radius: 7px;
+    text-decoration: none; 
+    color: $newbie;
+
+    &:hover {
+        background-color: $newbie;
+        color: white;
+    }
+}
+
+.repo {
+    color: $newbie;
+
+    &:hover {
+        color: black;
+    }
+}
+
+
+.show {
+    display: block;
+}

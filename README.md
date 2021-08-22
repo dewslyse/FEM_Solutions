@@ -7,7 +7,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Gallery
 
-Click on an image to view live site :rocket::rocket:
+Click on an image to view live site :rocket:
 
 <!-- #### :star: Newbie  -->
 

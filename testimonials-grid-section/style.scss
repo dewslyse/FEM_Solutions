@@ -23,4 +23,83 @@ body {
     min-height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 0.8125rem;
+    background-color: $light-grayish-blue;
+}
+
+.container {
+    // border: 1px solid red;
+    max-width: 327px;
+    margin: 71px 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+
+    .daniel {
+        background: $moderate-violet url(./images/bg-pattern-quotation.svg) no-repeat top 0 right 25px;
+
+        img {
+            border: 2px solid rgb(167, 117, 241);
+        }
+    }
+
+    .jonathan {
+        background-color: $very-dark-grayish-blue;
+    }
+
+    .jeanette,
+    .kira {
+        background-color: $white;
+        color: $very-dark-grayish-blue;
+    }
+
+    .patrick {
+        background-color: $very-dark-blackish-blue;
+
+        img {
+            border: 2px solid rgb(167, 117, 241);
+        }
+    }
+}
+
+article {
+    // border: 1px green solid;
+    padding: 25px 24px 30px 31px;
+    border-radius: 8px;
+    color: $white;
+    box-shadow: 64px 96px 80px -75px rgba(72,85,106,0.3);
+
+    .header {
+        display: flex;
+        align-items: center;
+
+        img {
+            border-radius: 50%;
+            height: 30px;
+            margin-right: 16px;
+        }
+
+        h2 {
+            font-size: 0.8125rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 0.6875rem;
+            font-weight: 500;
+            opacity: 50%;
+        }
+    }
+
+    blockquote {
+        margin: 16px 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin-right: 26px;
+        line-height: 1.4;
+        opacity: 70%;
+    }
 }

@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 327px;
+  max-width: 480px;
   margin: 71px 24px;
   display: -ms-grid;
   display: grid;
@@ -105,4 +105,79 @@ article p {
   margin-right: 26px;
   line-height: 1.4;
   opacity: 70%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 640px) {
+  .container {
+    max-width: 900px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira";
+  }
+  .container .daniel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: daniel;
+  }
+  .container .jonathan {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: jonathan;
+  }
+  .container .jeanette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: jeanette;
+  }
+  .container .patrick {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: patrick;
+  }
+  .container .kira {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: kira;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1110px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  }
+  .container .daniel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: daniel;
+  }
+  .container .jonathan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: jonathan;
+  }
+  .container .jeanette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: jeanette;
+  }
+  .container .patrick {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: patrick;
+  }
+  .container .kira {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: kira;
+  }
 }

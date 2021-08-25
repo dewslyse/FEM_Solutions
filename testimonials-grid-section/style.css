@@ -23,8 +23,12 @@ body {
   background-color: #ecf2f8;
 }
 
+h1 {
+  display: none;
+}
+
 .container {
-  max-width: 480px;
+  max-width: 400px;
   margin: 71px 24px;
   display: -ms-grid;
   display: grid;
@@ -95,13 +99,14 @@ article .header h3 {
   opacity: 50%;
 }
 
-article blockquote {
+article .pull-quote {
   margin: 16px 0;
   font-size: 1.3rem;
   font-weight: 600;
+  letter-spacing: -0.25px;
 }
 
-article p {
+article .quote {
   margin-right: 26px;
   line-height: 1.4;
   opacity: 70%;
@@ -113,28 +118,28 @@ article p {
     max-width: 900px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira";
+        grid-template-areas: "daniel jonathan" "daniel patrick" "jeanette patrick" "kira kira";
   }
   .container .daniel {
     -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: daniel;
   }
   .container .jonathan {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: jonathan;
   }
   .container .jeanette {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: jeanette;
   }
   .container .patrick {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: patrick;
   }
   .container .kira {
@@ -148,6 +153,7 @@ article p {
 @media (min-width: 1140px) {
   .container {
     max-width: 1110px;
+    margin: unset;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
@@ -157,6 +163,7 @@ article p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: daniel;
+    background-position: top 0 right 82px;
   }
   .container .jonathan {
     -ms-grid-row: 1;
@@ -179,5 +186,11 @@ article p {
     -ms-grid-row-span: 2;
     -ms-grid-column: 4;
     grid-area: kira;
+  }
+  article {
+    padding: 25px 32px 30px 31px;
+  }
+  article .quote {
+    margin-right: 6.5px;
   }
 }

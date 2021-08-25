@@ -26,9 +26,12 @@ body {
     background-color: $light-grayish-blue;
 }
 
+h1 {
+    display: none;
+}
+
 .container {
-    // border: 1px solid red;
-    max-width: 480px;
+    max-width: 400px;
     margin: 71px 24px;
     display: grid;
     grid-template-columns: 1fr;
@@ -60,12 +63,9 @@ body {
             border: 2px solid rgb(167, 117, 241);
         }
     }
-
-    
 }
 
 article {
-    // border: 1px green solid;
     padding: 25px 24px 30px 31px;
     border-radius: 8px;
     color: $white;
@@ -93,13 +93,14 @@ article {
         }
     }
 
-    blockquote {
+    .pull-quote {
         margin: 16px 0;
         font-size: 1.3rem;
         font-weight: 600;
+        letter-spacing: -0.25px;
     }
 
-    p {
+    .quote {
         margin-right: 26px;
         line-height: 1.4;
         opacity: 70%;
@@ -113,9 +114,14 @@ article {
         max-width: 900px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "daniel daniel"
-            "jonathan jeanette"
-            "patrick patrick"
+            // "daniel daniel"
+            // "jonathan jeanette"
+            // "patrick patrick"
+            // "kira kira";
+
+            "daniel jonathan"
+            "daniel patrick"
+            "jeanette patrick"
             "kira kira";
 
         .daniel {
@@ -144,13 +150,16 @@ article {
 @media (min-width: 1140px) {
     .container {
         max-width: 1110px;
+        margin: unset;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira";
 
+
         .daniel {
             grid-area: daniel;
+            background-position: top 0 right 82px;
         }
 
         .jonathan {
@@ -167,6 +176,14 @@ article {
 
         .kira {
             grid-area: kira;
+        }
+    }
+
+    article {
+        padding: 25px 32px 30px 31px;  
+
+        .quote {
+            margin-right: 6.5px;
         }
     }
 }

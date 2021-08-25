@@ -9,7 +9,10 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 Click on an image to view live site 🚀
 
+<br>
+
 #### :star: Newbie 
+<br>
 
 [<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) [<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/)
 
@@ -18,7 +21,10 @@ Click on an image to view live site 🚀
 [<img src="./faq-accordion-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/faq-accordion-card/) 
 <!--[<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/) [<img src="./huddle-landing-page/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page/) -->
 
+<br>
+
 #### :star::star: Junior 
+<br>
 
 [<img src="./testimonials-grid-section/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/testimonials-grid-section/) 
 <!--

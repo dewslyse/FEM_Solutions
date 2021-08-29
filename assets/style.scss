@@ -1,0 +1,498 @@
+$light-color: #fff;
+$html: #6abced; 
+$css: #3e54a3;
+$javascript: #e13784;
+$api: #85c20a;
+$newbie: #14c2c8;
+$junior: #aad742;
+$intermediate: #f1b604;
+$advanced: #f48925;
+$guru: #eb5252;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.solutions-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+header {
+    background-color: white;
+    margin: 15px auto 10px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .profile {
+        display: none;
+    }
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+    .nav-heading {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+ul {
+    display: flex;
+
+    li {
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        list-style: none;
+        margin: 4px;
+        padding: 5px 15px;
+
+        .level-text {
+            display: none;
+        }
+    }
+}
+
+//filter buttons mixin
+@mixin level-btn($color) {
+    border: $color 2px solid;
+    color: $color;
+    
+    &.active {
+        background-color: $color;
+        
+        .number {
+            color: white;
+        }
+
+        // .level-text {
+        //     color: white;
+        // }
+    }    
+}
+
+//Filter buttons based on difficulty level
+#newbie-tab {
+    @include level-btn($newbie);
+}
+
+#junior-tab {
+    @include level-btn($junior);
+}
+
+#intermediate-tab {
+    @include level-btn($intermediate);
+}
+
+#advanced-tab {
+    @include level-btn($advanced);
+}
+
+#guru-tab {
+    @include level-btn($guru);
+}
+
+#show-tab {
+    @include level-btn(#3e54a3);
+
+    &.active {
+        color: white;
+    }
+}
+
+//Style for solutions card
+@mixin card-style ($color) {
+    background-color: white;
+    padding: 0;
+    margin: 20px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+
+    .screenshot {
+        width: 100%;
+        border-top: 2px dotted $color;
+        border-bottom: 3px solid $color;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            display: block;
+            backface-visibility: hidden;
+            // object-fit: cover;
+            transition: transform 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(0.975);
+            }
+        }
+    }
+
+    .solution-details {
+        // background-color: white;
+        margin: 20px 20px 30px;
+
+        .technology {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        
+            .html {
+                margin-right: 5px;
+                color: $html;
+            }
+            
+            .css {
+                margin-right: 5px;
+                color: $css;
+            }
+        
+            .javascript {
+                margin-right: 5px;
+                color: $javascript;
+            }
+            
+            .api {
+                margin-right: 5px;
+                color: $api;
+            }
+        }
+
+        .solution-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+
+            .solution-btn {
+                font-size: 0.85rem;
+                font-weight: 500;
+                cursor: pointer;
+                padding: 6px 10px;
+                border: 1px solid $color;
+                background-color: white;
+                border-radius: 7px;
+                text-decoration: none; 
+                color: $color;
+            
+                &:hover {
+                    background-color: white;
+                    color: $color;
+                    font-weight: bold;
+                }
+            }
+
+            .repo {
+                color: $color;
+            
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+//Solutions card for different difficulty levels
+.newbie {
+    @include card-style($newbie);
+}
+
+.junior {
+    @include card-style($junior);
+}
+
+.intermediate {
+    @include card-style($intermediate);
+}
+
+.advanced {
+    @include card-style($advanced);
+}
+
+.guru {
+    @include card-style($guru);
+}
+
+
+// MEDIA QUERIES
+ @media (min-width: 768px) {
+    .container {
+        max-width: 840px;
+    }
+    
+    header {
+        .logo {
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    nav {
+        .nav-heading {
+            font-size: 1.2rem;
+        }
+    }
+
+    ul {
+        li {
+            font-size: 0.9rem;
+            margin: 7px;
+            padding: 7px 18px;
+        }
+    }
+
+    .solutions-section {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+
+ @media (min-width: 1140px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    header {
+        margin: 15px 50px 10px;
+        align-self: flex-start;
+
+
+        .logo {
+            height: 70px;
+            width: 70px;
+            margin-right: 15px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        
+            .handle {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 0 50px;
+
+        .nav-heading {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            padding: 30px 0;
+            margin: 0;
+        }
+    }
+
+    ul {
+
+        li {
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+
+            .number {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: white;
+                padding: 10px 15px 10px 30px;
+                margin-left: -35px;
+                margin-right: 10px;
+            }
+
+            .level-text {
+                display: inline-flex;
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    #newbie-tab {
+        border: $newbie 2px solid;
+        color: $newbie;
+
+        .number {
+            background-color: $newbie;
+        }
+        
+        &.active {
+            border: white 2px dotted;
+            background-color: $newbie;
+            
+            .number {
+                background-color: white;
+                color: $newbie;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #junior-tab {
+        border: $junior 2px solid;
+        color: $junior;
+
+        .number {
+            background-color: $junior;
+        }
+        
+        &.active {
+            border: white 2px dotted;
+            background-color: $junior;
+            
+            .number {
+                background-color: white;
+                color: $junior;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #intermediate-tab { 
+        border: $intermediate 2px solid;
+        color: $intermediate;
+
+        .number {
+            background-color: $intermediate;
+        }
+        
+        &.active {
+            border: white 2px dotted;
+            background-color: $intermediate;
+            
+            .number {
+                background-color: white;
+                color: $intermediate;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #advanced-tab {
+        border: $advanced 2px solid;
+        color: $advanced;
+
+        .number {
+            background-color: $advanced;
+        }
+        
+        &.active {
+            border: white 2px dotted;
+            background-color: $advanced;
+            
+            .number {
+                background-color: white;
+                color: $advanced;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #guru-tab {
+        border: $guru 2px solid;
+        color: $guru;
+
+        .number {
+            background-color: $guru;
+        }
+        
+        &.active {
+            border: white 2px dotted;
+            background-color: $guru;
+            
+            .number {
+                background-color: white;
+                color: $guru;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #show-tab {
+        border: #3e54a3 2px solid;
+        color: #3e54a3;
+ 
+        &.active {
+            border: white 2px dotted;
+            background-color: #3e54a3;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    
+    .solutions-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }

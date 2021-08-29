@@ -9,37 +9,23 @@ $intermediate: #f1b604;
 $advanced: #f48925;
 $guru: #eb5252;
 
+//MIXINS
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@mixin level-btn ($color) {
+    border: $color 2px solid;
+    color: $color;
+    
+    &.active {
+        background-color: $color;
+        
+        .number {
+            color: white;
+        }
+    }    
 }
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: $light-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // min-height: 100vh;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 375px;
-}
-
-.solutions-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-}
-
-// MIXINS
 
 @mixin card-style ($color) {
+    background-color: white;
     padding: 0;
     margin: 20px 20px 10px;
     border-radius: 5px;
@@ -49,9 +35,23 @@ body {
         width: 100%;
         border-top: 2px dotted $color;
         border-bottom: 3px solid $color;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            display: block;
+            backface-visibility: hidden;
+            // object-fit: cover;
+            transition: transform 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(0.975);
+            }
+        }
     }
 
     .solution-details {
+        // background-color: white;
         margin: 20px 20px 30px;
 
         .technology {
@@ -96,13 +96,15 @@ body {
                 cursor: pointer;
                 padding: 6px 10px;
                 border: 1px solid $color;
+                background-color: white;
                 border-radius: 7px;
                 text-decoration: none; 
                 color: $color;
             
                 &:hover {
-                    background-color: $color;
-                    color: white;
+                    background-color: white;
+                    color: $color;
+                    font-weight: bold;
                 }
             }
 
@@ -115,21 +117,4 @@ body {
             }
         }
     }
-}
-
-.solution-1,
-.solution-2,
-.solution-3,
-.solution-4,
-.solution-5,
-.solution-7,
-.solution-8,
-.solution-9,
-.solution-10,
-.solution-11 {
-    @include card-style($newbie);
-}
-
-.solution-6 {
-    @include card-style($junior);
 }

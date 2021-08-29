@@ -1,0 +1,356 @@
+@import url(./SCSS/_config.scss);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.solutions-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+header {
+    position: relative;
+    background-color: white;
+    margin: 15px auto 10px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content:left;
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .profile {
+        display: none;
+
+        // .name {
+        //     font-size: 1.5rem;
+        //     font-weight: 600;
+        // }
+
+        // .handle {
+        //     font-size: 0.9rem;
+        // }
+    }
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+    .nav-heading {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+ul {
+    display: flex;
+
+    li {
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        list-style: none;
+        margin: 4px;
+        padding: 5px 15px;
+
+        .level-text {
+            display: none;
+        }
+    }
+}
+
+
+
+#newbie-tab {
+    @include level-btn($newbie);
+}
+
+#junior-tab {
+    @include level-btn($junior);
+}
+
+#intermediate-tab {
+    @include level-btn($intermediate);
+}
+
+#advanced-tab {
+    @include level-btn($advanced);
+}
+
+#guru-tab {
+    @include level-btn($guru);
+}
+
+#show-tab {
+    @include level-btn(#3e54a3);
+
+    &.active {
+        color: white;
+    }
+}
+
+
+
+
+// MIXINS
+
+
+
+.newbie {
+    @include card-style($newbie);
+}
+
+.junior {
+    @include card-style($junior);
+}
+
+.intermediate {
+    @include card-style($intermediate);
+}
+
+.advanced {
+    @include card-style($advanced);
+}
+
+.guru {
+    @include card-style($guru);
+}
+
+// MEDIA QUERIES
+ @media (min-width: 768px) {
+    .container {
+        max-width: 840px;
+    }
+    
+    .solutions-section {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media (min-width: 1140px) {
+
+    nav {
+        background-color: white;// #f6f5f2;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+        padding: 0 100px;
+        z-index: 10;
+
+        .nav-heading {
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+    }
+
+
+    #newbie-tab {
+        border: $newbie 2px solid;
+        color: $newbie;
+
+        .number {
+            background-color: $newbie;
+        }
+        
+        &.active {
+            border: black 2px dotted;
+            background-color: $newbie;
+            
+            .number {
+                background-color: white;
+                color: $newbie;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #junior-tab {
+        border: $junior 2px solid;
+        color: $junior;
+
+        .number {
+            background-color: $junior;
+        }
+        
+        &.active {
+            border: black 2px dotted;
+            background-color: $junior;
+            
+            .number {
+                background-color: white;
+                color: $junior;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #intermediate-tab { 
+        border: $intermediate 2px solid;
+        color: $intermediate;
+
+        .number {
+            background-color: $intermediate;
+        }
+        
+        &.active {
+            border: black 2px dotted;
+            background-color: $intermediate;
+            
+            .number {
+                background-color: white;
+                color: $intermediate;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #advanced-tab {
+        border: $advanced 2px solid;
+        color: $advanced;
+
+        .number {
+            background-color: $advanced;
+        }
+        
+        &.active {
+            border: black 2px dotted;
+            background-color: $advanced;
+            
+            .number {
+                background-color: white;
+                color: $advanced;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #guru-tab {
+        border: $guru 2px solid;
+        color: $guru;
+
+        .number {
+            background-color: $guru;
+        }
+        
+        &.active {
+            border: black 2px dotted;
+            background-color: $guru;
+            
+            .number {
+                background-color: white;
+                color: $guru;
+            }
+
+            .level-text {
+                color: white;
+            }
+        }
+    }
+
+    #show-tab {
+        border: green 2px solid;
+        color: green;
+ 
+        &.active {
+            border: black 2px dotted;
+            background-color: green;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+            margin: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            overflow: hidden;
+
+            .number {
+                background-color: red;
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: white;
+                padding: 8px 10px;
+                margin: -5px 15px -5px -200px;
+            }
+
+            .level-text {
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+
+            &.active {
+                background-color: $newbie;
+                color: white;
+            }
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+    
+    .solutions-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }

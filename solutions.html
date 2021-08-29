@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
+    <meta name="description"
+        content="A collection of solutions to Frontend mentor challenges. FEM helps improve your front-end skills by providing real-world projects.">
     <title>Frontend Mentor Solutions | dewslyse</title>
     <link rel="shortcut icon" type="image/jpg"
         href="https://avatars.githubusercontent.com/u/8092327?s=400&u=ca5f2cd59ffd639cb2d11a37aff0c66e8b4c4667&v=4">
@@ -17,15 +19,56 @@
 
 <body>
 
-    <header>
-
+    <header class="container">
+        <div>
+            <img class="logo"
+                src="https://avatars.githubusercontent.com/u/8092327?s=400&u=ca5f2cd59ffd639cb2d11a37aff0c66e8b4c4667&v=4"
+                alt="logo">
+        </div>
+        <div class="profile">
+            <p class="name">dewslyse</p>
+            <p class="handle">@dewslyse</p>
+        </div>
     </header>
+    <nav>
+        <h1 class="nav-heading">Frontend Mentor Solutions</h1>
+        <ul>
+            <li id="newbie-tab" class="level" data-filter="newbie"><span class="number">1</span><span
+                    class="level-text">Newbie</span>
+            </li>
+            <li id="junior-tab" class="level" data-filter="junior"><span class="number">2</span><span
+                    class="level-text">Junior</span>
+            </li>
+            <li class="level" data-filter="intermediate" id="intermediate-tab"><span class="number">3</span><span
+                    class="level-text">Intermediate</span></li>
+            <li class="level" data-filter="advanced" id="advanced-tab"><span class="number">4</span><span
+                    class="level-text">Advanced</span></li>
+            <li class="level" data-filter="guru" id="guru-tab"><span class="number">5</span><span
+                    class="level-text">Guru</span></li>
+            <li class="level level-text active" data-filter="all" id="show-tab">Show all</li>
+        </ul>
+
+        <!-- <div>
+            <p>Level</p>
+            <ul>
+                <li class="level" data-filter="newbie">1</li>
+                <li class="level" data-filter="junior">2</li>
+                <li class="level" data-filter="intermediate">3</li>
+                <li class="level" data-filter="advanced">4</li>
+                <li class="level" data-filter="guru">5</li>
+                <li class="level" data-filter="all">All</li>
+            </ul>
+        </div> -->
+
+    </nav>
 
     <main class="container">
         <div class="solutions-section">
-            <div class="solution-10">
-                <img class="screenshot" src="./order-summary-component/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+
+            <div class="solution newbie">
+                <div class="screenshot">
+                    <img src="./order-summary-component/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -34,19 +77,22 @@
                     <h2 class="solution-title">Order summary component</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/order-summary-component/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/order-summary-component"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-9">
-                <img class="screenshot" src="./stats-preview-card/design/desktop-preview.jpg" alt="solution screenshot">
+            <div class="solution newbie">
+                <div class="screenshot">
+                    <img src="./stats-preview-card/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -55,19 +101,21 @@
                     <h2 class="solution-title">Stats preview card</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/stats-preview-card/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo" href="https://github.com/dewslyse/FEM_Solutions/tree/main/stats-preview-card"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-8">
-                <img class="screenshot" src="./3-column-preview-card/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution newbie">
+                <div class="screenshot">
+                    <img src="./3-column-preview-card/design/desktop-preview.webp" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -76,19 +124,21 @@
                     <h2 class="solution-title">3-column preview card</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo" href="https://github.com/dewslyse/FEM_Solutions/tree/main/3-column-preview-card"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-7">
-                <img class="screenshot" src="./profile-card-component/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution newbie">
+                <div class="screenshot">
+                    <img src="./profile-card-component/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -97,20 +147,22 @@
                     <h2 class="solution-title">Profile card component</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/profile-card-component/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/profile-card-component"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-6">
-                <img class="screenshot" src="./testimonials-grid-section/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution junior">
+                <div class="screenshot">
+                    <img src="./testimonials-grid-section/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -119,19 +171,23 @@
                     <h2 class="solution-title">Testimonials grid section</h2>
                     <div class="links">
                         <a class="solution-btn"
-                            href="https://dewslyse.github.io/FEM_Solutions/testimonials-grid-section/" target="_blank">
+                            href="https://dewslyse.github.io/FEM_Solutions/testimonials-grid-section/" target="_blank"
+                            rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/testimonials-grid-section"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-5">
-                <img class="screenshot" src="./faq-accordion-card/design/desktop-preview.jpg" alt="solution screenshot">
+            <div class="solution intermediate">
+                <div class="screenshot">
+                    <img src="./faq-accordion-card/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -140,19 +196,21 @@
                     <h2 class="solution-title">FAQ accordion card</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/faq-accordion-card/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo" href="https://github.com/dewslyse/FEM_Solutions/tree/main/faq-accordion-card"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-4">
-                <img class="screenshot" src="./social-proof-section/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution intermediate">
+                <div class="screenshot">
+                    <img src="./social-proof-section/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -161,19 +219,21 @@
                     <h2 class="solution-title">Social proof section</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/social-proof-section/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo" href="https://github.com/dewslyse/FEM_Solutions/tree/main/social-proof-section"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-3">
-                <img class="screenshot" src="./four-card-feature-section/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution advanced">
+                <div class="screenshot">
+                    <img src="./four-card-feature-section/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -182,20 +242,23 @@
                     <h2 class="solution-title">Four card feature section</h2>
                     <div class="links">
                         <a class="solution-btn"
-                            href="https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/" target="_blank">
+                            href="https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/" target="_blank"
+                            rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/four-card-feature-section"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-11">
-                <img class="screenshot" src="./intro-component-with-signup/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution advanced">
+                <div class="screenshot">
+                    <img src="./intro-component-with-signup/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -205,21 +268,23 @@
                     <h2 class="solution-title">Intro component with sign-up form</h2>
                     <div class="links">
                         <a class="solution-btn"
-                            href="https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/"
-                            target="_blank">
+                            href="https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/" target="_blank"
+                            rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/intro-component-with-signup"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-2">
-                <img class="screenshot" src="./single-price-grid-component/design/desktop-preview.jpg"
-                    alt="solution screenshot">
+            <div class="solution guru">
+                <div class="screenshot">
+                    <img src="./single-price-grid-component/design/desktop-preview.jpg" alt="solution screenshot">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -228,21 +293,24 @@
                     <h2 class="solution-title">Single price grid component</h2>
                     <div class="links">
                         <a class="solution-btn"
-                            href="https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/"
-                            target="_blank">
+                            href="https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/" target="_blank"
+                            rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo"
                             href="https://github.com/dewslyse/FEM_Solutions/tree/main/single-price-grid-component"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="solution-1">
-                <img class="screenshot" src="./huddle-landing-page/design/desktop-preview.jpg" alt="solution screenshot"
-                    loading="lazy">
+            <div class="solution guru">
+                <div class="screenshot">
+                    <img src="./huddle-landing-page/design/desktop-preview.jpg" alt="solution screenshot"
+                        loading="lazy">
+                </div>
                 <div class="solution-details">
                     <div class="technology">
                         <span class="html">HTML</span>
@@ -251,11 +319,12 @@
                     <h2 class="solution-title">Huddle landing page</h2>
                     <div class="links">
                         <a class="solution-btn" href="https://dewslyse.github.io/FEM_Solutions/huddle-landing-page/"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             See solution
                         </a>
                         <a class="repo" href="https://github.com/dewslyse/FEM_Solutions/tree/main/huddle-landing-page"
-                            target="_blank"><i class="fab fa-github fa-2x"></i>
+                            target="_blank" aria-label="link to github repository" rel="noreferrer"><i
+                                class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -266,8 +335,10 @@
 
     <footer></footer>
 
-    <!-- <script src="./assets/script.js"></script> -->
     <script src="https://kit.fontawesome.com/861ecf43a0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+    <script src="./assets/script.js" defer></script>
 
 </body>
 

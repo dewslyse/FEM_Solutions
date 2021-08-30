@@ -84,12 +84,18 @@ nav .nav-heading {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ul li {
@@ -773,6 +779,7 @@ ul li .level-text {
     text-transform: uppercase;
     padding: 30px 0;
     margin: 0;
+    text-align: left;
   }
   ul li {
     border-radius: 5px;

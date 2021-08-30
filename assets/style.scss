@@ -69,11 +69,14 @@ nav {
         font-size: 0.9rem;
         font-weight: 600;
         margin-bottom: 10px;
+        text-align: center;
     }
 }
 
 ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     li {
         border-radius: 4px;
@@ -331,6 +334,7 @@ ul {
             text-transform: uppercase;
             padding: 30px 0;
             margin: 0;
+            text-align: left;
         }
     }
 

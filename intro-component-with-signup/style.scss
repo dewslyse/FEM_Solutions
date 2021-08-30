@@ -9,7 +9,9 @@ $blue: hsl(248, 32%, 49%);
 $dark-blue: hsl(249, 10%, 26%);
 $grayish-blue: hsl(246, 25%, 77%);
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,4 +24,83 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: $red url(./images/bg-intro-mobile.png) no-repeat center;
+    // background-size: contain;
+}
+
+.container {
+    border: red 1px solid;
+    max-width: 375px;
+    height: 1000px;
+    padding: 90px 23px 68px 23px;
+    text-align: center;
+    color: white;
+}
+
+.intro-section {
+
+    h1 {    
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    p {
+        // font-size: 1rem;
+        font-weight: 500;
+        margin: 30px 0 62px 0;
+        line-height: 1.6;
+    }
+}
+
+.trial-text {
+    background-color: $blue;
+    border-radius: 8px;
+    padding: 20px 50px;
+    margin-bottom: 25px;
+}
+
+.form-section {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    #first-name,
+    #last-name,
+    #email,
+    #password {
+        // display: block;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid $grayish-blue;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: $dark-blue;
+        margin-bottom: 16px;
+    }
+
+    #submit {
+        width: 100%;
+        background-color: $green;
+        border: 0px;
+        border-radius: 5px;
+        padding: 20px;
+        color: white;
+        text-transform: uppercase;
+        // font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .disclaimer {
+        color: $grayish-blue;
+        font-size: 0.7rem;
+        padding: 10px 20px 0 20px;
+        line-height: 2;
+
+        b {
+            color: $red;
+        }
+    }
 }

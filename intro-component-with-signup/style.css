@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -18,4 +20,81 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  background: #ff7a7a url(./images/bg-intro-mobile.png) no-repeat center;
+}
+
+.container {
+  border: red 1px solid;
+  max-width: 375px;
+  height: 1000px;
+  padding: 90px 23px 68px 23px;
+  text-align: center;
+  color: white;
+}
+
+.intro-section h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.intro-section p {
+  font-weight: 500;
+  margin: 30px 0 62px 0;
+  line-height: 1.6;
+}
+
+.trial-text {
+  background-color: #6055a5;
+  border-radius: 8px;
+  padding: 20px 50px;
+  margin-bottom: 25px;
+}
+
+.form-section {
+  background-color: white;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+}
+
+.form-section #first-name,
+.form-section #last-name,
+.form-section #email,
+.form-section #password {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3e3c49;
+  margin-bottom: 16px;
+}
+
+.form-section #submit {
+  width: 100%;
+  background-color: #38cc8c;
+  border: 0px;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.form-section .disclaimer {
+  color: #b9b6d3;
+  font-size: 0.7rem;
+  padding: 10px 20px 0 20px;
+  line-height: 2;
+}
+
+.form-section .disclaimer b {
+  color: #ff7a7a;
 }

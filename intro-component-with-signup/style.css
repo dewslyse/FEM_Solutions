@@ -24,8 +24,7 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  height: 1000px;
+  max-width: 540px;
   padding: 92px 23px 68px 23px;
   text-align: center;
   color: white;
@@ -38,15 +37,15 @@ body {
 
 .intro-section p {
   font-weight: 500;
-  margin: 25px 0 62px 0;
   line-height: 1.65;
+  margin: 25px 0 62px 0;
 }
 
 .trial-text {
   font-weight: 400;
   background-color: #6055a5;
   border-radius: 8px;
-  padding: 18px 60px;
+  padding: 18px 50px;
   margin-bottom: 25px;
   -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -133,4 +132,85 @@ body {
 
 .form-section .disclaimer b {
   color: #ff7a7a;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 960px) {
+  body {
+    background: #ff7a7a url(./images/bg-intro-desktop.png) center;
+  }
+  .container {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 30px;
+  }
+  .intro-section {
+    text-align: left;
+    margin-right: 25px;
+  }
+  .intro-section h1 {
+    font-size: 3rem;
+    line-height: 1.13;
+    letter-spacing: 0.6px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .intro-section p {
+    margin: 30px 0 0 0;
+  }
+  .trial-text {
+    font-size: 0.9375rem;
+    letter-spacing: 0.15px;
+  }
+  .form-section {
+    padding: 40px;
+  }
+  .form-section #first-name,
+  .form-section #last-name,
+  .form-section #email,
+  .form-section #password {
+    padding: 19.5px 12.5px;
+    margin-bottom: 20px;
+  }
+  .form-section #first-name::-webkit-input-placeholder,
+  .form-section #last-name::-webkit-input-placeholder,
+  .form-section #email::-webkit-input-placeholder,
+  .form-section #password::-webkit-input-placeholder {
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+  }
+  .form-section #first-name:-ms-input-placeholder,
+  .form-section #last-name:-ms-input-placeholder,
+  .form-section #email:-ms-input-placeholder,
+  .form-section #password:-ms-input-placeholder {
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+  }
+  .form-section #first-name::-ms-input-placeholder,
+  .form-section #last-name::-ms-input-placeholder,
+  .form-section #email::-ms-input-placeholder,
+  .form-section #password::-ms-input-placeholder {
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+  }
+  .form-section #first-name::placeholder,
+  .form-section #last-name::placeholder,
+  .form-section #email::placeholder,
+  .form-section #password::placeholder {
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+  }
+  .form-section .disclaimer {
+    padding: 13px 20px 0 20px;
+  }
 }

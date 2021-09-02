@@ -1,0 +1,78 @@
+//Primary colours
+$blue: hsl(223, 87%, 63%);
+
+//Secondary colours
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+//Neutral colours
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+}
+
+header {
+    img {
+        max-width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+.container {
+    border: 1px solid red;
+    max-width: 375px;
+    text-align: center;
+    padding: 0 20px;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin-bottom: 50px;
+
+        #email {
+            border-radius: 50px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        #submit {
+            border-radius: 50px;
+            padding: 15px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+footer {
+    margin-top: 100px;
+
+    .socials {
+        margin-bottom: 25px;
+    }
+}

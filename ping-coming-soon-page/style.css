@@ -24,13 +24,16 @@ body {
   font-size: 1.25rem;
 }
 
+header {
+  margin: 100px 0 0 0;
+}
+
 header img {
   max-width: 80%;
   margin-bottom: 50px;
 }
 
 .container {
-  border: 1px solid red;
   max-width: 375px;
   text-align: center;
   padding: 0 20px;
@@ -38,10 +41,20 @@ header img {
 
 .container h1 {
   font-size: 1.5rem;
+  font-weight: 300;
+  color: #969696;
+}
+
+.container h1 .soon {
+  font-weight: 700;
+  color: #151f29;
 }
 
 .container p {
-  font-size: 1rem;
+  margin: 25px 0 10px 0;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #151f29;
 }
 
 .container .subscribe {
@@ -52,19 +65,53 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 25px;
+  padding: 25px 20px;
   margin-bottom: 50px;
 }
 
-.container .subscribe #email {
-  border-radius: 50px;
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
+.container .subscribe #email,
 .container .subscribe #submit {
   border-radius: 50px;
   padding: 15px;
+  border: 1px solid #4f7df3;
+  color: white;
+  font-weight: 600;
+}
+
+.container .subscribe #email {
+  background-color: transparent;
+  margin-bottom: 15px;
+  border: 1px solid #c2d3ff;
+}
+
+.container .subscribe #email::-webkit-input-placeholder {
+  padding-left: 15px;
+  color: #c2d3ff;
+  font-weight: 300;
+}
+
+.container .subscribe #email:-ms-input-placeholder {
+  padding-left: 15px;
+  color: #c2d3ff;
+  font-weight: 300;
+}
+
+.container .subscribe #email::-ms-input-placeholder {
+  padding-left: 15px;
+  color: #c2d3ff;
+  font-weight: 300;
+}
+
+.container .subscribe #email::placeholder {
+  padding-left: 15px;
+  color: #c2d3ff;
+  font-weight: 300;
+}
+
+.container .subscribe #submit {
+  background-color: #4f7df3;
+  -webkit-box-shadow: 0px 10px 20px #c2d3ff;
+          box-shadow: 0px 10px 20px #c2d3ff;
 }
 
 .container img {
@@ -72,9 +119,110 @@ header img {
 }
 
 footer {
-  margin-top: 100px;
+  margin: 100px 0 40px 0;
 }
 
 footer .socials {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+}
+
+footer .socials a {
+  color: #4f7df3;
+  border: #c2d3ff solid 2px;
+  border-radius: 50%;
+}
+
+footer .socials a:hover {
+  cursor: pointer;
+  color: white;
+  border: #4f7df3 solid 2px;
+  background-color: #4f7df3;
+}
+
+footer .socials .facebook {
+  padding: 8px 14px;
+}
+
+footer .socials .twitter {
+  padding: 8px 10px;
+  margin: 0 15px;
+}
+
+footer .socials .instagram {
+  padding: 8px 12px;
+}
+
+footer .copyright {
+  color: #969696;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 640px) {
+  header {
+    margin: 168px 0 0 0;
+  }
+  header img {
+    max-width: 100%;
+    height: 32px;
+    margin-bottom: 75px;
+  }
+  .container {
+    max-width: 750px;
+    padding: 0 55px;
+  }
+  .container h1 {
+    font-size: 2.75rem;
+  }
+  .container p {
+    margin: 35px 0 40px 0;
+    font-size: 1.5rem;
+  }
+  .container .subscribe {
+    padding: 25px 40px;
+    margin-bottom: 110px;
+  }
+  .container .subscribe #email,
+  .container .subscribe #submit {
+    border-radius: 50px;
+    padding: 25px;
+    font-size: 1.55rem;
+  }
+  .container .subscribe #email {
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  .container .subscribe #email::-webkit-input-placeholder {
+    padding-left: 37px;
+  }
+  .container .subscribe #email:-ms-input-placeholder {
+    padding-left: 37px;
+  }
+  .container .subscribe #email::-ms-input-placeholder {
+    padding-left: 37px;
+  }
+  .container .subscribe #email::placeholder {
+    padding-left: 37px;
+  }
+  .container .subscribe img {
+    margin-bottom: 130px;
+  }
+  footer {
+    margin: 250px 0 80px 0;
+  }
+  footer .socials {
+    margin-bottom: 75px;
+  }
+  footer .socials .facebook {
+    padding: 16px 22px;
+  }
+  footer .socials .twitter {
+    padding: 16px 19px;
+    margin: 0 20px;
+  }
+  footer .socials .instagram {
+    padding: 16px 22px;
+  }
+  footer .copyright {
+    font-size: 1.265rem;
+  }
 }

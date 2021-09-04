@@ -8,14 +8,6 @@ const emailValidation = (event) => {
 
     const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    // if (validEmail.test(input.value)) {
-    //     form.submit();
-    // }
-    // else {
-    //     form.classList.add('invalid');
-    //     errorMsg.innerHTML = "Please provide a valid email address";
-    //     input.style.border = '1px solid #ff0000';
-    // }
     if (input.value == "") {
         form.classList.add('invalid');
         errorMsg.innerHTML = "Whoops! It looks like you forgot to add your email";

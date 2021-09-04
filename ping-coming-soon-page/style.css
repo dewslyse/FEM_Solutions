@@ -219,7 +219,7 @@ footer .copyright {
     margin-bottom: 130px;
   }
   .container .subscribe.invalid .error-msg {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: -10px 0 40px 0;
   }
   footer {
@@ -313,7 +313,7 @@ footer .copyright {
     padding: 15px;
   }
   .container .subscribe.invalid .error-msg {
-    position: fixed;
+    position: absolute;
     margin-top: 65px;
     margin-left: 35px;
     font-size: 0.75rem;

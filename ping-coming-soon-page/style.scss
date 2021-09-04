@@ -35,7 +35,6 @@ header {
 }
 
 .container {
-    // border: 1px solid red;
     max-width: 375px;
     text-align: center;
     padding: 0 20px;
@@ -89,6 +88,12 @@ header {
         #submit {
             background-color: $blue;
             box-shadow: 0px 10px 20px $pale-blue;
+
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($color: $blue, $amount: 10%);
+                border: 1px solid lighten($color: $blue, $amount: 10%);
+            }
         }
     }
 
@@ -105,13 +110,13 @@ footer {
 
         a {
             color: $blue; 
-            border: $pale-blue solid 2px;
+            border: $pale-blue solid 1px;
             border-radius: 50%;
 
             &:hover {
                 cursor: pointer;
                 color: white;
-                border: $blue solid 2px;
+                border: $blue solid 1px;
                 background-color: $blue;
             }  
         }
@@ -149,7 +154,6 @@ footer {
     }
 
     .container {
-        // border: 1px solid red;
         max-width: 750px;
         padding: 0 55px;
     
@@ -217,7 +221,6 @@ footer {
 
 @media (min-width: 992px) {
     header {
-        // border: 1px red solid;
         margin: 85px 0 0 0;
     
         img {
@@ -228,76 +231,48 @@ footer {
     }
 
     .container {
-        // border: 1px solid red;
         max-width: 768px;
-        text-align: center;
         padding: 0 64px;
     
         h1 {
             font-size: 3rem;
-            font-weight: 300;
-            color: $gray;
-    
-            .soon {
-                font-weight: 700;
-                color: $very-dark-blue;
-            }
         }
     
         p {
             margin: 16px 0 42px 0;
             font-size: 1.25rem;
             font-weight: 300;
-            color: $very-dark-blue;
         }
     
         .subscribe {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            // align-items: center;
-            padding: 0px;// 30px;
+            padding: 0px;
             margin-bottom: 85px;
-            // margin: 0 19px;
     
             #email, 
             #submit {
-                border-radius: 50px;
                 padding: unset;
-                // padding: 0;//13px;
-                border: 1px solid $blue;
-                color: white;
                 font-weight: 300;
             }
     
             #email {
-                background-color: transparent;
                 margin: 0;
-                border: 1px solid $pale-blue;
                 padding: 13px;
                 width: 66%;
     
                 &::placeholder {
                     font-size: 1rem;
                     padding-left: 18px;
-                    color: $pale-blue;
-                    font-weight: 300;
                 }
-    
             }
     
             #submit {
                 width: 31.5%;
                 font-size: 1rem;
-                // padding: 0;// 0px 15px;
                 padding: 15px;
-                background-color: $blue;
-                box-shadow: 0px 10px 20px $pale-blue;
             }
-        }
-    
-        img {
-            max-width: 100%;
         }
     }
 
@@ -306,19 +281,6 @@ footer {
     
         .socials {
             margin-bottom: 30px;
-    
-            a {
-                color: $blue; 
-                border: $pale-blue solid 1px;
-                border-radius: 50%;
-    
-                &:hover {
-                    cursor: pointer;
-                    color: white;
-                    border: $blue solid 1px;
-                    background-color: $blue;
-                }  
-            }
     
             .facebook {
                 padding: 4px 10px;
@@ -335,7 +297,6 @@ footer {
         }
     
         .copyright {
-            color: $gray;
             font-size: 0.76rem;
         }
     }

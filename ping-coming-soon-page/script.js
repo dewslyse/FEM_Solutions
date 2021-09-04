@@ -11,13 +11,11 @@ const emailValidation = (event) => {
     if (input.value == "") {
         form.classList.add('invalid');
         errorMsg.innerHTML = "Whoops! It looks like you forgot to add your email";
-        input.style.border = '1px solid #ff0000';
     }
 
     else if (!validEmail.test(input.value)) {
         form.classList.add('invalid');
         errorMsg.innerHTML = "Please provide a valid email address";
-        input.style.border = '1px solid #ff0000';
     }
 
     else {

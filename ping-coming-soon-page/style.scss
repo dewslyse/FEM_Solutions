@@ -95,6 +95,10 @@ header {
             }
         }
 
+        &.invalid > #email {
+            border: 1px solid red;
+        }
+
         &.invalid .error-msg {
             display: block;
             color: red;
@@ -303,7 +307,8 @@ footer {
     }
 
     footer {
-        margin: 70px 0 40px 0;
+        margin: 70px 0 0 0;
+        // margin: 70px 0 40px 0;
     
         .socials {
             margin-bottom: 30px;

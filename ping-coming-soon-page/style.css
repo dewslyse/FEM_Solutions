@@ -117,6 +117,10 @@ header img {
   border: 1px solid #7ea0f6;
 }
 
+.container .subscribe.invalid > #email {
+  border: 1px solid red;
+}
+
 .container .subscribe.invalid .error-msg {
   display: block;
   color: red;
@@ -319,7 +323,7 @@ footer .copyright {
     font-size: 0.75rem;
   }
   footer {
-    margin: 70px 0 40px 0;
+    margin: 70px 0 0 0;
   }
   footer .socials {
     margin-bottom: 30px;

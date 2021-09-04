@@ -25,8 +25,9 @@
         <p>Subscribe and get notified</p>
 
         <div>
-            <form class="subscribe">
-                <input type="email" placeholder="Your email address..." id="email">
+            <form class="subscribe" action="#">
+                <input type="email" placeholder="Your email address..." id="email" aria-label="Email input">
+                <span class="error-msg desktop"></span>
                 <button type="submit" id="submit">Notify Me</button>
             </form>
         </div>
@@ -47,6 +48,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/861ecf43a0.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

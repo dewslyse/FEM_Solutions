@@ -53,7 +53,6 @@ header img {
 .container p {
   margin: 25px 0 10px 0;
   font-size: 0.825rem;
-  font-weight: 600;
   color: #151f29;
 }
 
@@ -79,31 +78,29 @@ header img {
 }
 
 .container .subscribe #email {
-  background-color: transparent;
   margin-bottom: 15px;
+  padding-left: 30px;
   border: 1px solid #c2d3ff;
+  color: #151f29;
+  outline: 0;
 }
 
 .container .subscribe #email::-webkit-input-placeholder {
-  padding-left: 15px;
   color: #c2d3ff;
   font-weight: 300;
 }
 
 .container .subscribe #email:-ms-input-placeholder {
-  padding-left: 15px;
   color: #c2d3ff;
   font-weight: 300;
 }
 
 .container .subscribe #email::-ms-input-placeholder {
-  padding-left: 15px;
   color: #c2d3ff;
   font-weight: 300;
 }
 
 .container .subscribe #email::placeholder {
-  padding-left: 15px;
   color: #c2d3ff;
   font-weight: 300;
 }
@@ -118,6 +115,14 @@ header img {
   cursor: pointer;
   background-color: #7ea0f6;
   border: 1px solid #7ea0f6;
+}
+
+.container .subscribe.invalid .error-msg {
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: -10px 0 30px 0;
 }
 
 .container img {
@@ -196,21 +201,26 @@ footer .copyright {
   .container .subscribe #email {
     background-color: transparent;
     margin-bottom: 20px;
+    padding-left: 65px;
   }
   .container .subscribe #email::-webkit-input-placeholder {
-    padding-left: 37px;
+    padding-left: 0px;
   }
   .container .subscribe #email:-ms-input-placeholder {
-    padding-left: 37px;
+    padding-left: 0px;
   }
   .container .subscribe #email::-ms-input-placeholder {
-    padding-left: 37px;
+    padding-left: 0px;
   }
   .container .subscribe #email::placeholder {
-    padding-left: 37px;
+    padding-left: 0px;
   }
   .container .subscribe img {
     margin-bottom: 130px;
+  }
+  .container .subscribe.invalid .error-msg {
+    font-size: 1.3rem;
+    margin: -10px 0 40px 0;
   }
   footer {
     margin: 250px 0 80px 0;
@@ -275,29 +285,38 @@ footer .copyright {
   }
   .container .subscribe #email {
     margin: 0;
-    padding: 13px;
+    padding: 13px 13px 13px 35px;
     width: 66%;
   }
   .container .subscribe #email::-webkit-input-placeholder {
     font-size: 1rem;
-    padding-left: 18px;
+    padding-left: 0;
   }
   .container .subscribe #email:-ms-input-placeholder {
     font-size: 1rem;
-    padding-left: 18px;
+    padding-left: 0;
   }
   .container .subscribe #email::-ms-input-placeholder {
     font-size: 1rem;
-    padding-left: 18px;
+    padding-left: 0;
   }
   .container .subscribe #email::placeholder {
     font-size: 1rem;
-    padding-left: 18px;
+    padding-left: 0;
+  }
+  .container .subscribe span {
+    display: none;
   }
   .container .subscribe #submit {
     width: 31.5%;
     font-size: 1rem;
     padding: 15px;
+  }
+  .container .subscribe.invalid .error-msg {
+    position: fixed;
+    margin-top: 65px;
+    margin-left: 35px;
+    font-size: 0.75rem;
   }
   footer {
     margin: 70px 0 40px 0;

@@ -26,4 +26,4 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/ping-coming-soon-page/](https://dewslyse.github.io/FEM_Solutions/ping-coming-soon-page/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/ping-coming-soon-page](https://github.com/dewslyse/FEM_Solutions/tree/main/ping-coming-soon-page)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/ping-coming-soon-page-solution-ulZs_ZGzh) :fire:

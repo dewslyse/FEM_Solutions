@@ -27,15 +27,6 @@ body {
   max-width: 375px;
 }
 
-.solutions-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-}
-
 header {
   background-color: white;
   margin: 15px auto 10px;
@@ -109,6 +100,16 @@ ul li {
 
 ul li .level-text {
   display: none;
+}
+
+.solutions-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-bottom: 30px;
 }
 
 #newbie-tab {

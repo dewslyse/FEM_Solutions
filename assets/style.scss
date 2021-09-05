@@ -29,11 +29,11 @@ body {
     max-width: 375px;
 }
 
-.solutions-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
+// .solutions-section {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+// }
 
 header {
     background-color: white;
@@ -91,6 +91,14 @@ ul {
         }
     }
 }
+
+.solutions-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 30px;
+}
+
 
 //filter buttons mixin
 @mixin level-btn($color) {

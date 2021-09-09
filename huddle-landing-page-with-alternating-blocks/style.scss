@@ -13,3 +13,36 @@ $grayish-blue: hsl(208, 11%, 55%);
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section {
+    border: 1px solid red;
+}
+
+article {
+    border: 1px solid green;
+}
+
+.container {
+    img {
+        width: 300px;
+        
+    }
+}
+
+footer {
+    background-color: $grayish-blue;
+}

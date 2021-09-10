@@ -23,10 +23,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.top {
-  border: 1px solid black;
+.container {
+  max-width: 750px;
+}
+
+header {
+  padding: 46px 34px;
+  background: #ebfbff url(./images/bg-hero-mobile.svg) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,18 +49,206 @@ body {
           align-items: center;
 }
 
-.hero-section {
-  border: 1px solid red;
+header .top .logo {
+  width: 30%;
+  margin: 10px 0;
 }
 
-article {
-  border: 1px solid green;
+header ul {
+  list-style: none;
 }
 
-.container img {
-  width: 300px;
+header ul .try-free {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 42px;
+  border-radius: 50px;
+  color: #00252e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header .hero-section {
+  margin: 162px 40px 15px;
+}
+
+header .hero-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #00252e;
+}
+
+header .hero-section p {
+  font-size: 2rem;
+  margin: 42px 0 88px 0;
+  line-height: 1.5;
+}
+
+header .hero-section .mockup {
+  width: 100%;
+  margin-top: 130px;
+}
+
+.get-started-1,
+.get-started-2 {
+  color: white;
+  background-color: #ff52bf;
+  text-decoration: none;
+  padding: 24px 120px;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.get-started-2 {
+  padding: 24px 100px;
+  font-size: 1.25rem;
+}
+
+.blocks {
+  margin: 120px 0 0 0;
+}
+
+.blocks article {
+  text-align: center;
+  margin: 0 38px 80px;
+  padding: 112px 100px 70px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blocks article img {
+  width: 100%;
+}
+
+.blocks article h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #00252e;
+  font-size: 2.5rem;
+  margin: 105px 0 31px 0;
+}
+
+.blocks article p {
+  font-size: 1.6875rem;
+  margin: 0 -20px;
+  letter-spacing: 0.5px;
+  line-height: 1.55;
+  color: #808d99;
+}
+
+.blocks .overlap {
+  position: relative;
+  top: 160px;
+  margin: 0 20px;
+  padding: 90px 48px 110px;
+  text-align: center;
+  border-radius: 28px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  background-color: white;
+}
+
+.blocks .overlap h2 {
+  margin-bottom: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  color: #00252e;
 }
 
 footer {
-  background-color: #808d99;
+  background-color: #00252e;
+  padding-top: 300px;
+  padding: 300px 34px 70px;
+  color: white;
+}
+
+footer .footer-logo {
+  width: 48%;
+  color: white;
+  margin-bottom: 45px;
+}
+
+footer .footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 45px;
+}
+
+footer .footer-contact img {
+  margin-top: 10px;
+  height: 30px;
+}
+
+footer .footer-contact p {
+  margin-left: 55px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+footer .footer-links {
+  margin-top: 80px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 25px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.75rem;
+}
+
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+footer .socials .facebook,
+footer .socials .twitter,
+footer .socials .instagram {
+  color: white;
+  border: white solid 2px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+footer .socials .facebook {
+  padding: 7px 13px;
+}
+
+footer .socials .twitter {
+  padding: 7px 10px;
+  margin: 0 15px;
+}
+
+footer .socials .instagram {
+  padding: 7px 11px;
+}
+
+footer .copyright {
+  text-align: center;
 }

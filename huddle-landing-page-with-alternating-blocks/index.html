@@ -10,16 +10,17 @@
         href="https://avatars.githubusercontent.com/u/8092327?s=400&u=ca5f2cd59ffd639cb2d11a37aff0c66e8b4c4667&v=4">
     <title>Huddle landing page with alternating feature blocks solution | FEM</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/861ecf43a0.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="container">
         <div class="top">
-            <img src="./images/logo.svg" alt="">
+            <img class="logo" src="./images/logo.svg" alt="">
             <ul>
                 <li>
-                    <a href="#">Try It Free</a>
+                    <a class="try-free" href="#">Try It Free</a>
                 </li>
             </ul>
         </div>
@@ -31,15 +32,16 @@
                     Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
                     Create connections with your users as you engage in genuine discussion.
                 </p>
-                <a href="#">Get Started For Free</a>
+                <a class="get-started-1" href="#">Get Started For Free</a>
             </div>
 
-            <img src="./images/illustration-mockups.svg" alt="">
+            <img class="mockup" src="./images/illustration-mockups.svg" alt="">
         </div>
     </header>
 
-    <main class="container">
+    <main class="container blocks">
         <article>
+            <img src="./images/illustration-grow-together.svg" alt="">
             <div>
                 <h2>Grow Together</h2>
                 <p>
@@ -47,9 +49,10 @@
                     Think of the insightful conversations you miss out on with a feedback form.
                 </p>
             </div>
-            <img src="./images/illustration-grow-together.svg" alt="">
         </article>
+
         <article>
+            <img src="./images/illustration-flowing-conversation.svg" alt="">
             <div>
                 <h2>Flowing Conversations</h2>
                 <p>
@@ -57,9 +60,10 @@
                     have just-in-time loading for a more natural flow.
                 </p>
             </div>
-            <img src="./images/illustration-flowing-conversation.svg" alt="">
         </article>
+
         <article>
+            <img src="./images/illustration-your-users.svg" alt="">
             <div>
                 <h2>Your Users</h2>
                 <p>
@@ -67,36 +71,36 @@
                     This means, once signed in to your app, your users can start chatting immediately.
                 </p>
             </div>
-            <img src="./images/illustration-your-users.svg" alt="">
         </article>
 
-        <div>
+        <div class="overlap">
             <h2>Ready To Build Your Community?</h2>
-            <a href="#">Get Started For Free</a>
+            <a class="get-started-2" href="#">Get Started For Free</a>
         </div>
+
     </main>
 
-    <footer>
-        <img src="./images/logo.svg" alt="">
+    <footer class="container">
+        <img class="footer-logo" src="./images/logo-footer.svg" alt="">
         <div>
             <div>
-                <div>
+                <div class="footer-contact">
                     <img src="./images/icon-location.svg" alt="">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua
                     </p>
                 </div>
-                <div>
+                <div class="footer-contact">
                     <img src="./images/icon-phone.svg" alt="">
                     <p>+1-543-123-4567</p>
                 </div>
-                <div>
+                <div class="footer-contact">
                     <img src="./images/icon-email.svg" alt="">
                     <p>example@huddle.com</p>
                 </div>
             </div>
-            <div>
+            <div class="footer-links">
                 <ul>
                     <li>
                         <a href="">About Us</a>
@@ -122,8 +126,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="socials"></div>
-            <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+            <div class="socials">
+                <a class="facebook" href="https://facebook.com" target="_blank" aria-label="link to facebook page"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="twitter" href="https://twitter.com" target="_blank" aria-label="link to twitter page"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="instagram" href="https://instagram.com" target="_blank" aria-label="link to instagram page"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
         </div>
     </footer>
 

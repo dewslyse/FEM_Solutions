@@ -21,12 +21,11 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/huddle-landing-page-with-alternating-blocks/](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page-with-alternating-blocks/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/huddle-landing-page-with-alternating-blocks](https://github.com/dewslyse/FEM_Solutions/tree/main/huddle-landing-page-with-alternating-blocks)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-blocks-PLWj8r3LY) :fire:
 
 ### Built with
 
 - Semantic HTML5 markup
 - SASS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow

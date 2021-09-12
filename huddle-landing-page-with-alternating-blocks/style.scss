@@ -332,9 +332,13 @@ footer {
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     }
 
+    .get-started-2 {
+        padding: 26px 100px;   
+    }
+
     .blocks {
         // border: solid 1px red;
-        margin: 160px 0 0 0;
+        margin: 160px 0 24px 0;
         padding: 0 65px;
         // z-index: 10;
     
@@ -394,21 +398,148 @@ footer {
     
         .overlap {
             position: relative;
-            top: 160px;
-            margin: 0 20px; //150px 24px;
-            padding: 90px 48px 110px;// 100px;
+            // display: flex;
+            // flex-direction: column;
+            top: 120px;
+            // left: 50%;
+            // transform: translate(-50%);
+            // margin: 0;// 20px; //150px 24px;
+            padding: 65px 48px 80px;// 100px;
             text-align: center;
-            border-radius: 28px;
+            border-radius: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             z-index: 100;
             background-color: white;
+            width: 61%;
+            margin: 0 auto;
         
             h2 {
-                margin-bottom: 70px;
+                margin-bottom: 61px;
                 font-family: 'Poppins', sans-serif;
-                font-size: 2.25rem;
+                font-size: 2rem;
                 color: $very-dark-cyan;
             }
+        }
+    }
+
+    footer {
+        // z-index: -1;
+        background: $very-dark-cyan;
+        // padding: 194px 150px 70px;
+        padding: 0;
+        color: white;
+        margin: 0;
+        // max-width: 1440px;//unset;
+        width: 100%;
+        
+        .footer-content {
+            // max-width: 1248px;
+            // padding: 0 192px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            margin: 190px auto 0;
+
+            // flex-direction: row;
+        }
+
+        .content-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 192px;
+            // max-width: 1200px;
+        }
+    
+        .footer-logo {
+            display: block;
+            width: 236px;
+            margin-bottom: 40px;
+            margin-left: 192px;
+        }
+    
+        .footer-contact {
+            max-width: 380px;
+            display: flex;
+            flex-direction: row;
+            // align-items: flex-end;
+            margin-bottom: 24px;
+            margin-right: -100px;
+    
+            img {
+                margin-top: 10px;
+                height: 18px;
+                // align-content: ;
+            }
+    
+            p {
+                margin-left: 27.5px;
+                padding-right: 0px;
+                font-size: 1rem;
+                align-self: flex-end;
+            }
+        }
+    
+        .footer-links {
+                margin: 0;
+                // margin-top: 80px;
+                // font-size: 1rem;
+    
+            }
+    
+        ul {
+            list-style: none;
+            // color: white;
+            // text-decoration: none;
+    
+            li {
+                margin-bottom: 16px;
+            }
+    
+            a {
+                text-decoration: none;
+                color: white ;
+                font-size: 1rem;
+            }
+        }
+    
+        .socials {
+            display: flex;
+            // justify-content: center;
+            // justify-content: flex-start;
+            // margin-top: 0px;
+            // margin-bottom: 40px;
+            margin: 0;
+            padding-top: 10px;
+    
+            .facebook,
+            .twitter,
+            .instagram {
+                color: white; 
+                border: white solid 2px;
+                border-radius: 50%;
+                text-align: center;
+            }
+    
+            .facebook {
+                padding: 7px 13px;
+            }
+    
+            .twitter {
+                padding: 7px 10px;
+                margin: 0 15px;
+            }
+    
+            .instagram {
+                padding: 7px 11px;
+            }
+        }
+    
+        .copyright {
+            margin-top: 24px;
+            text-align: right;
+            margin-bottom: 62px;
+            font-size: 0.75rem;
+            margin-right: 100px;
         }
     }
 

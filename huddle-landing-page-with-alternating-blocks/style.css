@@ -71,6 +71,10 @@ header ul .try-free {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+header ul .try-free:hover {
+  background-color: whitesmoke;
+}
+
 header .hero-section {
   margin: 162px 40px 15px;
 }
@@ -104,6 +108,11 @@ header .hero-section .mockup {
   font-weight: 700;
   -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.get-started-1:hover,
+.get-started-2:hover {
+  background-color: #ff85d2;
 }
 
 .get-started-2 {
@@ -165,7 +174,6 @@ header .hero-section .mockup {
 
 footer {
   background-color: #00252e;
-  padding-top: 300px;
   padding: 300px 34px 70px;
   color: white;
 }
@@ -193,8 +201,7 @@ footer .footer-contact img {
 }
 
 footer .footer-contact p {
-  margin-left: 55px;
-  margin-right: 10px;
+  margin: 0 10px 0 55px;
   font-size: 2rem;
 }
 
@@ -210,6 +217,10 @@ footer ul li {
   margin-bottom: 25px;
 }
 
+footer ul li:hover {
+  text-decoration: underline;
+}
+
 footer ul a {
   text-decoration: none;
   color: white;
@@ -223,8 +234,7 @@ footer .socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin: 80px 0 40px 0;
 }
 
 footer .socials .facebook,
@@ -234,6 +244,13 @@ footer .socials .instagram {
   border: white solid 2px;
   border-radius: 50%;
   text-align: center;
+}
+
+footer .socials .facebook:hover,
+footer .socials .twitter:hover,
+footer .socials .instagram:hover {
+  color: #ff52bf;
+  border-color: #ff52bf;
 }
 
 footer .socials .facebook {
@@ -294,8 +311,7 @@ footer .copyright {
   header .hero-section h1 {
     font-size: 2.625rem;
     letter-spacing: -1.5px;
-    padding-right: 50px;
-    padding-top: 45px;
+    padding: 45px 50px 0 0;
   }
   header .hero-section p {
     font-size: 1.125rem;
@@ -402,8 +418,7 @@ footer .copyright {
   footer .footer-logo {
     display: block;
     width: 236px;
-    margin-bottom: 40px;
-    margin-left: 160px;
+    margin: 0 0 40px 160px;
   }
   footer .footer-contact {
     max-width: 380px;
@@ -445,10 +460,100 @@ footer .copyright {
     padding: 6px 10px;
   }
   footer .copyright {
-    margin-top: 24px;
+    margin: 24px 120px 60px 0;
     text-align: right;
-    margin-bottom: 60px;
     font-size: 0.75rem;
-    margin-right: 120px;
+  }
+}
+
+@media (max-width: 749px) {
+  .container {
+    max-width: 460px;
+  }
+  header {
+    padding: 40px 20px;
+    margin: 0;
+  }
+  header .top .logo {
+    max-width: 104px;
+    margin: 10px;
+  }
+  header ul .try-free {
+    padding: 6px 16px;
+    font-size: 0.725rem;
+  }
+  header .hero-section {
+    margin: 80px 0px 15px;
+  }
+  header .hero-section h1 {
+    font-size: 1.65rem;
+  }
+  header .hero-section p {
+    font-size: 1.125rem;
+    margin: 35px 0 40px;
+  }
+  header .hero-section .mockup {
+    margin-top: 75px;
+  }
+  .get-started-1,
+  .get-started-2 {
+    padding: 10px 20px;
+    font-size: 0.8125rem;
+  }
+  .get-started-2 {
+    padding: 8px 16px;
+  }
+  .blocks {
+    margin: 75px 0 0 0;
+  }
+  .blocks article {
+    margin: 0 20px 40px;
+    padding: 30px 20px 40px;
+  }
+  .blocks article h2 {
+    font-size: 1.375rem;
+    margin: 30px 0 25px 0;
+  }
+  .blocks article p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .blocks .overlap {
+    top: 80px;
+    padding: 50px 20px 50px;
+  }
+  .blocks .overlap h2 {
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+  }
+  footer {
+    padding: 200px 20px 70px;
+  }
+  footer .footer-logo {
+    max-width: 240px;
+    margin-bottom: 30px;
+  }
+  footer .footer-contact {
+    margin-bottom: 25px;
+  }
+  footer .footer-contact img {
+    margin-top: 0;
+    height: 20px;
+  }
+  footer .footer-contact p {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+  footer .footer-links {
+    margin-top: 50px;
+  }
+  footer ul li {
+    margin-bottom: 15px;
+  }
+  footer ul a {
+    font-size: 1rem;
+  }
+  footer .copyright {
+    font-size: 0.825rem;
   }
 }

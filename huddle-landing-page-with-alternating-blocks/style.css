@@ -341,7 +341,8 @@ footer .copyright {
             box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
   }
   .blocks article img {
-    width: 473px;
+    width: 37%;
+    height: auto;
   }
   .blocks article h2 {
     font-family: 'Poppins', sans-serif;

@@ -27,8 +27,10 @@ Click on an image to view live site 🚀
 <br>
 
 [<img src="./testimonials-grid-section/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/testimonials-grid-section/) 
+[<img src="./huddle-landing-page-with-alternating-blocks/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page-with-alternating-blocks/) 
+
 <!--
-[<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+[<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
 
 #### :star::star::star: Intermediate 
 

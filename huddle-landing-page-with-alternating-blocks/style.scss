@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-// font-family: 'Poppins', sans-serif;
-
 $pink: hsl(322, 100%, 66%);
 $very-pale-cyan: hsl(193, 100%, 96%);
 $very-dark-cyan: hsl(192, 100%, 9%);
@@ -25,7 +23,6 @@ body {
 }
 
 .container {
-    // border: 1px solid blue;
     max-width: 750px;
 }
 
@@ -36,7 +33,6 @@ header {
     text-align: center;
 
     .top {
-        // border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,32 +60,19 @@ header {
     }
 
     .hero-section {
-        // border: 1px solid red;
         margin: 162px 40px 15px;
     
         h1 {
            font-family: 'Poppins', sans-serif;
-           font-size: 3rem; // 2.8125rem;
+           font-size: 3rem;
            color: $very-dark-cyan;
         }
     
         p {
-            font-size: 2rem; //1.9375rem;
+            font-size: 2rem;
             margin: 42px 0 88px 0;
             line-height: 1.5;
         }
-    
-        // .get-started {
-        //     color: white;
-        //     background-color: $pink;
-        //     text-decoration: none;
-        //     padding: 24px 120px;
-        //     width: 100%;
-        //     border-radius: 50px;
-        //     font-size: 1.5rem;
-        //     font-weight: 700;
-        //     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-        // }
 
         .mockup {
             width: 100%;
@@ -117,9 +100,7 @@ header {
 }
 
 .blocks {
-    // border: solid 1px red;
     margin: 120px 0 0 0;
-    // z-index: 10;
 
     article {
         text-align: center;
@@ -151,8 +132,8 @@ header {
     .overlap {
         position: relative;
         top: 160px;
-        margin: 0 20px; //150px 24px;
-        padding: 90px 48px 110px;// 100px;
+        margin: 0 20px;
+        padding: 90px 48px 110px;
         text-align: center;
         border-radius: 28px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -170,7 +151,6 @@ header {
 
 
 footer {
-    // z-index: -1;
     background-color: $very-dark-cyan;
     padding-top: 300px ;
     padding: 300px 34px 70px;
@@ -206,8 +186,6 @@ footer {
 
     ul {
         list-style: none;
-        // color: white;
-        // text-decoration: none;
 
         li {
             margin-bottom: 25px;
@@ -261,8 +239,6 @@ footer {
     }
 
     header {
-        // max-width: unset;
-
         padding: 30px 80px;
         background: $very-pale-cyan url(./images/bg-hero-desktop.svg) no-repeat;
         text-align: left;
@@ -296,14 +272,14 @@ footer {
             }
         
             h1 {
-               font-size: 2.625rem; // 2.8125rem;
+               font-size: 2.625rem;
                letter-spacing: -1.5px;
                padding-right: 50px;
                padding-top: 45px;
             }
         
             p {
-                font-size: 1.125rem; //1.9375rem;
+                font-size: 1.125rem; 
                 margin: 25px 60px 30px 0;
                 line-height: 1.6;
             }
@@ -321,15 +297,9 @@ footer {
     .get-started-1 {
         display: block;
         text-align: center;
-        color: white;
-        background-color: $pink;
-        text-decoration: none;
         padding: 18px 30px;
         width: 48%;
-        border-radius: 50px;
         font-size: 0.875rem;
-        font-weight: 700;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     }
 
     .get-started-2 {
@@ -337,10 +307,8 @@ footer {
     }
 
     .blocks {
-        // border: solid 1px red;
         margin: 160px 0 24px 0;
         padding: 0 65px;
-        // z-index: 10;
     
         article {
             height: 440px;
@@ -348,10 +316,9 @@ footer {
             text-align: left;
             align-items: center;
             margin: 0 38px 40px;
-            // margin: unset;
             padding: 55px 30px 50px 0;
             border-radius: 15px;
-            box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.15);
         
             img {
                 width: 400px;
@@ -359,20 +326,14 @@ footer {
             }
         
             h2 {
-                font-family: 'Poppins', sans-serif;
-                color: $very-dark-cyan;
                 font-size: 1.75rem;
                 margin: 0px 0 10px 0;
                 padding: 0 0 0 121px;
-                // margin: unset;
             }
         
             p {
                 font-size: 1.0625rem;
-                margin: 0;// -20px;
-                letter-spacing: 0.5px;
-                line-height: 1.55;
-                color: $grayish-blue;
+                margin: 0;
                 padding: 0 190px 0 121px;
             }
         }
@@ -397,78 +358,48 @@ footer {
         }
     
         .overlap {
-            position: relative;
-            // display: flex;
-            // flex-direction: column;
             top: 120px;
-            // left: 50%;
-            // transform: translate(-50%);
-            // margin: 0;// 20px; //150px 24px;
             padding: 65px 48px 80px;// 100px;
-            text-align: center;
             border-radius: 20px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            z-index: 100;
-            background-color: white;
+            box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
             width: 61%;
             margin: 0 auto;
         
             h2 {
                 margin-bottom: 61px;
-                font-family: 'Poppins', sans-serif;
                 font-size: 2rem;
-                color: $very-dark-cyan;
             }
         }
     }
 
     footer {
-        // z-index: -1;
-        background: $very-dark-cyan;
-        // padding: 194px 150px 70px;
         padding: 0;
-        color: white;
         margin: 0;
-        // max-width: 1440px;//unset;
         width: 100%;
         
         .footer-content {
-            // max-width: 1248px;
-            // padding: 0 192px;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
             margin: 190px auto 0;
-
-            // flex-direction: row;
         }
 
         .content-inner {
             display: flex;
             justify-content: space-between;
-            padding: 0 192px;
-            // max-width: 1200px;
+            padding: 0 160px;
         }
     
         .footer-logo {
             display: block;
             width: 236px;
             margin-bottom: 40px;
-            margin-left: 192px;
+            margin-left: 160px;
         }
     
         .footer-contact {
             max-width: 380px;
-            display: flex;
-            flex-direction: row;
-            // align-items: flex-end;
-            margin-bottom: 24px;
-            margin-right: -100px;
+            margin-bottom: 20px;
     
             img {
-                margin-top: 10px;
                 height: 18px;
-                // align-content: ;
             }
     
             p {
@@ -476,71 +407,50 @@ footer {
                 padding-right: 0px;
                 font-size: 1rem;
                 align-self: flex-end;
+                line-height: 1.5;
             }
         }
     
         .footer-links {
                 margin: 0;
-                // margin-top: 80px;
-                // font-size: 1rem;
-    
+                margin-left: -30px;    
             }
     
         ul {
-            list-style: none;
-            // color: white;
-            // text-decoration: none;
     
             li {
-                margin-bottom: 16px;
+                margin-bottom: 19px;
             }
     
             a {
-                text-decoration: none;
-                color: white ;
-                font-size: 1rem;
+                font-size: 1.125rem;
             }
         }
     
         .socials {
-            display: flex;
-            // justify-content: center;
-            // justify-content: flex-start;
-            // margin-top: 0px;
-            // margin-bottom: 40px;
             margin: 0;
             padding-top: 10px;
     
-            .facebook,
-            .twitter,
-            .instagram {
-                color: white; 
-                border: white solid 2px;
-                border-radius: 50%;
-                text-align: center;
-            }
-    
             .facebook {
-                padding: 7px 13px;
+                padding: 6px 12px;
             }
     
             .twitter {
-                padding: 7px 10px;
-                margin: 0 15px;
+                padding: 6px 9px;
+                margin: 0 10px;
             }
     
             .instagram {
-                padding: 7px 11px;
+                padding: 6px 10px;
             }
         }
     
         .copyright {
             margin-top: 24px;
             text-align: right;
-            margin-bottom: 62px;
+            margin-bottom: 60px;
             font-size: 0.75rem;
-            margin-right: 100px;
+            margin-right: 120px;
         }
     }
-
 }

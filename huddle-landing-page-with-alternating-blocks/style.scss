@@ -339,6 +339,7 @@ footer {
         // z-index: 10;
     
         article {
+            height: 440px;
             display: flex;
             text-align: left;
             align-items: center;
@@ -346,11 +347,10 @@ footer {
             // margin: unset;
             padding: 55px 30px 50px 0;
             border-radius: 15px;
-            box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
         
             img {
                 width: 400px;
-                // width: 100%;
                 height: auto;
             }
         
@@ -369,7 +369,7 @@ footer {
                 letter-spacing: 0.5px;
                 line-height: 1.55;
                 color: $grayish-blue;
-                padding: 0 150px 0 121px;
+                padding: 0 190px 0 121px;
             }
         }
 
@@ -378,7 +378,19 @@ footer {
             flex-direction: row-reverse;
         }
 
-        .conversations {}
+        .conversations {
+            padding-left: 121px;
+
+            .conversations-text {
+                margin-left: 170px;
+
+                h2,
+                p {
+                    padding-left: 0;
+                    padding-right: 10px;
+                }
+            }
+        }
     
         .overlap {
             position: relative;

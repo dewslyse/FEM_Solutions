@@ -256,7 +256,7 @@ footer .copyright {
 /* MEDIA QUEIRES */
 @media (min-width: 1140px) {
   .container {
-    max-width: 100%;
+    max-width: 1440px;
   }
   header {
     padding: 30px 80px;
@@ -337,8 +337,8 @@ footer .copyright {
     margin: 0 38px 40px;
     padding: 55px 30px 50px 0;
     border-radius: 15px;
-    -webkit-box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
   }
   .blocks article img {
     width: 34%;

@@ -22,6 +22,6 @@ Users should be able to:
   
 ### Links
 
-- Live Site URL: [https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/](https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/){:target="_blank"}
+- Live Site URL: ![https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/](https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/){:target="_blank"}
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/base-apparel-coming-soon](https://github.com/dewslyse/FEM_Solutions/tree/main/base-apparel-coming-soon){:target="_blank"}
 - View [solution on Frontend mentor](){:target="_blank"} :fire:

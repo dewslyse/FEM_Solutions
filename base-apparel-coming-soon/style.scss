@@ -106,7 +106,74 @@ header {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 1140px) {
+
+@media (min-width: 992px) {
+    body {
+        background: url(./images/hero-desktop.jpg) no-repeat right center, url(./images/bg-pattern-desktop.svg) no-repeat left center;
+        background-size: contain, contain;
+        background-position-x: 105%;
+        background-color: hsl(0, 100%, 98%);
+        display: block;
+    }
+
+    header {
+        all: unset;
+    
+        .logo {
+            max-width: 164px;
+            margin: 64px 60px;
+            position: unset;
+        }
+    }
+
+    .container {
+        padding: 0;
+        max-width: 360px;
+        margin-left: 60px;
+    
+        h1 {
+            margin-top: 65px;
+            font-size: 3.2rem;
+            text-align: left;
+            letter-spacing: 15px;
+            line-height: 1.1;
+    
+            span {
+                font-weight: 300;
+                margin-bottom: 0px;
+            }
+        }
+    
+        p {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            text-align: left;
+            line-height: 1.7;
+            font-size: 1rem;
+            letter-spacing: 0.1px;
+            padding-right: 30px;
+        }
+        
+        input {
+            padding: 18px;
+            padding-left: 30px;
+            font-size: 1rem;
+            width: 80%;
+        }
+    
+        button {
+            padding: 16px 40px;
+            right: 50px;
+    
+            &:hover {
+                padding: 17px 45px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1240px) {
     body {
         background: url(./images/hero-desktop.jpg) no-repeat right center, url(./images/bg-pattern-desktop.svg) no-repeat left center;
         background-size: contain, contain;

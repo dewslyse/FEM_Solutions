@@ -21,7 +21,6 @@ body {
     // justify-content: center;
     align-items: center;
     margin: 0 auto;
-
 }
 
 header {
@@ -102,6 +101,69 @@ header {
             box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.15);
             padding: 12px 36px;
             cursor: pointer;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1140px) {
+    body {
+        background: url(./images/hero-desktop.jpg) no-repeat right center, url(./images/bg-pattern-desktop.svg) no-repeat left center;
+        background-size: contain, contain;
+        background-color: hsl(0, 100%, 98%);
+        display: block;
+    }
+
+    header {
+        all: unset;
+    
+        .logo {
+            max-width: 164px;
+            margin: 64px 165px;
+            position: unset;
+        }
+    }
+
+    .container {
+        padding: 0;
+        max-width: 446px;
+        margin-left: 165px;
+    
+        h1 {
+            margin-top: 65px;
+            font-size: 4rem;
+            text-align: left;
+            letter-spacing: 17.5px;
+            line-height: 1.1;
+    
+            span {
+                font-weight: 300;
+                margin-bottom: 0px;
+            }
+        }
+    
+        p {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            text-align: left;
+            line-height: 1.7;
+            font-size: 1rem;
+            letter-spacing: 0.1px;
+            padding-right: 0px;
+        }
+        
+        input {
+            padding: 19px;
+            padding-left: 30px;
+            font-size: 1rem;
+        }
+    
+        button {
+            padding: 17px 45px;
+    
+            &:hover {
+                padding: 17px 50px;
+            }
         }
     }
 }

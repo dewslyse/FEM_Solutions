@@ -12,4 +12,112 @@ body {
   font-size: 1rem;
   background: linear-gradient(135deg, white 0%, #fff5f5 60%) no-repeat;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin-top: 84px;
+  height: 250px;
+  background-image: url(./images/hero-mobile.jpg);
+  background-size: cover;
+  margin-bottom: 35px;
+}
+
+header .logo {
+  max-width: 100px;
+  margin: 31px;
+  position: relative;
+  bottom: 84px;
+}
+
+.container {
+  padding: 30px 30px;
+  max-width: 480px;
+}
+
+.container h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #413a3a;
+}
+
+.container h1 span {
+  font-weight: 300;
+  color: #ce9797;
+  display: block;
+}
+
+.container p {
+  margin-top: 15px;
+  margin-bottom: 31px;
+  text-align: center;
+  color: #ce9797;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  letter-spacing: -0.4px;
+}
+
+.container form {
+  position: relative;
+}
+
+.container input {
+  background: transparent;
+  padding: 15px;
+  border: 1px solid #d9cacd;
+  outline: none;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 25px;
+  font-size: 0.875rem;
+}
+
+.container input::-webkit-input-placeholder {
+  color: #d9cacd;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container input:-ms-input-placeholder {
+  color: #d9cacd;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container input::-ms-input-placeholder {
+  color: #d9cacd;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container input::placeholder {
+  color: #d9cacd;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container button {
+  padding: 12px 26px;
+  text-align: center;
+  background: Linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.container button:hover {
+  -webkit-box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.15);
+  padding: 12px 36px;
+  cursor: pointer;
 }

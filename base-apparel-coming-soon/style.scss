@@ -16,4 +16,92 @@ body {
     font-size: 1rem;
     background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 60%) no-repeat;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 100%;
+    margin-top: 84px;
+    height: 250px;
+    background-image: url(./images/hero-mobile.jpg);
+    background-size: cover;
+    margin-bottom: 35px;
+
+
+    .logo {
+        max-width: 100px;
+        margin: 31px;
+        position: relative;
+        bottom: 84px;
+    }
+}
+
+.container {
+    padding: 30px 30px;
+    max-width: 480px;
+
+    h1 {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 10px;
+        color: $dark-grayish-red;
+
+        span {
+            font-weight: 300;
+            color: $desaturated-red;
+            display: block;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        margin-bottom: 31px;
+        text-align: center;
+        color: $desaturated-red;
+        line-height: 1.5;
+        font-size: 0.9375rem;
+        letter-spacing: -0.4px;
+    }
+
+    form {
+        position: relative;
+    }
+
+    input {
+        background: transparent;
+        padding: 15px;
+        border: 1px solid #d9cacd;
+        outline: none;
+        width: 100%;
+        border-radius: 50px;
+        padding-left: 25px;
+        font-size: 0.875rem;
+
+        &::placeholder {
+            color: #d9cacd;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+
+    button {
+        padding: 12px 26px;
+        text-align: center;
+        background: Linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        border-radius: 50px;
+        position: absolute;
+        right: 0;
+
+        &:hover {
+            box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.15);
+            padding: 12px 36px;
+            cursor: pointer;
+        }
+    }
 }

@@ -208,7 +208,7 @@ header .logo {
   }
   .container h1 span {
     font-weight: 300;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
   }
   .container p {
     margin-top: 20px;
@@ -223,9 +223,11 @@ header .logo {
     padding: 19px;
     padding-left: 30px;
     font-size: 1rem;
+    width: 100%;
   }
   .container button {
     padding: 17px 45px;
+    right: 0;
   }
   .container button:hover {
     padding: 17px 50px;

@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(135deg, white 0%, #fff5f5 60%) no-repeat;
+  min-height: 100vh;
+}

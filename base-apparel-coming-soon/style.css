@@ -248,7 +248,7 @@ header .logo {
   }
   .container h1 span {
     font-weight: 300;
-    margin-bottom: 0px;
+    margin-bottom: -3px;
   }
   .container p {
     margin-top: 20px;

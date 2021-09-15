@@ -19,8 +19,6 @@
 
     <header>
         <img class="logo" src="./images/logo.svg" alt="">
-        <!-- <div class="hero-mobile"></div> -->
-        <!-- <img src="./images/hero-mobile.jpg" alt=""> -->
     </header>
 
     <main class="container">
@@ -32,12 +30,17 @@
             Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
 
-        <form action="#">
-            <input type="email" id="email" placeholder="Email Address">
-            <button type="submit" id="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+        <form action="#" class="sign-up">
+            <div class="email-input">
+                <input type="email" id="email" placeholder="Email Address" oninput="emailValidation()">
+                <button type="submit" id="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+                <span class="error-msg"></span>
+            </div>
         </form>
+
     </main>
-    <!-- <aside>Desktop image</aside> -->
+
+    <script src="./script.js"></script>
 
 </body>
 

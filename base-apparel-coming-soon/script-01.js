@@ -4,7 +4,7 @@ const submit = document.querySelector('#submit');
 const errorMsg = document.querySelector('.error-msg');
 
 const emailValidation = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
 
     const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -19,10 +19,14 @@ const emailValidation = (event) => {
     }
 
     else {
-        form.classList.remove('invalid');
-        form.classList.add('valid');
-        errorMsg.innerHTML = "";
+        form.submit();
     }
+
+    setTimeout(() => {
+        input.value = "";
+        form.classList.remove('invalid');
+        errorMsg.innerHTML = "";
+    }, 2500);
 };
 
 submit.addEventListener('click', emailValidation);

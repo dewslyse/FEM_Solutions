@@ -71,7 +71,7 @@ form #last-name,
 form #email,
 form #password {
   width: 100%;
-  padding: 19.5px;
+  padding: 19px;
   border-radius: 5px;
   border: 1px solid #b9b6d3;
   font-size: 0.85rem;
@@ -210,7 +210,6 @@ form .disclaimer b {
   .right-section {
     -ms-flex-preferred-size: 548px;
         flex-basis: 548px;
-    margin-top: -1px;
   }
   .trial-text {
     font-size: 0.9375rem;
@@ -226,7 +225,7 @@ form .disclaimer b {
   form #last-name,
   form #email,
   form #password {
-    padding: 19.5px 30px;
+    padding: 19px 30px;
     margin-bottom: 20px;
   }
   form #first-name::-webkit-input-placeholder,

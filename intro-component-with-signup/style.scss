@@ -73,7 +73,7 @@ form {
     #email,
     #password {
         width: 100%;
-        padding: 19.5px;
+        padding: 19px;
         border-radius: 5px;
         border: 1px solid $grayish-blue;
         font-size: 0.85rem;
@@ -181,7 +181,7 @@ form {
 
     .right-section {
         flex-basis: 548px;
-        margin-top: -1px;
+        // margin-top: -1px;
     }
 
     .trial-text {
@@ -200,7 +200,7 @@ form {
         #last-name,
         #email,
         #password {
-            padding: 19.5px 30px;
+            padding: 18px 30px;
             margin-bottom: 20px;
     
             &::placeholder {

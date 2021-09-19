@@ -225,7 +225,11 @@ form .disclaimer b {
   form #last-name,
   form #email,
   form #password {
+<<<<<<< HEAD
     padding: 19px 30px;
+=======
+    padding: 19.5px 30px;
+>>>>>>> 1146898ada0f0976e14e0efbeeb8eac3910082c8
     margin-bottom: 20px;
   }
   form #first-name::-webkit-input-placeholder,

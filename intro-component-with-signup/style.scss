@@ -64,6 +64,9 @@ body {
     flex-direction: column;
     padding: 25px 25px 22px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+form {
 
     #first-name,
     #last-name,
@@ -78,12 +81,41 @@ body {
         letter-spacing: 0.2px;
         color: $dark-blue;
         margin-bottom: 16px;
+        outline: none;
+        
+        &:focus {
+            outline: $blue dotted 2px;
+        }
 
         &::placeholder {
             font-family: 'Poppins', sans-serif;
         }
     }
 
+    .error-msg {
+        color: $red;
+        text-align: right;
+        font-size: 0.8125rem;
+        font-style: italic;
+        margin-top: -15px;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    .error-msg.display-error-text {
+        display: block;
+    }
+
+    #first-name.show-error-icon,
+    #last-name.show-error-icon,
+    #email.show-error-icon,
+    #password.show-error-icon {
+        background: url(./images/icon-error.svg) no-repeat;
+        background-position: center right 15px;
+        border: $red solid 2px;
+        color: $red;
+    }
+    
     #submit {
         width: 100%;
         background-color: $green;
@@ -95,6 +127,11 @@ body {
         font-weight: 700;
         letter-spacing: 1.2px;
         box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color: $green, $amount: 10);
+        }
     }
 
     .disclaimer {
@@ -127,6 +164,7 @@ body {
     .intro-section {
         text-align: left;
         margin-right: 25px;
+        flex-basis: 552px;
 
         h1 {
             font-size: 3rem;
@@ -141,29 +179,38 @@ body {
         }
     }
 
+    .right-section {
+        flex-basis: 548px;
+        margin-top: -1px;
+    }
+
     .trial-text {
         font-size: 0.9375rem;
-        letter-spacing: 0.15px;
+        letter-spacing: 0.18px;
     }
 
     .form-section {
         padding: 40px;
+    }
+
+    form {
+        position: relative;
 
         #first-name,
         #last-name,
         #email,
         #password {
-            padding: 19.5px 12.5px;
+            padding: 19.5px 30px;
             margin-bottom: 20px;
     
             &::placeholder {
-                padding-left: 20px;
+                padding-left: 0;
                 letter-spacing: 0.5px;
             }
         }
 
         .disclaimer {
-            padding: 13px 20px 0 20px;
+            padding: 10px 20px 0 20px;
         }
     }
 }

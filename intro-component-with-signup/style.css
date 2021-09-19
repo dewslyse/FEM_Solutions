@@ -66,10 +66,10 @@ body {
           box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-.form-section #first-name,
-.form-section #last-name,
-.form-section #email,
-.form-section #password {
+form #first-name,
+form #last-name,
+form #email,
+form #password {
   width: 100%;
   padding: 19.5px;
   border-radius: 5px;
@@ -79,37 +79,69 @@ body {
   letter-spacing: 0.2px;
   color: #3e3c49;
   margin-bottom: 16px;
+  outline: none;
 }
 
-.form-section #first-name::-webkit-input-placeholder,
-.form-section #last-name::-webkit-input-placeholder,
-.form-section #email::-webkit-input-placeholder,
-.form-section #password::-webkit-input-placeholder {
+form #first-name:focus,
+form #last-name:focus,
+form #email:focus,
+form #password:focus {
+  outline: #6055a5 dotted 2px;
+}
+
+form #first-name::-webkit-input-placeholder,
+form #last-name::-webkit-input-placeholder,
+form #email::-webkit-input-placeholder,
+form #password::-webkit-input-placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
-.form-section #first-name:-ms-input-placeholder,
-.form-section #last-name:-ms-input-placeholder,
-.form-section #email:-ms-input-placeholder,
-.form-section #password:-ms-input-placeholder {
+form #first-name:-ms-input-placeholder,
+form #last-name:-ms-input-placeholder,
+form #email:-ms-input-placeholder,
+form #password:-ms-input-placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
-.form-section #first-name::-ms-input-placeholder,
-.form-section #last-name::-ms-input-placeholder,
-.form-section #email::-ms-input-placeholder,
-.form-section #password::-ms-input-placeholder {
+form #first-name::-ms-input-placeholder,
+form #last-name::-ms-input-placeholder,
+form #email::-ms-input-placeholder,
+form #password::-ms-input-placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
-.form-section #first-name::placeholder,
-.form-section #last-name::placeholder,
-.form-section #email::placeholder,
-.form-section #password::placeholder {
+form #first-name::placeholder,
+form #last-name::placeholder,
+form #email::placeholder,
+form #password::placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
-.form-section #submit {
+form .error-msg {
+  color: #ff7a7a;
+  text-align: right;
+  font-size: 0.8125rem;
+  font-style: italic;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+form .error-msg.display-error-text {
+  display: block;
+}
+
+form #first-name.show-error-icon,
+form #last-name.show-error-icon,
+form #email.show-error-icon,
+form #password.show-error-icon {
+  background: url(./images/icon-error.svg) no-repeat;
+  background-position: center right 15px;
+  border: #ff7a7a solid 2px;
+  color: #ff7a7a;
+}
+
+form #submit {
   width: 100%;
   background-color: #38cc8c;
   border: 0px;
@@ -123,14 +155,19 @@ body {
           box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.15);
 }
 
-.form-section .disclaimer {
+form #submit:hover {
+  cursor: pointer;
+  background-color: #61d6a3;
+}
+
+form .disclaimer {
   color: #b9b6d3;
   font-size: 0.7rem;
   padding: 8px 20px 0 20px;
   line-height: 2;
 }
 
-.form-section .disclaimer b {
+form .disclaimer b {
   color: #ff7a7a;
 }
 
@@ -157,6 +194,8 @@ body {
   .intro-section {
     text-align: left;
     margin-right: 25px;
+    -ms-flex-preferred-size: 552px;
+        flex-basis: 552px;
   }
   .intro-section h1 {
     font-size: 3rem;
@@ -168,49 +207,57 @@ body {
   .intro-section p {
     margin: 30px 0 0 0;
   }
+  .right-section {
+    -ms-flex-preferred-size: 548px;
+        flex-basis: 548px;
+    margin-top: -1px;
+  }
   .trial-text {
     font-size: 0.9375rem;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.18px;
   }
   .form-section {
     padding: 40px;
   }
-  .form-section #first-name,
-  .form-section #last-name,
-  .form-section #email,
-  .form-section #password {
-    padding: 19.5px 12.5px;
+  form {
+    position: relative;
+  }
+  form #first-name,
+  form #last-name,
+  form #email,
+  form #password {
+    padding: 19.5px 30px;
     margin-bottom: 20px;
   }
-  .form-section #first-name::-webkit-input-placeholder,
-  .form-section #last-name::-webkit-input-placeholder,
-  .form-section #email::-webkit-input-placeholder,
-  .form-section #password::-webkit-input-placeholder {
-    padding-left: 20px;
+  form #first-name::-webkit-input-placeholder,
+  form #last-name::-webkit-input-placeholder,
+  form #email::-webkit-input-placeholder,
+  form #password::-webkit-input-placeholder {
+    padding-left: 0;
     letter-spacing: 0.5px;
   }
-  .form-section #first-name:-ms-input-placeholder,
-  .form-section #last-name:-ms-input-placeholder,
-  .form-section #email:-ms-input-placeholder,
-  .form-section #password:-ms-input-placeholder {
-    padding-left: 20px;
+  form #first-name:-ms-input-placeholder,
+  form #last-name:-ms-input-placeholder,
+  form #email:-ms-input-placeholder,
+  form #password:-ms-input-placeholder {
+    padding-left: 0;
     letter-spacing: 0.5px;
   }
-  .form-section #first-name::-ms-input-placeholder,
-  .form-section #last-name::-ms-input-placeholder,
-  .form-section #email::-ms-input-placeholder,
-  .form-section #password::-ms-input-placeholder {
-    padding-left: 20px;
+  form #first-name::-ms-input-placeholder,
+  form #last-name::-ms-input-placeholder,
+  form #email::-ms-input-placeholder,
+  form #password::-ms-input-placeholder {
+    padding-left: 0;
     letter-spacing: 0.5px;
   }
-  .form-section #first-name::placeholder,
-  .form-section #last-name::placeholder,
-  .form-section #email::placeholder,
-  .form-section #password::placeholder {
-    padding-left: 20px;
+  form #first-name::placeholder,
+  form #last-name::placeholder,
+  form #email::placeholder,
+  form #password::placeholder {
+    padding-left: 0;
     letter-spacing: 0.5px;
   }
-  .form-section .disclaimer {
-    padding: 13px 20px 0 20px;
+  form .disclaimer {
+    padding: 10px 20px 0 20px;
   }
 }

@@ -18,14 +18,12 @@
 <body>
 
     <main class="container">
-        <!-- <div> -->
         <div class="intro-section">
             <h1>Learn to code by watching others</h1>
             <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
                 but understanding how developers think is invaluable.
             </p>
         </div>
-        <!-- </div> -->
 
         <div class="right-section">
             <p class="trial-text">
@@ -33,28 +31,29 @@
             </p>
 
             <div class="form-section">
-                <form action="" class="sign-up-form">
+                <form action="/" id="form">
                     <div class="form-input">
                         <input type="text" placeholder="First Name" id="first-name" aria-label="Enter first name">
-                        <span class="error-msg" role="alert"></span>
+                        <p class="error-msg">First name cannot be empty</p>
                     </div>
 
                     <div class="form-input">
                         <input type="text" placeholder="Last Name" id="last-name" aria-label="Enter last name">
-                        <span class="error-msg" role="alert"></span>
+                        <p class="error-msg">Last name cannot be empty</p>
                     </div>
 
                     <div class="form-input">
                         <input type="email" placeholder="Email Address" id="email" aria-label="Enter email address">
-                        <span class="error-msg" role="alert"></span>
+                        <p class="error-msg">Looks like this is not an email</p>
                     </div>
 
                     <div class="form-input">
                         <input type="password" placeholder="Password" id="password" aria-label="Enter password">
-                        <span class="error-msg" role="alert"></span>
+                        <p class="error-msg">Password cannot be empty</p>
                     </div>
 
-                    <button type="submit" id="submit">Claim your free trial</button>
+                    <button type="submit" id="submit" onclick="event.preventDefault(); isFormValid();">Claim your free
+                        trial</button>
                     <p class="disclaimer">
                         By clicking the button, you are agreeing to our <b>Terms and Services</b>
                     </p>

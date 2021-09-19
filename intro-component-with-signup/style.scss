@@ -140,8 +140,11 @@ form {
         padding: 8px 20px 0 20px;
         line-height: 2;
 
-        b {
+        a {
+            font-weight: 600;
+            text-decoration: none;
             color: $red;
+            cursor: pointer;
         }
     }
 }

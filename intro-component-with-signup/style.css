@@ -167,8 +167,11 @@ form .disclaimer {
   line-height: 2;
 }
 
-form .disclaimer b {
+form .disclaimer a {
+  font-weight: 600;
+  text-decoration: none;
   color: #ff7a7a;
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES */

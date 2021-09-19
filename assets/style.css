@@ -281,12 +281,12 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #14c2c8;
+  font-weight: 500;
 }
 
 .newbie .solution-details .links .solution-btn:hover {
-  background-color: white;
-  color: #14c2c8;
-  font-weight: bold;
+  color: #fff;
+  background-color: #14c2c8;
 }
 
 .newbie .solution-details .links .repo {
@@ -384,12 +384,12 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #aad742;
+  font-weight: 500;
 }
 
 .junior .solution-details .links .solution-btn:hover {
-  background-color: white;
-  color: #aad742;
-  font-weight: bold;
+  color: #fff;
+  background-color: #aad742;
 }
 
 .junior .solution-details .links .repo {
@@ -487,12 +487,12 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #f1b604;
+  font-weight: 500;
 }
 
 .intermediate .solution-details .links .solution-btn:hover {
-  background-color: white;
-  color: #f1b604;
-  font-weight: bold;
+  color: #fff;
+  background-color: #f1b604;
 }
 
 .intermediate .solution-details .links .repo {
@@ -590,12 +590,12 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #f48925;
+  font-weight: 500;
 }
 
 .advanced .solution-details .links .solution-btn:hover {
-  background-color: white;
-  color: #f48925;
-  font-weight: bold;
+  color: #fff;
+  background-color: #f48925;
 }
 
 .advanced .solution-details .links .repo {
@@ -693,12 +693,12 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #eb5252;
+  font-weight: 500;
 }
 
 .guru .solution-details .links .solution-btn:hover {
-  background-color: white;
-  color: #eb5252;
-  font-weight: bold;
+  color: #fff;
+  background-color: #eb5252;
 }
 
 .guru .solution-details .links .repo {

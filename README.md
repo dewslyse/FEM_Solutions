@@ -14,13 +14,20 @@ Click on an image to view live site 🚀
 #### :star: Newbie 
 <br>
 
-[<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) [<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/)
+[<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) 
+[<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) 
+[<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) 
+[<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/)
 
-[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/) [<img src="./huddle-landing-page/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page/)
+[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) 
+[<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) 
+[<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/) 
+[<img src="./huddle-landing-page/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page/)
 
-[<img src="./faq-accordion-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/faq-accordion-card/) [<img src="./ping-coming-soon-page/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/ping-coming-soon-page/)
+[<img src="./faq-accordion-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/faq-accordion-card/) 
+[<img src="./ping-coming-soon-page/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/ping-coming-soon-page/)
 [<img src="./base-apparel-coming-soon/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/) 
-<!--[<img src="./huddle-landing-page/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page/) -->
+[<img src="./intro-component-with-signup/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/)
 
 <br>
 

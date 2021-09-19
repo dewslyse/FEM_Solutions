@@ -22,7 +22,7 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/](https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/intro-component-with-signup](https://github.com/dewslyse/FEM_Solutions/tree/main/intro-component-with-signup)
-- View [solution on Frontend mentor](#) :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-8p-hk54ft) :fire:
 
 
 ## My process
@@ -30,7 +30,6 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-<!-- - Flexbox -->
-<!-- - CSS Grid -->
+- SCSS
+- Javascript
 - Mobile-first workflow

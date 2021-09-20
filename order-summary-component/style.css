@@ -37,6 +37,7 @@ body {
   max-width: 20.4375rem;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
+  margin: 20px 0;
 }
 
 article {

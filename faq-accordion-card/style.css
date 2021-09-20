@@ -23,6 +23,7 @@ body {
 }
 
 .container {
+  margin: 30px 0;
   max-width: 375px;
   display: -webkit-box;
   display: -ms-flexbox;

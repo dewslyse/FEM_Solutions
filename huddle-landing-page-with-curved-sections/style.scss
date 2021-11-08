@@ -1,0 +1,17 @@
+//Primary colours
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+
+//Neutrals
+$very-dark-cyan: hsl(192, 100%, 9%);
+$very-dark-blue: hsl(207, 100%, 98%);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

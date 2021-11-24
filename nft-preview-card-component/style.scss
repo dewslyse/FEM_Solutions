@@ -1,0 +1,26 @@
+//Colours
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-bkgrd: hsl(217, 54%, 11%);
+$card-bkgrd: hsl(216, 50%, 16%);
+$horizontal-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $main-bkgrd;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

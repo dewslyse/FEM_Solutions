@@ -1,6 +1,8 @@
 # Huddle landing page with curved sections solution
 
-:heavy_check_mark: This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2).
+- In progress
+
+<!-- :heavy_check_mark: This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2).
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -29,4 +31,4 @@ Users should be able to:
 - SASS
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first workflow -->

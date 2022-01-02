@@ -21,6 +21,132 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $soft-blue;
 }
 
+.container {
+    max-width: 375px;
+}
 
+.nft-card {
+    background-color: $card-bkgrd;
+    max-width: 328px;
+    padding: 25px;
+    border-radius: 14px;
+    height: 544px;
+}
+
+.card {
+    position: relative;
+}
+
+.card:hover .card-overlay {
+    opacity: 0.5;
+}
+
+.card:hover .icon-view {
+    opacity: 1;
+}
+
+.card-img {
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.card-overlay,
+.icon-view {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+}
+
+.card-overlay {
+    width: 100%;
+    height: 99%;
+    border-radius: 7px;
+    left: 0;
+    top: 0;
+    background-color: $cyan;
+}
+
+.icon-view {
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.caption {
+    padding: 19px 0 14px;
+    font-size: 1.375rem;
+
+    &:hover {
+        color: $cyan;
+    }
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.eth-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.eth {
+    display: flex;
+    color: $cyan;
+}
+
+.eth-text,
+.time-days {
+    padding: 0 0 0 5px;
+}
+
+.time {
+    display: flex;
+
+    img {
+        height: 18px;
+    }
+}
+
+.line {
+    background-color: $horizontal-line;
+    height: 1px;
+    border: 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 16px 0 0 0;
+    font-size: 1rem;
+    letter-spacing: -0.4px;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border: $white solid 2px;
+        border-radius: 50%;
+        margin-right: 18px ;
+    }
+}
+
+.profile-name {
+    text-decoration: none;
+}
+
+.caption,
+.profile-name {
+    color: $white;
+
+    &:hover {
+        color: $cyan;
+        cursor: pointer;
+    }
+}

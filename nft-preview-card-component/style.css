@@ -183,10 +183,6 @@ body {
   .eth-details {
     padding: 22px 0 23px;
   }
-  .eth-text,
-  .time-days {
-    padding: 0 0 0 6px;
-  }
   .profile {
     letter-spacing: 0px;
   }

@@ -94,22 +94,23 @@ body {
 .eth-details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 0;
 }
 
 .eth {
     display: flex;
     color: $cyan;
-    flex-wrap: nowrap;
-}
 
-.eth-text {
-    font-size: 1rem;
+    img {
+        height: 18px;
+    }
 }
 
 .eth-text,
 .time-days {
     padding: 0 0 0 5px;
+    align-items: center;
 }
 
 .time {
@@ -177,6 +178,10 @@ body {
 
     .eth-details {
         padding: 22px 0 23px;
+    }
+
+    .eth-text {
+        font-size: 1.0625rem;
     }
 
     .profile {

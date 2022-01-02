@@ -1,6 +1,8 @@
 # Chat app CSS illustration solution
 
-:heavy_check_mark: This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY).
+- In progress
+
+<!-- :heavy_check_mark: This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY).
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -28,4 +30,4 @@ Users should be able to:
 - Semantic HTML5 markup
 - SASS
 - Flexbox
-- Mobile-first workflow
+- Mobile-first workflow -->

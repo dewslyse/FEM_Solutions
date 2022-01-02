@@ -24,15 +24,15 @@ body {
 }
 
 .container {
-  max-width: 375px;
+  max-width: 23.44rem;
 }
 
 .nft-card {
   background-color: #14253d;
-  max-width: 328px;
+  max-width: 20.5rem;
   padding: 25px;
   border-radius: 14px;
-  height: 544px;
+  height: 34rem;
 }
 
 .card {
@@ -163,4 +163,38 @@ body {
 .profile-name:hover {
   color: #00fff7;
   cursor: pointer;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 69.375rem;
+  }
+  .nft-card {
+    max-width: 22rem;
+    height: 37.25rem;
+  }
+  .icon-view {
+    height: 50px;
+  }
+  .description {
+    font-size: 1.125rem;
+  }
+  .eth-details {
+    padding: 22px 0 23px;
+  }
+  .eth-text,
+  .time-days {
+    padding: 0 0 0 6px;
+  }
+  .eth-text {
+    font-size: 1.0625rem;
+  }
+  .profile {
+    letter-spacing: 0px;
+  }
+  .profile img {
+    width: 33px;
+    height: 33px;
+  }
 }

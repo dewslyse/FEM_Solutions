@@ -100,6 +100,11 @@ body {
 .eth {
     display: flex;
     color: $cyan;
+    flex-wrap: nowrap;
+}
+
+.eth-text {
+    font-size: 1rem;
 }
 
 .eth-text,

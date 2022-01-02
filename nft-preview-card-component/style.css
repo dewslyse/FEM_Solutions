@@ -107,6 +107,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #00fff7;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.eth-text {
+  font-size: 1rem;
 }
 
 .eth-text,

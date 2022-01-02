@@ -1,6 +1,8 @@
 # NFT preview card component
 
-:heavy_check_mark: This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+- In progress
+
+<!-- :heavy_check_mark: This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -19,6 +21,6 @@ Users should be able to:
   
 ### Links
 
-<!-- - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/](https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/)
+- Live Site URL: [https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/](https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/nft-preview-card-component](https://github.com/dewslyse/FEM_Solutions/tree/main/nft-preview-card-component)
 - View [solution on Frontend mentor]() :fire: -->

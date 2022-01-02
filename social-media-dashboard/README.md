@@ -1,6 +1,8 @@
 # Social media dashboard with theme switcher
 
-:heavy_check_mark: This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). 
+- In progress
+
+<!-- :heavy_check_mark: This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). 
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -30,4 +32,4 @@ Users should be able to:
 - SASS
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first workflow -->

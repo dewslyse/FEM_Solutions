@@ -14,6 +14,7 @@ Click on an image to view live site 🚀
 #### :star: Newbie 
 <br>
 
+[<img src="./nft-preview-card-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/) 
 [<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) 
 [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) 
 [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) 

@@ -21,4 +21,4 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/](https://dewslyse.github.io/FEM_Solutions/nft-preview-card-component/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/nft-preview-card-component](https://github.com/dewslyse/FEM_Solutions/tree/main/nft-preview-card-component)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-Uscy6HeF3) :fire:

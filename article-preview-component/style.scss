@@ -45,6 +45,7 @@ body {
     height: 514px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -61,6 +62,7 @@ body {
 
 .description {
     margin: 38px 30px 20px;
+    // position: relative;
 }
 
 .quote {
@@ -72,10 +74,10 @@ body {
 
 .text {
     font-size: 0.835rem;
-
-    // font-size: 13.5px;
-    margin-bottom: 40px;
+    font-weight: 500;
+    margin-bottom: 34px;
     color: $desaturated-dark-blue;
+    line-height: 19.5px;
 }
 
 .share-section {
@@ -109,11 +111,59 @@ body {
         font-size: 0.74rem;
         // font-size: 13px;
         color: $grayish-blue;
+        letter-spacing: 0.5px;
     }
 }
 
 .icon-share {
     background-color: $light-grayish-blue;
-    padding: 13px;
-    border-radius: 13px;
+    color: red;
+    border: none;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.share {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    bottom: 0;
+    background-color: $very-dark-grayish-blue;
+    padding: 0 30px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.share-text {
+    text-transform: uppercase;
+    color: $grayish-blue;
+    font-size: 0.78rem;
+    letter-spacing: 5.5px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+    margin: 0 55px 0 16px;
+}
+
+.twitter {
+    margin: 0 16px;
+}
+
+.facebook,
+.twitter,
+.pinterest {
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.3);
+    }
 }

@@ -45,6 +45,7 @@ body {
   height: 514px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .card-img {
@@ -73,8 +74,10 @@ body {
 
 .text {
   font-size: 0.835rem;
-  margin-bottom: 40px;
+  font-weight: 500;
+  margin-bottom: 34px;
   color: #6d7f97;
+  line-height: 19.5px;
 }
 
 .share-section {
@@ -115,10 +118,70 @@ body {
 .profile-details p {
   font-size: 0.74rem;
   color: #9eafc2;
+  letter-spacing: 0.5px;
 }
 
 .icon-share {
   background-color: #ecf2f8;
-  padding: 13px;
-  border-radius: 13px;
+  color: red;
+  border: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.share {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  width: 100%;
+  bottom: 0;
+  background-color: #48556a;
+  padding: 0 30px;
+}
+
+.share a {
+  text-decoration: none;
+}
+
+.share-text {
+  text-transform: uppercase;
+  color: #9eafc2;
+  font-size: 0.78rem;
+  letter-spacing: 5.5px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 10px;
+  margin: 0 55px 0 16px;
+}
+
+.twitter {
+  margin: 0 16px;
+}
+
+.facebook,
+.twitter,
+.pinterest {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }

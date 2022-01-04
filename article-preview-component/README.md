@@ -18,16 +18,16 @@ Users should be able to:
 
 <img src="./design/desktop-preview.jpg" alt="screenshot" width="400"/>
   
+### Built with
+
+- Semantic HTML5 markup
+- SASS/SCSS
+- Flexbox
+- Mobile-first workflow 
+
 ### Links
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/article-preview-component/](https://dewslyse.github.io/FEM_Solutions/article-preview-component/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/article-preview-component](https://github.com/dewslyse/FEM_Solutions/tree/main/article-preview-component)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/article-preview-component-xFGdBle4U) :fire:
 
-<!-- ### Built with
-
-- Semantic HTML5 markup
-- SASS
-- Flexbox
-- CSS Grid
-- Mobile-first workflow 

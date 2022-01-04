@@ -18,6 +18,7 @@ Click on an image to view live site 🚀
 [<img src="./four-card-feature-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/four-card-feature-section/) 
 [<img src="./order-summary-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/order-summary-component/) 
 [<img src="./social-proof-section/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/social-proof-section/) 
+[<img src="./article-preview-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/article-preview-component/) 
 [<img src="./single-price-grid-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/single-price-grid-component/)
 [<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) 
 [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) 

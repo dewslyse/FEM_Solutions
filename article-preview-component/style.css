@@ -131,7 +131,7 @@ body {
   cursor: pointer;
 }
 
-.share {
+.share.display {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +146,7 @@ body {
   padding: 0 30px;
 }
 
-.share a {
+.share.display a {
   text-decoration: none;
 }
 

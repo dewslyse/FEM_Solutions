@@ -62,7 +62,6 @@ body {
 
 .description {
     margin: 38px 30px 20px;
-    // position: relative;
 }
 
 .quote {
@@ -102,14 +101,12 @@ body {
     h2 {
         font-size: 0.8125rem;
         font-weight: 700;
-        // font-size: 13px;
         color: $very-dark-grayish-blue;
         margin-bottom: 3px;
     }
 
     p {
         font-size: 0.74rem;
-        // font-size: 13px;
         color: $grayish-blue;
         letter-spacing: 0.5px;
     }
@@ -125,7 +122,7 @@ body {
     cursor: pointer;
 }
 
-.share {
+.share.display {
     position: absolute;
     display: flex;
     align-items: center;

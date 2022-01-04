@@ -1,8 +1,7 @@
 # Article preview component solution
 
-- In progress
 
-<!-- :heavy_check_mark: This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
+:heavy_check_mark: This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -31,4 +30,4 @@ Users should be able to:
 - SASS
 - Flexbox
 - CSS Grid
-- Mobile-first workflow --> 
+- Mobile-first workflow 

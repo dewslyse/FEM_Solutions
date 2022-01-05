@@ -38,19 +38,26 @@ Click on an image to view live site 🚀
 [<img src="./huddle-landing-page-with-alternating-blocks/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/huddle-landing-page-with-alternating-blocks/) 
 
 <!--
-[<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+<br>
 
 #### :star::star::star: Intermediate 
+<br>
 
-[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+[<img src="./chat-app-css-illustration/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/chat-app-css-illustration/) 
+
+<br>
 
 #### :star::star::star::star: Advanced 
+<br>
 
-[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+[<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) 
+
+<br>
 
 #### :star::star::star::star::star: Guru 
+<br>
 
-[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) [<img src="./profile-card-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/profile-card-component/) [<img src="./stats-preview-card/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/stats-preview-card/)
+[<img src="./3-column-preview-card/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/3-column-preview-card/) 
 
 -->
 

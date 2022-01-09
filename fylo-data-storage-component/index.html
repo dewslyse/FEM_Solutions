@@ -19,10 +19,10 @@
     <main class="container">
         <h1 class="sr-only">Fylo data storage component</h1>
 
-        <div>
+        <div class="intro">
             <img src="./images/logo.svg" alt="Fylo logo">
 
-            <div class="icons">
+            <div class="intro-icons">
                 <a href="#" aria-label="Open file">
                     <img src="./images/icon-document.svg" alt="">
                 </a>
@@ -35,19 +35,19 @@
             </div>
         </div>
 
-        <div>
-            <!-- <p>You've used <span>815 GB</span> of your storage</p> -->
+        <div class="data">
+            <p class="data-info">You've used <span>815 GB</span> of your storage</p>
 
-            <!-- <div></div> -->
-            <label for="data">You've used <span>815 GB</span> of your storage</label>
-            <meter id="data" value="81.5" min="0" max="100"></meter>
+            <div class="data-progress">
+                <div class="data-bar"></div>
+            </div>
 
-            <div>
+            <div class="data-range">
                 <p>0 GB</p>
                 <P>1000 GB</P>
             </div>
 
-            <p><span>185</span> GB left</p>
+            <p class="data-popup"><span>185</span> GB left</p>
         </div>
     </main>
 </body>

@@ -26,7 +26,7 @@ body {
 
 .container {
   margin: 0 25px;
-  width: 480px;
+  width: 600px;
 }
 
 .sr-only {
@@ -169,4 +169,59 @@ a:nth-child(2) {
   font-size: 2.5rem;
   color: #0c122c;
   margin-right: 7px;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 992px) {
+  body {
+    background: #0c122c url(./images/bg-desktop.png) no-repeat bottom;
+    background-size: contain;
+  }
+  .container {
+    max-width: 1110px;
+    width: 922px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: -22px;
+  }
+  .intro {
+    width: 350px;
+    margin: unset;
+  }
+  .intro-icons {
+    margin-top: 28px;
+  }
+  .data {
+    width: 540px;
+    height: 153px;
+    padding: 40px;
+  }
+  .data-info {
+    text-align: left;
+  }
+  .data-progress {
+    margin-bottom: 7px;
+  }
+  .data-popup {
+    top: -61%;
+    left: 76%;
+  }
+  .data-popup::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 40px solid whitesmoke;
+    top: 50px;
+    right: 0;
+  }
 }

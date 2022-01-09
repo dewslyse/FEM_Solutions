@@ -27,7 +27,7 @@ body {
 
 .container {
     margin: 0 25px;
-    width: 480px;
+    width: 600px;
     // border: 1px solid greenyellow;
     // height: 415px;
     // width: 330px;
@@ -153,5 +153,63 @@ a {
         font-size: 2.5rem;
         color: $very-dark-blue;
         margin-right: 7px;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 992px) {
+    body {
+        background: $very-dark-blue url(./images/bg-desktop.png) no-repeat bottom;
+        background-size: contain;
+    }
+
+    .container {
+        max-width: 1110px;
+        width: 922px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: -22px;
+
+    }
+
+    .intro {
+        width: 350px;
+        margin: unset;  
+    }
+
+    .intro-icons {
+        margin-top: 28px;
+    }
+
+    .data {
+        width: 540px;
+        height: 153px;
+        padding: 40px;
+    }
+
+    .data-info {
+        text-align: left;
+    }
+
+    .data-progress {
+        margin-bottom: 7px;
+    }
+
+    .data-popup {
+        top: -61%;
+        left: 76%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+	        height: 0;
+	        border-left: 40px solid transparent;
+	        border-right: 0px solid transparent;
+	        border-top: 40px solid whitesmoke;
+            top: 50px;
+            right: 0;
+        }
     }
 }

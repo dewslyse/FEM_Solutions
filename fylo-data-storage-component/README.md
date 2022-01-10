@@ -1,8 +1,5 @@
 # Article preview component solution
 
-- In progress...
-
-<!-- 
 
 :heavy_check_mark: This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n).
 
@@ -32,5 +29,3 @@ Users should be able to:
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/fylo-data-storage-component/](https://dewslyse.github.io/FEM_Solutions/fylo-data-storage-component/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/fylo-data-storage-component](https://github.com/dewslyse/FEM_Solutions/tree/main/fylo-data-storage-component)
 - View [solution on Frontend mentor]() :fire: 
-
--->

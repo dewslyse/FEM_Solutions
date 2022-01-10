@@ -156,6 +156,11 @@ a {
     }
 }
 
+.intro,
+.data {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 /*MEDIA QUERIES*/
 @media (min-width: 992px) {
     body {

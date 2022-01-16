@@ -15,6 +15,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -32,13 +35,15 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+  max-width: 480px;
 }
 
 .header {
   background-color: #1c2431;
+  width: 100%;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +53,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   padding: 25px 20px;
 }
 
@@ -79,7 +83,6 @@ body {
 }
 
 .introduction {
-  background-color: #1c2431;
   background-image: url(./images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -87,7 +90,9 @@ body {
 }
 
 .introduction__img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
   padding: 30px 30px 95px;
 }
 
@@ -122,6 +127,7 @@ body {
 
 .features {
   margin: 100px 0 150px;
+  padding: 0 20px;
 }
 
 .feature {
@@ -299,6 +305,7 @@ body {
   background-color: #0b1523;
   padding: 30px;
   padding-top: 240px;
+  width: 100%;
 }
 
 .footer__logo {

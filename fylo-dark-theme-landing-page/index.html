@@ -20,37 +20,39 @@
 
 <body>
 
-    <header class="header container">
-        <a class="logo" href="#">
-            <img class="logo" src="./images/logo.svg" alt="Fylo Homepage">
-        </a>
-        <nav class="menu headings">
-            <ul class="menu__row">
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Features</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Team</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Sign In</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
+    <header class="header">
+        <div class="navbar">
+            <a class="logo" href="#">
+                <img class="logo" src="./images/logo.svg" alt="Fylo Homepage">
+            </a>
+            <nav class="menu headings">
+                <ul class="menu__row">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Features</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Team</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="introduction">
             <img class="introduction__img" src="./images/illustration-intro.png" alt="" aria-hidden="true">
         </div>
+    </header>
+
+    <main class="container">
 
         <div class="intro text-center">
-            <h1 class="headings intro__caption">All your files in one secure location, accessible anywhere.</h1>
+            <h1 class="intro__caption headings">All your files in one secure location, accessible anywhere.</h1>
             <p class="intro__text">
                 Fylo stores all your most important files in one secure location. Access them wherever you need, share
                 and collaborate with friends family, and co-workers.
             </p>
-            <a class="btn intro__btn" href="#">Get Started</a>
+            <a class="btn" href="#">Get Started</a>
         </div>
 
         <div class="features text-center">
@@ -160,13 +162,13 @@
                     <input class="subscribe__input" type="email" id="email" placeholder="email@example.com"
                         aria-label="Email input">
                     <span class="subscribe__error-msg"></span>
-                    <button class="btn subscribe__button" type="submit" id="submit">Get Started For Free</button>
+                    <button class="btn" type="submit" id="submit">Get Started For Free</button>
                 </form>
             </div>
         </div>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
         <img class="footer__logo" src="./images/logo.svg" alt="Fylo Homepage">
 
         <div class="footer__contact">

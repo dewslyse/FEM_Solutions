@@ -18,6 +18,7 @@ $white: hsl(0, 0%, 100%);
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     background-color: $main-bg;
@@ -33,17 +34,18 @@ body {
 }
 
 .container {
-    max-width: 375px;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    max-width: 480px;
 }
 
 .header {
     background-color: $intro-bg;
+    width: 100%;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 25px 20px;
 }
 
@@ -72,7 +74,6 @@ body {
 }
 
 .introduction {
-    background-color: $intro-bg;
     background-image: url(./images/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -80,7 +81,9 @@ body {
 }
 
 .introduction__img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
     padding: 30px 30px 95px;
 }
 
@@ -114,6 +117,7 @@ body {
 
 .features {
     margin: 100px 0 150px;
+    padding: 0 20px;
 }
 
 .feature {
@@ -268,6 +272,7 @@ body {
     background-color: $footer-bg;
     padding: 30px;
     padding-top: 240px;
+    width: 100%;
 }
 
 .footer__logo {

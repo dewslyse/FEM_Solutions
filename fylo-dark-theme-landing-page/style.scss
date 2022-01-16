@@ -53,7 +53,7 @@ body {
     height: 30px;
 }
 
-.menu__row {
+.menu {
     display: flex;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .menu__link {
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-left: 15px;
 }
 
@@ -152,7 +152,7 @@ body {
 
 .productive__text {
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
@@ -161,7 +161,7 @@ body {
     text-decoration: none;
     font-size: 0.75rem;
     padding-bottom: 4px;
-    border-bottom: 1px $cta-cyan solid;
+    border-bottom: 2px $cta-cyan solid;
     color: $cta-cyan;
     
     &:hover {
@@ -247,7 +247,7 @@ body {
 .subscribe__text {
     margin: 30px 0 40px;
     font-size: 0.925rem;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .subscribe__form {
@@ -293,7 +293,7 @@ body {
 }
 
 .footer__text {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .footer__nav {
@@ -331,5 +331,232 @@ body {
 
     &:nth-child(2) {
         margin: 0 12px;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 700px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .navbar {
+        padding: 48px 50px 0 40px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 48px;
+    }
+
+    .menu__link {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .introduction__img {
+        max-width: 89%;
+        margin-top: 65px;
+        padding-bottom: 200px;
+    }
+
+    .intro {
+        margin-top: -135px;
+    }
+
+    .intro__caption {
+        font-size: 3rem;
+        margin: 0 0 30px;
+    }
+
+    .intro__text {
+        font-size: 1.75rem;
+        padding: 0 50px;
+        margin-bottom: 97px;
+    }
+
+    .btn {
+        padding: 31px 162px;
+        font-size: 1.75rem;
+    }
+
+    .features {
+        margin-top: 242px;
+    }
+
+    .feature {
+        margin-bottom: 180px;
+    }
+
+    .feature__img {
+        height: 120px;
+    }
+
+    // .feature__img--f2 {
+    //     height: 135px;
+    //     margin-top: -5px;
+    // }
+
+    .feature__caption {
+        font-size: 2.25rem;
+        margin: 64px 0 20px;
+    }
+
+    .feature__text {
+        font-size: 1.75rem;
+        padding: 0 50px;
+    }
+
+    .productive {
+        margin: 250px 0;
+    }
+
+    .productive__img {
+        max-width: 89%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .productive__caption {
+        font-size: 2.25rem;
+        margin: 94px 35px 35px;
+    }
+
+    .productive__text {
+        font-size: 1.75rem;
+        margin: 0 26px 32px;
+    }
+
+    .productive__cta {
+        margin-left: 27px;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+    .productive__cta::after {
+        margin-left: 18px;
+    }
+
+    .testimonials {
+        padding: 0 95px;
+        background-position: top 27px left 105px;
+        background-size: 6%;
+        padding-top: 60px;
+    }
+
+    .testimonial {
+        padding: 50px 40px 40px;
+        margin-bottom: 48px;
+    }
+
+    .testimonial__text {
+        font-size: 1.25rem;
+        padding-bottom: 35px;
+    }
+
+    .testimonial__img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .testimonial__about {
+        margin-left: 18px;
+    }
+
+    .testimonial__name {
+        font-size: 1.25rem;
+        padding-bottom: 7px;
+        letter-spacing: 0.8px;
+    }
+
+    .testimonial__position {
+        font-size: 0.9125rem;
+    }
+
+    .subscription {
+        margin: 90px 40px 0;
+        top: 350px;
+    }
+
+    .subscribe {
+        padding: 82px 50px 70px;
+    }
+
+    .subscribe__caption {
+        font-size: 2.2715rem;
+    }
+
+    .subscribe__text {
+        font-size: 1.75rem;
+        margin: 35px 0 64px;
+    }
+
+    .subscribe__input {
+        padding: 35px 0 35px 60px;
+        font-size: 1.3rem;
+        margin-bottom: 48px;
+    }
+
+    .subscribe__btn {
+        font-size: 1.75rem;
+        padding: 35px 80px;
+    }
+
+    .footer {
+        padding: 447px 60px 50px;
+    }
+
+    .footer__logo {
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    .footer__contact {
+        margin: 25px 0 30px;
+    }
+
+    .footer__img {
+        height: 30px;
+        margin: 20px 55px 0 0;
+    }
+
+    .footer__text {
+        font-size: 2rem;
+    }
+
+    .footer__number,
+    .footer__email {
+        font-size: 1.75rem;
+        margin-left: -12px;
+        margin-top: 5px;
+    }
+
+    .footer__nav {
+        margin: 100px 0;
+    }
+
+    .footer__nav--top {
+        margin-top: 163px;
+    }
+
+    .footer__item {
+        margin-bottom: 35px;
+    }
+
+    .footer__link {
+        font-size: 1.875rem;
+    }
+
+    .socials {
+        margin: 164px 0 35px;
+    }
+
+    .socials__links {
+        height: 50px;
+        width: 50px;
+
+        &:nth-child(2) {
+            margin: 0 25px;
+        }
     }
 }

@@ -57,7 +57,7 @@ body {
 }
 
 .logo {
-  height: 30px;
+  width: 120px;
 }
 
 .menu {
@@ -132,10 +132,6 @@ body {
 
 .feature {
   margin-bottom: 80px;
-}
-
-.feature__img {
-  height: 70px;
 }
 
 .feature__caption {
@@ -398,7 +394,7 @@ body {
             justify-content: space-between;
   }
   .logo {
-    height: 48px;
+    width: 160px;
   }
   .menu__link {
     font-size: 1.5rem;
@@ -430,9 +426,6 @@ body {
   }
   .feature {
     margin-bottom: 180px;
-  }
-  .feature__img {
-    height: 120px;
   }
   .feature__caption {
     font-size: 2.25rem;
@@ -570,10 +563,10 @@ body {
     max-width: 1440px;
   }
   .navbar {
-    padding: 74px 82px;
+    padding: 74px 82px 70px;
   }
   .logo {
-    height: 51px;
+    width: 172px;
   }
   .menu__link {
     font-size: 1rem;
@@ -603,37 +596,24 @@ body {
     padding: 18px 95px;
   }
   .features {
-    padding: unset;
     margin: 140px 175px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
   .feature {
-    margin-bottom: 100px;
-  }
-  .feature__img {
-    height: unset;
-  }
-  .feature__img--f2222 {
-    margin: -5px 0 0 -24px;
+    margin-bottom: 90px;
   }
   .feature__caption {
     font-size: 1.2rem;
     margin: 22px 0 10px;
     letter-spacing: 0.5px;
   }
-  .feature__caption--f2222 {
-    margin-top: 19px;
-    margin-left: -20px;
-  }
   .feature__text {
     font-size: 0.865rem;
-    padding: unset;
-  }
-  .feature__text--f2222 {
-    padding: 0 70px;
-    margin-left: -20px;
+    padding: 0 85px;
   }
 }

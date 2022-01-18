@@ -596,7 +596,7 @@ body {
     padding: 18px 95px;
   }
   .features {
-    margin: 140px 175px;
+    margin: 140px 175px 29px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -615,5 +615,36 @@ body {
   .feature__text {
     font-size: 0.865rem;
     padding: 0 85px;
+  }
+  .productive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0 100px;
+  }
+  .productive__section {
+    text-align: left;
+    margin-left: -115px;
+  }
+  .productive__img {
+    height: 100%;
+    margin-right: 175px;
+    margin-left: 5px;
+  }
+  .productive__caption {
+    font-size: 2.3rem;
+    letter-spacing: 1.7px;
+    line-height: 1.4;
+    margin-top: 60px;
+  }
+  .productive__text {
+    font-size: 1rem;
+  }
+  .productive__cta {
+    margin: 0;
   }
 }

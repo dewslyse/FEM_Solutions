@@ -125,10 +125,6 @@ body {
     margin-bottom: 80px;
 }
 
-// .feature__img {
-//     // height: 70px;
-// }
-
 .feature__caption {
     font-size: 1.2rem;
     margin: 30px 0 15px;
@@ -389,15 +385,6 @@ body {
         margin-bottom: 180px;
     }
 
-    // .feature__img {
-    //     height: 120px;
-    // }
-
-    // .feature__img--f2 {
-    //     height: 135px;
-    //     margin-top: -5px;
-    // }
-
     .feature__caption {
         font-size: 2.25rem;
         margin: 64px 0 20px;
@@ -611,46 +598,15 @@ body {
     }
 
     .features {
-        // padding: 0 50px;
-        // padding: unset;
-        margin: 140px 175px;
-        // padding: 0 200px;
-        // margin: 139px;// 220px 0;
+        margin: 140px 175px 29px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        // grid-gap: 100px;
     }
 
     .feature {
-        // padding: ;
         margin-bottom: 90px;
-        // padding: 0 100px;
-        // margin-left: -80px;
-        // margin-right: -80px;
-        // margin: 0 175px 100px;
     }
-
-    // .feature--col2 {
-    //     margin-left: -64px;
-    //     margin-top: -8px;
-    // }
-    
-    // .feature--col4 {
-    //     padding-left: -564px;
-    // }
-
-    // .feature__img {
-    //     height: unset;
-    //     // margin: unset;
-    //     // padding: unset;
-    // }
-
-    // .feature__img--f2222 {
-    //     // margin-left: -24px;
-    //     // margin-top: -5px;
-    //     margin: -5px 0 0 -24px;
-    // }
 
     .feature__caption {
         font-size: 1.2rem;
@@ -658,20 +614,45 @@ body {
         letter-spacing: 0.5px;
     }
 
-    // .feature__caption--f2222 {
-    //     margin-top: 19px;
-    //     margin-left: -20px;
-    // }
-
     .feature__text {
         font-size: 0.865rem;
         padding: 0 85px;
-        // padding: unset;
-
     }
 
-    // .feature__text--f2222 {
-    //     padding: 0 70px;
-    //     margin-left: -20px;
-    // }
+    .productive {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 100px;
+    }
+    
+    .productive__section {
+        text-align: left;
+        margin-left: -115px;
+    }
+    
+    .productive__img {
+        height: 100%;
+        margin-right: 175px;
+        margin-left: 5px;
+    }
+
+    .productive__caption {
+        font-size: 2.3rem;
+        letter-spacing: 1.7px;
+        line-height: 1.4;
+        margin-top: 60px;
+        // margin-right: 130px;
+        // margin-left: -115px;
+    }
+
+    .productive__text {
+        font-size: 1rem;
+        // margin-left: -115px;
+        // margin-right: 100px;
+    }
+
+    .productive__cta {
+        margin: 0;
+    }
 }

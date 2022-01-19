@@ -160,13 +160,14 @@ body {
     padding: 0 25px;
 }
 
-.feature-text-2 {
-    padding: 0 10px;
-}
-
+.feature-text-2,
 .feature-text-3 {
     padding: 0 10px;
 }
+
+// .feature-text-3 {
+//     padding: 0 10px;
+// }
 
 .productive {
     display: flex;
@@ -407,5 +408,326 @@ body {
     &:hover {
         color: $cta-cyan;
         border: solid 2px $cta-cyan;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) and (max-width: 1140px) {
+
+    header {
+        max-width: 750px;
+    }
+
+    .container {
+        max-width: 750px;
+        // border: 1px solid red;
+    }
+
+    .navbar {
+        padding: 48px 50px 0 40px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .menu-link {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .introduction {
+        margin-top: 91px;
+        background-image: url(./images/bg-curvy-mobile.svg);
+        padding-bottom: 0px;
+    }
+
+    .introduction-img {
+        max-width: 81%;
+        margin-bottom: 65px;
+    }
+
+    .intro-caption {
+        font-size: 3rem;
+        line-height: 1.5;
+        margin: 0 0 30px;
+    }
+
+    .intro-text {
+        font-size: 1.75rem;
+        margin-bottom: 95px;
+    }
+
+    .btn {
+        padding: 31px 162px;
+        font-size: 1.75rem;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 295px 0px 160px;
+    }
+
+    .feature {
+        margin-bottom: 160px;
+        padding: 0 35px;
+
+        &:nth-of-type(2) {
+            margin-bottom: 185px;
+            margin-left: 0;
+            padding: 0 40px;
+        }
+        
+        &:nth-of-type(3) {
+            margin-bottom: 192px;
+        }
+
+        &:nth-of-type(4) {
+            margin-left: 0;
+        }
+    }
+
+    .feature-img {  
+        display: unset;
+        
+        .ft-img-1 {
+            width: 128px;
+            height: 120px;
+            margin-bottom: 64px;
+        }
+
+        .ft-img-2{
+            width: 108px;
+            height: 138px;
+            margin-bottom: 64px;
+        }
+
+        .ft-img-3{
+            width: 132px;
+            height: 110px;
+            margin-bottom: 70px;
+        }
+
+        .ft-img-4{
+            width: 140px;
+            height: 98px;
+            margin-bottom: 75px;
+        }
+    }
+
+    .feature-caption {
+        font-size: 2.25rem;
+        margin-bottom: 20px;
+        // margin: 64px 0 20px;
+    }
+
+    .feature-text {
+        font-size: 1.75rem;
+        // padding: 0 50px;
+    }
+
+    .feature-text-2 {
+        padding: 0;
+    }
+
+    .productive {
+        display: flex;
+        flex-direction: column;
+        padding: 0 56px 0 56px;
+    }
+
+    .productive-img {
+        max-width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .productive-section {
+        padding: 0;
+        margin-bottom: 180px;
+    }
+
+    .productive-caption {
+        font-size: 2.25rem;
+        padding: 0;
+        letter-spacing: unset;
+        margin: 100px 0 30px 5px;
+    }
+    
+    .productive-text {
+        font-size: 1.75rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    
+        &:nth-of-type(2) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .productive-cta {
+        font-size: 1.5rem;
+        border-bottom: 2px $cta-cyan solid;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 95px;
+        margin: 80px 0 -115px;
+        background-position: top 5px left 100px;
+    }
+
+    .testimonial {
+        padding: 55px 40px 40px;
+        width: unset;
+        margin-bottom: 48px;
+    }
+
+    .testimonial-text {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+    
+    .testimonial-img {
+        height: 48px;
+        width: 48px;
+    }
+    
+    .testimonial-about {
+        margin-left: 18px;
+    }
+    
+    .testimonial-name {
+        font-size: 1.25rem;
+        margin-bottom: 7px;
+        letter-spacing: 1px;
+    }
+    
+    .testimonial-position {
+        font-size: 0.9125rem;
+        letter-spacing: 0.6px;
+    }
+
+    .subscription {
+        margin: 0 40px;
+        padding: 82px 50px 70px;
+        top: 350px;
+    }
+
+    .subscribe-caption {
+        font-size: 2.2715rem;
+        margin-bottom: 35px;
+    }
+    
+    .subscribe-text {
+        font-size: 1.75rem;
+        padding: 0;
+        margin-bottom: 64px;
+    }
+    
+    .subscribe-form {
+        padding: 0 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .subscribe-input {
+        margin-bottom: 50px;
+        padding: 40px 0 30px 60px;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .subscribe-btn {
+        padding: 32px;
+    }
+
+    footer {
+        max-width: 750px;
+    }
+
+    .footer {
+        padding: 500px 60px 50px;
+    }
+
+    .footer-logo {
+        width: 350px;
+        margin-left: 18px;
+    }
+
+    .footer-content {
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        margin: 25px 0 30px;
+    }
+
+    .footer-location {
+        max-width: unset;
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+
+    .footer-img,
+    .footer-img-location {
+        height: 32px;
+    }
+
+    .footer-img-location {
+        margin-top: -120px;
+    }
+
+    .footer-text {
+        font-size: 2rem;
+        margin-left: 54px;
+    }
+
+    .footer-col-2 {
+        font-size: 1.75rem;
+        margin: 0 0 120px 0;
+    }
+
+    .number {
+        margin-bottom: 35px;
+    }
+    
+    .footer-col-3 {
+        margin-top: 20px;
+    }
+    
+    .footer-col-4 {
+        margin-top: 60px;
+        margin-bottom: 130px;
+    }
+
+    .footer-number,
+    .footer-email {
+        margin-left: 40px;
+    }
+
+    .footer-item {
+        margin-bottom: 35px;
+    }
+    
+    .footer-link {
+        font-size: 1.875rem;
+    }
+
+    .socials {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .socials-link {
+        height: 50px;
+        width: 50px;
+
+        &:nth-child(2) {
+            margin: 0 25px;
+        }
     }
 }

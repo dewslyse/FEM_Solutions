@@ -41,7 +41,7 @@ body {
 }
 
 .navbar {
-  padding: 74px 80px 70px;
+  padding: 72px 80px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +100,7 @@ body {
 
 .intro-caption {
   font-size: 2.5rem;
-  line-height: 1.375;
+  line-height: 1.4;
   margin-bottom: 38px;
 }
 
@@ -325,11 +325,10 @@ body {
 }
 
 .subscribe-input {
-  padding: 16px 0;
+  padding: 16px 30px;
   border-radius: 50px;
   border: none;
   outline: none;
-  padding-left: 30px;
   width: 67.5%;
 }
 
@@ -356,5 +355,114 @@ body {
 .footer {
   background-color: #0b1523;
   width: 100%;
-  padding-top: 200px;
+  padding: 200px 80px 55px 120px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 27px 0;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-location {
+  max-width: 380px;
+  margin-right: 113px;
+}
+
+.footer-img,
+.footer-img-location {
+  max-width: 100%;
+  height: 18px;
+}
+
+.footer-img-location {
+  margin-top: -38px;
+}
+
+.footer-col-2 {
+  margin-left: -32px;
+  font-size: 0.85rem;
+  margin-right: 145px;
+}
+
+.footer-col-3 {
+  margin-right: 80px;
+}
+
+.footer-col-4 {
+  margin-right: 115px;
+}
+
+.footer-text,
+.footer-number,
+.footer-email {
+  margin-left: 26px;
+  line-height: 1.5;
+}
+
+.number {
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link:hover {
+  font-weight: 700;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials-link {
+  text-decoration: none;
+  color: white;
+  height: 32px;
+  width: 32px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.socials-link:nth-child(2) {
+  margin: 0 12px;
+}
+
+.socials-link:hover {
+  color: #65e2d9;
+  border: solid 2px #65e2d9;
 }

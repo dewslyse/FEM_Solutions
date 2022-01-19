@@ -223,7 +223,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    margin: 50px 90px;
+    margin: 50px 90px 35px;
     background: url(./images/bg-quotes.png) no-repeat;
     background-position: top 14px left 42px;
 }
@@ -264,6 +264,62 @@ body {
 .testimonial-position {
     font-size: 0.55rem;
 }
+
+.subscription {
+    background-color: $intro-bg;
+    // margin: 20px;
+    margin: 0 290px;
+    padding: 48px 0 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 115px;
+}
+
+.subscribe-caption {
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.subscribe-text {
+    font-size: 0.875rem;
+    padding: 0 100px;
+    line-height: 1.5;
+    margin-bottom: 38px;
+}
+
+.subscribe-form {
+    padding: 0 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-input {
+    // margin-bottom: 30px;
+    padding: 16px 0;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    width: 67.5%;
+
+    &::placeholder {
+        color: rgb(202, 201, 201);
+    }
+}
+
+.subscribe-btn {
+    padding: 16px 36px;
+}
+
+
+.footer {
+    background-color: $footer-bg;
+    // padding: 30px;
+    // padding-top: 240px;
+    width: 100%;
+    padding-top: 200px;
+}
+
 
 
 

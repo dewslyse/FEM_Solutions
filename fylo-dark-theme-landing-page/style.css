@@ -54,7 +54,7 @@ body {
 }
 
 .logo {
-  width: 175px;
+  width: 10.9375rem;
 }
 
 .menu {
@@ -84,7 +84,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  padding-bottom: 212px;
+  padding-bottom: 13.25rem;
 }
 
 .introduction-img {
@@ -94,7 +94,7 @@ body {
 }
 
 .intro {
-  max-width: 700px;
+  max-width: 43.75rem;
   margin: 40px auto 0;
 }
 

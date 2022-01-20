@@ -117,14 +117,14 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 90rem; //1440px;
     font-size: 1rem;
 }
 
 .features {
     display: grid;
     grid-template-columns: auto auto;
-    margin: -28px 185px 51px;
+    margin: -1.75rem 11.5625rem 3.1875rem; //-28px 185px 51px;
 }
 
 .feature {
@@ -167,7 +167,7 @@ body {
 .productive {
     display: flex;
     padding: 0 105px;
-    margin-bottom: 128px;
+    margin-bottom: 8rem; //128px;
 }
 
 .productive-section {
@@ -227,7 +227,7 @@ body {
 .testimonial {
     background-color: $testimonials-bg;
     padding: 40px 26px 25px;
-    width: 360px;
+    width: 22.5rem; //360px;
     border-radius: 5px;
 }
 
@@ -263,11 +263,11 @@ body {
 
 .subscription {
     background-color: $intro-bg;
-    margin: 0 290px;
+    margin: 0 18.125rem; //0 290px;
     padding: 48px 0 40px;
     border-radius: 10px;
     position: relative;
-    top: 115px;
+    top: 7.1875rem; //115px;
 }
 
 .subscribe-caption {
@@ -336,8 +336,8 @@ body {
 }
 
 .footer-location {
-    max-width: 380px;
-    margin-right: 113px;
+    max-width: 23.75rem; //380px;
+    margin-right: 7.0625rem; //113px;
 }
 
 .footer-img,
@@ -361,7 +361,7 @@ body {
 }
 
 .footer-col-4 {
-    margin-right: 115px;
+    margin-right: 7.1875rem; //115px;
 }
 
 .footer-text,
@@ -418,7 +418,7 @@ body {
 @media (min-width: 769px) and (max-width: 1140px) {
 
     .container {
-        max-width: 750px;
+        max-width: 46.875rem; //750px;
     }
 
     .navbar {
@@ -426,7 +426,7 @@ body {
     }
 
     .logo {
-        width: 160px;
+        width: 10rem; //160px;
     }
 
     .menu-link {
@@ -457,28 +457,28 @@ body {
     }
 
     .btn {
-        padding: 31px 162px;
+        padding: 1.9375rem 10.125rem; //31px 162px;
         font-size: 1.75rem;
     }
 
     .features {
         display: flex;
         flex-direction: column;
-        margin: 295px 0px 160px;
+        margin: 18.4375rem 0 10rem; //295px 0px 160px;
     }
 
     .feature {
-        margin-bottom: 160px;
+        margin-bottom: 10rem; //160px;
         padding: 0 35px;
 
         &:nth-of-type(2) {
-            margin-bottom: 185px;
+            margin-bottom: 11.5625rem; //185px;
             margin-left: 0;
             padding: 0 40px;
         }
         
         &:nth-of-type(3) {
-            margin-bottom: 192px;
+            margin-bottom: 12rem; //192px;
         }
 
         &:nth-of-type(4) {
@@ -541,7 +541,7 @@ body {
 
     .productive-section {
         padding: 0;
-        margin-bottom: 180px;
+        margin-bottom: 11.25rem; //180px;
     }
 
     .productive-caption {
@@ -609,7 +609,7 @@ body {
     .subscription {
         margin: 0 40px;
         padding: 82px 50px 70px;
-        top: 350px;
+        top: 21.875rem; //350px;
     }
 
     .subscribe-caption {
@@ -646,11 +646,11 @@ body {
     }
 
     .footer {
-        padding: 500px 60px 50px;
+        padding: 31.25rem 3.75rem 3.125rem; //500px 60px 50px;
     }
 
     .footer-logo {
-        width: 350px;
+        width: 21.875rem; //350px;
         margin-left: 18px;
     }
 
@@ -732,7 +732,7 @@ body {
 @media (max-width: 768px)  {
 
     .container {
-        max-width: 480px;
+        max-width: 30rem; //480px;
     }
 
     .navbar {
@@ -740,7 +740,7 @@ body {
     }
 
     .logo {
-        width: 130px;
+        width: 8.125rem; //130px;
     }
 
     .menu-link {
@@ -780,17 +780,17 @@ body {
     }
 
     .feature {
-        margin-bottom: 140px;
+        margin-bottom: 8.75rem; //140px;
         padding: 0 20px;
 
         &:nth-of-type(2) {
-            margin-bottom: 155px;
+            margin-bottom: 9.6875rem; //155px;
             margin-left: 0;
             padding: 0 40px;
         }
         
         &:nth-of-type(3) {
-            margin-bottom: 160px;
+            margin-bottom: 10rem; // 160px;
         }
 
         &:nth-of-type(4) {
@@ -921,7 +921,7 @@ body {
     .subscription {
         margin: 0 40px;
         padding: 60px 50px 70px;
-        top: 250px;
+        top: 15.625rem; //250px;
     }
 
     .subscribe-caption {
@@ -962,7 +962,7 @@ body {
     }
 
     .footer-logo {
-        width: 200px;
+        width: 12.5rem; // 200px;
         margin-left: 0px;
     }
 

@@ -128,7 +128,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   font-size: 1rem;
 }
 
@@ -137,7 +137,7 @@ body {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  margin: -28px 185px 51px;
+  margin: -1.75rem 11.5625rem 3.1875rem;
 }
 
 .feature {
@@ -188,7 +188,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 105px;
-  margin-bottom: 128px;
+  margin-bottom: 8rem;
 }
 
 .productive-section {
@@ -252,7 +252,7 @@ body {
 .testimonial {
   background-color: #202a3c;
   padding: 40px 26px 25px;
-  width: 360px;
+  width: 22.5rem;
   border-radius: 5px;
 }
 
@@ -292,11 +292,11 @@ body {
 
 .subscription {
   background-color: #1c2431;
-  margin: 0 290px;
+  margin: 0 18.125rem;
   padding: 48px 0 40px;
   border-radius: 10px;
   position: relative;
-  top: 115px;
+  top: 7.1875rem;
 }
 
 .subscribe-caption {
@@ -393,8 +393,8 @@ body {
 }
 
 .footer-location {
-  max-width: 380px;
-  margin-right: 113px;
+  max-width: 23.75rem;
+  margin-right: 7.0625rem;
 }
 
 .footer-img,
@@ -418,7 +418,7 @@ body {
 }
 
 .footer-col-4 {
-  margin-right: 115px;
+  margin-right: 7.1875rem;
 }
 
 .footer-text,
@@ -482,13 +482,13 @@ body {
 /* MEDIA QUERIES */
 @media (min-width: 769px) and (max-width: 1140px) {
   .container {
-    max-width: 750px;
+    max-width: 46.875rem;
   }
   .navbar {
     padding: 48px 50px 0 40px;
   }
   .logo {
-    width: 160px;
+    width: 10rem;
   }
   .menu-link {
     font-size: 1.5rem;
@@ -513,7 +513,7 @@ body {
     margin-bottom: 95px;
   }
   .btn {
-    padding: 31px 162px;
+    padding: 1.9375rem 10.125rem;
     font-size: 1.75rem;
   }
   .features {
@@ -524,19 +524,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 295px 0px 160px;
+    margin: 18.4375rem 0 10rem;
   }
   .feature {
-    margin-bottom: 160px;
+    margin-bottom: 10rem;
     padding: 0 35px;
   }
   .feature:nth-of-type(2) {
-    margin-bottom: 185px;
+    margin-bottom: 11.5625rem;
     margin-left: 0;
     padding: 0 40px;
   }
   .feature:nth-of-type(3) {
-    margin-bottom: 192px;
+    margin-bottom: 12rem;
   }
   .feature:nth-of-type(4) {
     margin-left: 0;
@@ -591,7 +591,7 @@ body {
   }
   .productive-section {
     padding: 0;
-    margin-bottom: 180px;
+    margin-bottom: 11.25rem;
   }
   .productive-caption {
     font-size: 2.25rem;
@@ -652,7 +652,7 @@ body {
   .subscription {
     margin: 0 40px;
     padding: 82px 50px 70px;
-    top: 350px;
+    top: 21.875rem;
   }
   .subscribe-caption {
     font-size: 2.2715rem;
@@ -687,10 +687,10 @@ body {
     margin: 100px 0 0 60px;
   }
   .footer {
-    padding: 500px 60px 50px;
+    padding: 31.25rem 3.75rem 3.125rem;
   }
   .footer-logo {
-    width: 350px;
+    width: 21.875rem;
     margin-left: 18px;
   }
   .footer-content {
@@ -760,13 +760,13 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 480px;
+    max-width: 30rem;
   }
   .navbar {
     padding: 48px 30px 40px 40px;
   }
   .logo {
-    width: 130px;
+    width: 8.125rem;
   }
   .menu-link {
     font-size: 1rem;
@@ -803,16 +803,16 @@ body {
     margin: 200px 0px 100px;
   }
   .feature {
-    margin-bottom: 140px;
+    margin-bottom: 8.75rem;
     padding: 0 20px;
   }
   .feature:nth-of-type(2) {
-    margin-bottom: 155px;
+    margin-bottom: 9.6875rem;
     margin-left: 0;
     padding: 0 40px;
   }
   .feature:nth-of-type(3) {
-    margin-bottom: 160px;
+    margin-bottom: 10rem;
   }
   .feature:nth-of-type(4) {
     margin-left: 0;
@@ -928,7 +928,7 @@ body {
   .subscription {
     margin: 0 40px;
     padding: 60px 50px 70px;
-    top: 250px;
+    top: 15.625rem;
   }
   .subscribe-caption {
     font-size: 1.5rem;
@@ -966,7 +966,7 @@ body {
     padding: 450px 35px 50px;
   }
   .footer-logo {
-    width: 200px;
+    width: 12.5rem;
     margin-left: 0px;
   }
   .footer-content {

@@ -163,16 +163,16 @@
             </article>
         </div>
 
-        <div class="subscription">
+        <div class="subscription" id="subscription">
             <div class="subscribe text-center">
                 <h2 class="subscribe-caption headings">Get early access today</h2>
                 <p class="subscribe-text">
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                     questions, our support team would be happy to help you.
                 </p>
-                <form class="subscribe-form" action="#">
+                <form class="subscribe-form" action="#subscription">
                     <input class="subscribe-input" type="email" id="email" placeholder="email@example.com"
-                        aria-label="Email input">
+                        aria-label="Email input" oninput="emailValidation()">
                     <span class="subscribe-error-msg"></span>
                     <button class="btn subscribe-btn" type="submit" id="submit">Get Started For Free</button>
                 </form>

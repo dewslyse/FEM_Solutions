@@ -737,15 +737,25 @@ body {
 
     .navbar {
         padding: 48px 30px 40px 40px;
+        flex-direction: column;
     }
 
     .logo {
         width: 8.125rem; //130px;
     }
 
+    .menu {
+        margin-top: 40px;// 60px auto;
+        // justify-content: space-between;
+    }
+
+    .menu-item:nth-of-type(2) {
+        padding: 0 25px;
+    }
+
     .menu-link {
         font-size: 1rem;
-        margin-left: 20px;
+        margin-left: 0;
     }
 
     .introduction {
@@ -769,7 +779,7 @@ body {
     }
 
     .btn {
-        padding: 20px 130px;
+        padding: 20px 100px;
         font-size: 1.25rem;
     }
 

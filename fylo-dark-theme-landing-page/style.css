@@ -764,13 +764,23 @@ body {
   }
   .navbar {
     padding: 48px 30px 40px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .logo {
     width: 8.125rem;
   }
+  .menu {
+    margin-top: 40px;
+  }
+  .menu-item:nth-of-type(2) {
+    padding: 0 25px;
+  }
   .menu-link {
     font-size: 1rem;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .introduction {
     margin-top: 50px;
@@ -789,7 +799,7 @@ body {
     margin-bottom: 70px;
   }
   .btn {
-    padding: 20px 130px;
+    padding: 20px 100px;
     font-size: 1.25rem;
   }
   .features {

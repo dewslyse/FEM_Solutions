@@ -763,7 +763,7 @@ body {
     max-width: 30rem;
   }
   .navbar {
-    padding: 48px 30px 40px 40px;
+    padding: 48px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

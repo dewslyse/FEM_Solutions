@@ -736,7 +736,7 @@ body {
     }
 
     .navbar {
-        padding: 48px 30px 40px 40px;
+        padding: 48px 0;
         flex-direction: column;
     }
 
@@ -745,8 +745,7 @@ body {
     }
 
     .menu {
-        margin-top: 40px;// 60px auto;
-        // justify-content: space-between;
+        margin-top: 40px;
     }
 
     .menu-item:nth-of-type(2) {

@@ -28,6 +28,7 @@ Click on an image to view live site 🚀
 [<img src="./ping-coming-soon-page/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/ping-coming-soon-page/)
 [<img src="./base-apparel-coming-soon/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/base-apparel-coming-soon/) 
 [<img src="./intro-component-with-signup/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/intro-component-with-signup/)
+[<img src="./qr-code-component/design/desktop-preview.jpg" alt="screenshot" width="200"/>](https://dewslyse.github.io/FEM_Solutions/qr-code-component/)
 
 <br>
 

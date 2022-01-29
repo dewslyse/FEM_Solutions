@@ -34,4 +34,59 @@ body {
 
 .container {
   max-width: 375px;
+  border: 1px solid red;
+  padding: 0 30px;
+}
+
+.header {
+  padding: 120px 0 0 0;
+  text-align: center;
+  background: url(./images/bg-header-mobile.png) no-repeat;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__caption {
+  margin: 65px 20px 18px;
+  letter-spacing: -0.5px;
+}
+
+.header__text {
+  margin: 0 32px 48px;
+  line-height: 1.6;
+}
+
+.header__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 31px 100px;
+}
+
+.header__btn {
+  padding: 16px 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.85px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header__btn--ios {
+  background-color: #26baa4;
+  margin-bottom: 25px;
+}
+
+.header__btn--mac {
+  background-color: #6173ff;
 }

@@ -34,12 +34,13 @@ body {
 
 .container {
   max-width: 375px;
-  border: 1px solid red;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
   padding: 0 30px;
 }
 
 .header {
-  padding: 120px 0 0 0;
+  padding: 122px 0 0 0;
   text-align: center;
   background: url(./images/bg-header-mobile.png) no-repeat;
 }
@@ -55,7 +56,7 @@ body {
 }
 
 .header__text {
-  margin: 0 32px 48px;
+  margin: 0 32px 47px;
   line-height: 1.6;
 }
 
@@ -89,4 +90,19 @@ body {
 
 .header__btn--mac {
   background-color: #6173ff;
+}
+
+.main {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.main__heading {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 18px;
+}
+
+.main__text {
+  line-height: 1.6;
 }

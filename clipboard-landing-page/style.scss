@@ -16,6 +16,7 @@ h2,
 h3,
 h4 {
     color: $dark-grayish-blue;
+    font-weight: 600;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
     max-width: 375px;
     border-right: 1px solid red;
     border-left: 1px solid red;
-    padding: 0 30px;
+    padding: 0 31px;
 }
 
 .header {
@@ -87,7 +88,7 @@ body {
     padding-top: 60px;
 }
 
-.main__heading {
+.main__heading--l1 {
     font-size: 1.75rem;
     letter-spacing: -0.5px;
     margin-bottom: 18px;
@@ -95,4 +96,64 @@ body {
 
 .main__text {
     line-height: 1.6;
+}
+
+.main__features {
+    margin-top: 65px;
+    margin-bottom: 150px;
+}
+
+.main__img {
+    width: 100%;    
+}
+
+.feature {
+    margin: 0 10px;
+
+    &:nth-of-type(1) {
+        margin-top: 55px;
+    }
+
+    &:nth-of-type(2) {
+        margin: 48px 10px;
+    }
+}
+
+.main__heading--l2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.main__access {
+    margin-top: 187px;
+    margin-bottom: 95px;
+}
+
+.main__text--access {
+    margin-bottom: 60px;
+}
+
+.access__img {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: 111%;
+    display: block;
+}
+
+.main__text--workflow {
+    margin-top: -5px;
+    margin-bottom: 88px;
+}
+
+.workflows__block:nth-of-type(2) {
+    margin: 56px 0 80px;
+}
+
+.workflows__img {
+    margin-bottom: 37px;
+}
+
+.workflows__text {
+    margin-top: 18px;
 }

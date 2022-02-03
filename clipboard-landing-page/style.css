@@ -34,16 +34,29 @@ body {
 }
 
 .container {
-  max-width: 375px;
+  max-width: 700px;
   border-right: 1px solid red;
   border-left: 1px solid red;
   padding: 0 31px;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   padding: 122px 0 0 0;
   text-align: center;
   background: url(./images/bg-header-mobile.png) no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.header-content {
+  max-width: 700px;
 }
 
 .header-logo {
@@ -142,13 +155,6 @@ body {
 
 .access-text {
   margin-bottom: 60px;
-}
-
-.access-img {
-  margin-left: -16px;
-  margin-right: -16px;
-  width: 111%;
-  display: block;
 }
 
 .main-text-workflow {
@@ -277,4 +283,57 @@ body {
 
 .socials-link:nth-of-type(2) {
   padding: 0 36px;
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1440px;
+  }
+  .header {
+    padding: 130px;
+    background: url(./images/bg-header-desktop.png) no-repeat;
+    width: 100%;
+  }
+  .header-content {
+    max-width: unset;
+  }
+  .caption-l1 {
+    font-size: 2.85rem;
+    margin: 56px 20px 18px;
+  }
+  .header-text {
+    font-size: 1.25rem;
+    margin: 0 250px 48px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+  }
+  .header-cta {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .btn {
+    width: 19.25%;
+  }
+  .btn-ios {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .main {
+    padding-top: 22px;
+  }
+  .caption-l2 {
+    font-size: 2.25rem;
+  }
+  .main-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 0 340px 60px;
+    letter-spacing: 0.1px;
+  }
 }

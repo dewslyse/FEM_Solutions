@@ -288,10 +288,12 @@ body {
 @media (min-width: 1140px) {
   .container {
     max-width: 1440px;
+    padding: 0;
   }
   .header {
     padding: 130px;
     background: url(./images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
     width: 100%;
   }
   .header-content {
@@ -335,5 +337,26 @@ body {
     line-height: 1.7;
     margin: 0 340px 60px;
     letter-spacing: 0.1px;
+  }
+  .track {
+    padding: 0 31px;
+    margin-bottom: 78px;
+  }
+  .main-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features-img {
+    width: 52.3%;
+    height: auto;
+    margin-left: -33px;
+  }
+  .feature {
+    margin: unset;
+    text-align: left;
+  }
+  .feature-text {
+    margin: 0;
   }
 }

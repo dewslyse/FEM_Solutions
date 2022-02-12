@@ -20,6 +20,6 @@ Users should be able to:
   
 ### Links
 
-- Live Site URL: [https://dewslyse.github.io/FEM_Solutions/qr-code-component/](https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/)
-- Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/qr-code-component](https://github.com/dewslyse/FEM_Solutions/tree/main/clipboard-landing-page)
+- Live Site URL: [https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/](https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/)
+- Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/clipboard-landing-page](https://github.com/dewslyse/FEM_Solutions/tree/main/clipboard-landing-page)
 - View [solution on Frontend mentor]() :fire:

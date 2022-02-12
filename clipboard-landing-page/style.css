@@ -378,4 +378,66 @@ body {
   .access-text {
     margin: 0 40px 110px;
   }
+  .main-workflow {
+    margin-top: 155px;
+    margin: 155px 160px 130px;
+  }
+  .workflows {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin-top: 77px;
+  }
+  .workflow:nth-of-type(1) {
+    margin-top: -7px;
+    margin-left: -15px;
+  }
+  .workflow:nth-of-type(2) {
+    padding-left: -50px;
+  }
+  .workflow:nth-of-type(3) {
+    margin-top: 0;
+  }
+  .workflow-text {
+    margin: unset;
+    margin-top: 18px;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 0 6px;
+  }
+  .workflow-img {
+    margin-bottom: 40px;
+  }
+  .clients {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px 116px 95px;
+  }
+  .clients-img {
+    display: block;
+    width: unset;
+    height: auto;
+  }
+  .clients-img:nth-of-type(2) {
+    width: unset;
+  }
+  .clients-img:nth-of-type(3) {
+    width: unset;
+  }
+  .clients-img:nth-of-type(4) {
+    width: unset;
+  }
+  .clients-img:nth-of-type(5) {
+    width: unset;
+    margin-top: 0;
+  }
 }

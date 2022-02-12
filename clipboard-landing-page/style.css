@@ -441,7 +441,7 @@ body {
     margin-top: 0;
   }
   .apps {
-    margin: 0 200px;
+    margin: 0 200px 150px;
   }
   .text-app {
     margin: 0 150px 48px;
@@ -457,5 +457,49 @@ body {
   }
   .app-downloads button {
     width: 228px;
+  }
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 44px 130px;
+  }
+  .footer-nav {
+    margin: 0;
+    margin-left: -180px;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 20px 100px;
+  }
+  .footer-nav-item {
+    margin: 0;
+  }
+  .footer-nav-link {
+    font-size: 1.125rem;
+  }
+  .socials {
+    margin: 0 35px 0 0;
+  }
+  .socials-link {
+    text-decoration: none;
+  }
+  .socials-link:nth-of-type(2) {
+    padding: 0 20px;
   }
 }

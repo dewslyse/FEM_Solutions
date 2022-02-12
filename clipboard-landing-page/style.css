@@ -440,4 +440,22 @@ body {
     width: unset;
     margin-top: 0;
   }
+  .apps {
+    margin: 0 200px;
+  }
+  .text-app {
+    margin: 0 150px 48px;
+  }
+  .app-downloads {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .app-downloads button {
+    width: 228px;
+  }
 }

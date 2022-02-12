@@ -352,11 +352,30 @@ body {
     height: auto;
     margin-left: -33px;
   }
+  .features {
+    margin: 12px 250px 0 110px;
+  }
   .feature {
     margin: unset;
     text-align: left;
   }
+  .feature:nth-of-type(1) {
+    margin-bottom: -10px;
+  }
+  .feature:nth-of-type(2) {
+    padding: 16px 0 5px 0px;
+    margin-left: 0;
+  }
   .feature-text {
     margin: 0;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+  .main-access {
+    margin-top: 150px;
+    margin: 150px 310px 95px;
+  }
+  .access-text {
+    margin: 0 40px 110px;
   }
 }

@@ -268,7 +268,6 @@ body {
         background: url(./images/bg-header-desktop.png) no-repeat;
         background-size: contain;
         width: 100%;
-        // max-width: unset;
     }
 
     .header-content {
@@ -313,7 +312,6 @@ body {
     .main-text {
         font-size: 1.125rem;
         line-height: 1.7;
-        // max-width: 1000px;
         margin: 0 340px 60px;
         letter-spacing: 0.1px;
     }
@@ -325,7 +323,6 @@ body {
 
     .main-features {
         display: flex;
-        // max-width: 100%;
     }
 
     .features-img {
@@ -334,12 +331,36 @@ body {
         margin-left: -33px;
     }
 
+    .features {
+        margin: 12px 250px 0 110px;
+    }
+
     .feature {
         margin: unset;
         text-align: left;
+
+        &:nth-of-type(1) {
+            margin-bottom: -10px;
+        }
+
+        &:nth-of-type(2) {
+            padding: 16px 0 5px 0px;
+            margin-left: 0;
+        }
     }
 
     .feature-text {
         margin: 0;
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+
+    .main-access {
+        margin-top: 150px;
+        margin: 150px 310px 95px;
+    }
+
+    .access-text {
+        margin: 0 40px 110px;
     }
 }

@@ -22,4 +22,4 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/](https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/clipboard-landing-page](https://github.com/dewslyse/FEM_Solutions/tree/main/clipboard-landing-page)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/clipboard-landing-page-solution-ZeZKphddJ) :fire:

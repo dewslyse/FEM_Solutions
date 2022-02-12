@@ -35,8 +35,6 @@ body {
 
 .container {
   max-width: 700px;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
   padding: 0 31px;
 }
 
@@ -95,6 +93,7 @@ body {
   border: none;
   -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .btn-ios {
@@ -102,8 +101,16 @@ body {
   margin-bottom: 25px;
 }
 
+.btn-ios:hover {
+  background-color: #2acfb7;
+}
+
 .btn-mac {
   background-color: #6173ff;
+}
+
+.btn-mac:hover {
+  background-color: #7a8aff;
 }
 
 .main {
@@ -270,7 +277,6 @@ body {
   text-decoration: none;
   color: #4c545d;
   font-size: 1.0625rem;
-  font-weight: 600;
 }
 
 .socials {
@@ -320,7 +326,7 @@ body {
     margin: 0;
   }
   .btn {
-    width: 19.25%;
+    width: 228px;
   }
   .btn-ios {
     margin-bottom: 0;
@@ -455,9 +461,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .app-downloads button {
-    width: 228px;
-  }
   .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -493,6 +496,9 @@ body {
   .footer-nav-link {
     font-size: 1.125rem;
   }
+  .footer-nav-link:hover {
+    color: #26baa4;
+  }
   .socials {
     margin: 0 35px 0 0;
   }
@@ -501,5 +507,8 @@ body {
   }
   .socials-link:nth-of-type(2) {
     padding: 0 20px;
+  }
+  .socials-link svg:hover * {
+    fill: #26baa4;
   }
 }

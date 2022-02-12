@@ -30,8 +30,6 @@ body {
 
 .container {
     max-width: 700px;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
     padding: 0 31px;
 }
 
@@ -44,7 +42,6 @@ body {
     background: url(./images/bg-header-mobile.png) no-repeat;
     background-size: cover;
     background-position: top center;
-    // max-width: 750px;
 }
 
 .header-content {
@@ -81,15 +78,24 @@ body {
     color: white;
     border: none;
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .btn-ios {
     background-color: $strong-cyan;
     margin-bottom: 25px;
+
+    &:hover {
+        background-color: lighten($color: $strong-cyan, $amount: 5%);
+    }
 }
 
 .btn-mac {
     background-color: $light-blue;
+
+    &:hover {
+        background-color: lighten($color: $light-blue, $amount: 5%);
+    }
 }
 
 .main {
@@ -171,7 +177,6 @@ body {
 .clients {
     display: flex;
     flex-direction: column;
-    // margin: 0 auto;
     margin: 132px 0 105px;
 }
 
@@ -182,7 +187,6 @@ body {
 
     &:nth-of-type(2) {
         width: 37%;
-        // margin-top: 65px;
         margin-bottom: 70px;
     }
 
@@ -241,7 +245,6 @@ body {
     text-decoration: none;
     color: $dark-grayish-blue;
     font-size: 1.0625rem;
-    font-weight: 600;
 }
 
 .socials {
@@ -293,7 +296,7 @@ body {
     }
 
     .btn {
-        width: 19.25%;
+        width: 228px;
     }
 
     .btn-ios {
@@ -443,10 +446,6 @@ body {
     .app-downloads {
         flex-direction: row;
         justify-content: center;
-
-        button {
-            width: 228px;
-        }
     }
 
     .footer {
@@ -474,6 +473,10 @@ body {
 
     .footer-nav-link {
         font-size: 1.125rem;
+
+        &:hover {
+            color: $strong-cyan;
+        }
     }
 
     .socials {
@@ -485,6 +488,10 @@ body {
     
         &:nth-of-type(2) {
             padding: 0 20px;
+        }
+
+        svg:hover * {
+            fill: $strong-cyan;
         }
     }
 }

@@ -21,19 +21,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    // min-height: 100vh;
     flex-direction: column;
 }
 
 .container {
     max-width: 375px;
 }
-
-// .solutions-section {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: auto;
-// }
 
 header {
     background-color: white;
@@ -99,7 +92,6 @@ ul {
     margin-bottom: 30px;
 }
 
-
 //filter buttons mixin
 @mixin level-btn($color) {
     border: $color 2px solid;
@@ -111,10 +103,6 @@ ul {
         .number {
             color: white;
         }
-
-        // .level-text {
-        //     color: white;
-        // }
     }
 }
 
@@ -155,11 +143,9 @@ ul {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #DBE5E6;
-    // overflow: hidden;
 
     .screenshot {
         width: 100%;
-        // border-top: 2px dotted $color;
         border-bottom: 2px solid $color;
         overflow: hidden;
     }
@@ -294,7 +280,6 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 }
-
 
 @media (min-width: 1140px) {
 

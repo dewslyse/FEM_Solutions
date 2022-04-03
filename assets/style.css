@@ -281,7 +281,6 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #14c2c8;
-  font-weight: 500;
 }
 
 .newbie .solution-btn:hover {
@@ -384,7 +383,6 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #aad742;
-  font-weight: 500;
 }
 
 .junior .solution-btn:hover {
@@ -487,7 +485,6 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #f1b604;
-  font-weight: 500;
 }
 
 .intermediate .solution-btn:hover {
@@ -590,7 +587,6 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #f48925;
-  font-weight: 500;
 }
 
 .advanced .solution-btn:hover {
@@ -693,7 +689,6 @@ ul li .level-text {
   border-radius: 7px;
   text-decoration: none;
   color: #eb5252;
-  font-weight: 500;
 }
 
 .guru .solution-btn:hover {

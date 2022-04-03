@@ -1,7 +1,7 @@
 $light-color: #fff;
-$html: #6abced; 
+$html: #6abced;
 $css: #3e54a3;
-$javascript: #e13784;
+$js: #e13784;
 $api: #85c20a;
 $newbie: #14c2c8;
 $junior: #aad742;
@@ -104,10 +104,10 @@ ul {
 @mixin level-btn($color) {
     border: $color 2px solid;
     color: $color;
-    
+
     &.active {
         background-color: $color;
-        
+
         .number {
             color: white;
         }
@@ -115,7 +115,7 @@ ul {
         // .level-text {
         //     color: white;
         // }
-    }    
+    }
 }
 
 //Filter buttons based on difficulty level
@@ -154,91 +154,91 @@ ul {
     margin: 20px 20px 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #DBE5E6;
+    // overflow: hidden;
 
     .screenshot {
         width: 100%;
-        border-top: 2px dotted $color;
-        border-bottom: 3px solid $color;
+        // border-top: 2px dotted $color;
+        border-bottom: 2px solid $color;
         overflow: hidden;
+    }
 
-        img {
-            max-width: 100%;
-            display: block;
-            backface-visibility: hidden;
-            // object-fit: cover;
-            transition: transform 0.3s ease 0s;
+    .img {
+        max-width: 100%;
+        display: block;
+        backface-visibility: hidden;
+        transition: transform 0.3s ease 0s;
 
-            &:hover {
-                transform: scale(0.975);
-            }
+        &:hover {
+            transform: scale(0.975);
         }
     }
 
     .solution-details {
-        // background-color: white;
         margin: 20px 20px 30px;
+    }
 
-        .technology {
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        
-            .html {
-                margin-right: 5px;
-                color: $html;
-            }
-            
-            .css {
-                margin-right: 5px;
-                color: $css;
-            }
-        
-            .javascript {
-                margin-right: 5px;
-                color: $javascript;
-            }
-            
-            .api {
-                margin-right: 5px;
-                color: $api;
-            }
+    .technology {
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .html {
+        margin-right: 7px;
+        color: $html;
+    }
+
+    .css {
+        margin-right: 7px;
+        color: $css;
+    }
+
+    .js {
+        margin-right: 7px;
+        color: $js;
+    }
+
+    .api {
+        margin-right: 7px;
+        color: $api;
+    }
+
+    .solution-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .solution-btn {
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 6px 10px;
+        border: 1px solid $color;
+        background-color: white;
+        border-radius: 7px;
+        text-decoration: none;
+        color: $color;
+        font-weight: 500;
+
+        &:hover {
+            color: $light-color;
+            background-color: $color;
         }
+    }
 
-        .solution-title {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
+    .repo {
+        color: $color;
 
-        .links {
-            display: flex;
-            justify-content: space-between;
-
-            .solution-btn {
-                font-size: 0.85rem;
-                font-weight: 500;
-                cursor: pointer;
-                padding: 6px 10px;
-                border: 1px solid $color;
-                background-color: white;
-                border-radius: 7px;
-                text-decoration: none; 
-                color: $color;
-                font-weight: 500;
-            
-                &:hover {
-                    color: $light-color;
-                    background-color: $color;
-                }
-            }
-
-            .repo {
-                color: $color;
-            
-                &:hover {
-                    color: black;
-                }
-            }
+        &:hover {
+            color: black;
         }
     }
 }
@@ -264,13 +264,12 @@ ul {
     @include card-style($guru);
 }
 
-
 // MEDIA QUERIES
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         max-width: 840px;
     }
-    
+
     header {
         .logo {
             height: 60px;
@@ -295,10 +294,10 @@ ul {
     .solutions-section {
         grid-template-columns: 1fr 1fr;
     }
- }
+}
 
 
- @media (min-width: 1140px) {
+@media (min-width: 1140px) {
 
     .container {
         max-width: 1200px;
@@ -323,7 +322,7 @@ ul {
                 font-size: 1.5rem;
                 font-weight: 600;
             }
-        
+
             .handle {
                 font-size: 0.9rem;
             }
@@ -383,11 +382,11 @@ ul {
         .number {
             background-color: $newbie;
         }
-        
+
         &.active {
             border: white 2px dotted;
             background-color: $newbie;
-            
+
             .number {
                 background-color: white;
                 color: $newbie;
@@ -406,11 +405,11 @@ ul {
         .number {
             background-color: $junior;
         }
-        
+
         &.active {
             border: white 2px dotted;
             background-color: $junior;
-            
+
             .number {
                 background-color: white;
                 color: $junior;
@@ -422,18 +421,18 @@ ul {
         }
     }
 
-    #intermediate-tab { 
+    #intermediate-tab {
         border: $intermediate 2px solid;
         color: $intermediate;
 
         .number {
             background-color: $intermediate;
         }
-        
+
         &.active {
             border: white 2px dotted;
             background-color: $intermediate;
-            
+
             .number {
                 background-color: white;
                 color: $intermediate;
@@ -452,11 +451,11 @@ ul {
         .number {
             background-color: $advanced;
         }
-        
+
         &.active {
             border: white 2px dotted;
             background-color: $advanced;
-            
+
             .number {
                 background-color: white;
                 color: $advanced;
@@ -475,11 +474,11 @@ ul {
         .number {
             background-color: $guru;
         }
-        
+
         &.active {
             border: white 2px dotted;
             background-color: $guru;
-            
+
             .number {
                 background-color: white;
                 color: $guru;
@@ -494,7 +493,7 @@ ul {
     #show-tab {
         border: #3e54a3 2px solid;
         color: #3e54a3;
- 
+
         &.active {
             border: white 2px dotted;
             background-color: #3e54a3;
@@ -503,8 +502,8 @@ ul {
         }
     }
 
-    
+
     .solutions-section {
         grid-template-columns: repeat(3, 1fr);
     }
- }
+}

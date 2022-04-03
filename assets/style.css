@@ -201,16 +201,16 @@ ul li .level-text {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #DBE5E6;
 }
 
 .newbie .screenshot {
   width: 100%;
-  border-top: 2px dotted #14c2c8;
-  border-bottom: 3px solid #14c2c8;
+  border-bottom: 2px solid #14c2c8;
   overflow: hidden;
 }
 
-.newbie .screenshot img {
+.newbie .img {
   max-width: 100%;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -221,7 +221,7 @@ ul li .level-text {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.newbie .screenshot img:hover {
+.newbie .img:hover {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
@@ -230,39 +230,39 @@ ul li .level-text {
   margin: 20px 20px 30px;
 }
 
-.newbie .solution-details .technology {
+.newbie .technology {
   font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.newbie .solution-details .technology .html {
-  margin-right: 5px;
+.newbie .html {
+  margin-right: 7px;
   color: #6abced;
 }
 
-.newbie .solution-details .technology .css {
-  margin-right: 5px;
+.newbie .css {
+  margin-right: 7px;
   color: #3e54a3;
 }
 
-.newbie .solution-details .technology .javascript {
-  margin-right: 5px;
+.newbie .js {
+  margin-right: 7px;
   color: #e13784;
 }
 
-.newbie .solution-details .technology .api {
-  margin-right: 5px;
+.newbie .api {
+  margin-right: 7px;
   color: #85c20a;
 }
 
-.newbie .solution-details .solution-title {
+.newbie .solution-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.newbie .solution-details .links {
+.newbie .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +271,7 @@ ul li .level-text {
           justify-content: space-between;
 }
 
-.newbie .solution-details .links .solution-btn {
+.newbie .solution-btn {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -284,16 +284,16 @@ ul li .level-text {
   font-weight: 500;
 }
 
-.newbie .solution-details .links .solution-btn:hover {
+.newbie .solution-btn:hover {
   color: #fff;
   background-color: #14c2c8;
 }
 
-.newbie .solution-details .links .repo {
+.newbie .repo {
   color: #14c2c8;
 }
 
-.newbie .solution-details .links .repo:hover {
+.newbie .repo:hover {
   color: black;
 }
 
@@ -304,16 +304,16 @@ ul li .level-text {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #DBE5E6;
 }
 
 .junior .screenshot {
   width: 100%;
-  border-top: 2px dotted #aad742;
-  border-bottom: 3px solid #aad742;
+  border-bottom: 2px solid #aad742;
   overflow: hidden;
 }
 
-.junior .screenshot img {
+.junior .img {
   max-width: 100%;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -324,7 +324,7 @@ ul li .level-text {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.junior .screenshot img:hover {
+.junior .img:hover {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
@@ -333,39 +333,39 @@ ul li .level-text {
   margin: 20px 20px 30px;
 }
 
-.junior .solution-details .technology {
+.junior .technology {
   font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.junior .solution-details .technology .html {
-  margin-right: 5px;
+.junior .html {
+  margin-right: 7px;
   color: #6abced;
 }
 
-.junior .solution-details .technology .css {
-  margin-right: 5px;
+.junior .css {
+  margin-right: 7px;
   color: #3e54a3;
 }
 
-.junior .solution-details .technology .javascript {
-  margin-right: 5px;
+.junior .js {
+  margin-right: 7px;
   color: #e13784;
 }
 
-.junior .solution-details .technology .api {
-  margin-right: 5px;
+.junior .api {
+  margin-right: 7px;
   color: #85c20a;
 }
 
-.junior .solution-details .solution-title {
+.junior .solution-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.junior .solution-details .links {
+.junior .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ ul li .level-text {
           justify-content: space-between;
 }
 
-.junior .solution-details .links .solution-btn {
+.junior .solution-btn {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -387,16 +387,16 @@ ul li .level-text {
   font-weight: 500;
 }
 
-.junior .solution-details .links .solution-btn:hover {
+.junior .solution-btn:hover {
   color: #fff;
   background-color: #aad742;
 }
 
-.junior .solution-details .links .repo {
+.junior .repo {
   color: #aad742;
 }
 
-.junior .solution-details .links .repo:hover {
+.junior .repo:hover {
   color: black;
 }
 
@@ -407,16 +407,16 @@ ul li .level-text {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #DBE5E6;
 }
 
 .intermediate .screenshot {
   width: 100%;
-  border-top: 2px dotted #f1b604;
-  border-bottom: 3px solid #f1b604;
+  border-bottom: 2px solid #f1b604;
   overflow: hidden;
 }
 
-.intermediate .screenshot img {
+.intermediate .img {
   max-width: 100%;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -427,7 +427,7 @@ ul li .level-text {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.intermediate .screenshot img:hover {
+.intermediate .img:hover {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
@@ -436,39 +436,39 @@ ul li .level-text {
   margin: 20px 20px 30px;
 }
 
-.intermediate .solution-details .technology {
+.intermediate .technology {
   font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.intermediate .solution-details .technology .html {
-  margin-right: 5px;
+.intermediate .html {
+  margin-right: 7px;
   color: #6abced;
 }
 
-.intermediate .solution-details .technology .css {
-  margin-right: 5px;
+.intermediate .css {
+  margin-right: 7px;
   color: #3e54a3;
 }
 
-.intermediate .solution-details .technology .javascript {
-  margin-right: 5px;
+.intermediate .js {
+  margin-right: 7px;
   color: #e13784;
 }
 
-.intermediate .solution-details .technology .api {
-  margin-right: 5px;
+.intermediate .api {
+  margin-right: 7px;
   color: #85c20a;
 }
 
-.intermediate .solution-details .solution-title {
+.intermediate .solution-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.intermediate .solution-details .links {
+.intermediate .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +477,7 @@ ul li .level-text {
           justify-content: space-between;
 }
 
-.intermediate .solution-details .links .solution-btn {
+.intermediate .solution-btn {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -490,16 +490,16 @@ ul li .level-text {
   font-weight: 500;
 }
 
-.intermediate .solution-details .links .solution-btn:hover {
+.intermediate .solution-btn:hover {
   color: #fff;
   background-color: #f1b604;
 }
 
-.intermediate .solution-details .links .repo {
+.intermediate .repo {
   color: #f1b604;
 }
 
-.intermediate .solution-details .links .repo:hover {
+.intermediate .repo:hover {
   color: black;
 }
 
@@ -510,16 +510,16 @@ ul li .level-text {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #DBE5E6;
 }
 
 .advanced .screenshot {
   width: 100%;
-  border-top: 2px dotted #f48925;
-  border-bottom: 3px solid #f48925;
+  border-bottom: 2px solid #f48925;
   overflow: hidden;
 }
 
-.advanced .screenshot img {
+.advanced .img {
   max-width: 100%;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -530,7 +530,7 @@ ul li .level-text {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.advanced .screenshot img:hover {
+.advanced .img:hover {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
@@ -539,39 +539,39 @@ ul li .level-text {
   margin: 20px 20px 30px;
 }
 
-.advanced .solution-details .technology {
+.advanced .technology {
   font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.advanced .solution-details .technology .html {
-  margin-right: 5px;
+.advanced .html {
+  margin-right: 7px;
   color: #6abced;
 }
 
-.advanced .solution-details .technology .css {
-  margin-right: 5px;
+.advanced .css {
+  margin-right: 7px;
   color: #3e54a3;
 }
 
-.advanced .solution-details .technology .javascript {
-  margin-right: 5px;
+.advanced .js {
+  margin-right: 7px;
   color: #e13784;
 }
 
-.advanced .solution-details .technology .api {
-  margin-right: 5px;
+.advanced .api {
+  margin-right: 7px;
   color: #85c20a;
 }
 
-.advanced .solution-details .solution-title {
+.advanced .solution-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.advanced .solution-details .links {
+.advanced .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +580,7 @@ ul li .level-text {
           justify-content: space-between;
 }
 
-.advanced .solution-details .links .solution-btn {
+.advanced .solution-btn {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -593,16 +593,16 @@ ul li .level-text {
   font-weight: 500;
 }
 
-.advanced .solution-details .links .solution-btn:hover {
+.advanced .solution-btn:hover {
   color: #fff;
   background-color: #f48925;
 }
 
-.advanced .solution-details .links .repo {
+.advanced .repo {
   color: #f48925;
 }
 
-.advanced .solution-details .links .repo:hover {
+.advanced .repo:hover {
   color: black;
 }
 
@@ -613,16 +613,16 @@ ul li .level-text {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #DBE5E6;
 }
 
 .guru .screenshot {
   width: 100%;
-  border-top: 2px dotted #eb5252;
-  border-bottom: 3px solid #eb5252;
+  border-bottom: 2px solid #eb5252;
   overflow: hidden;
 }
 
-.guru .screenshot img {
+.guru .img {
   max-width: 100%;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -633,7 +633,7 @@ ul li .level-text {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-.guru .screenshot img:hover {
+.guru .img:hover {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
@@ -642,39 +642,39 @@ ul li .level-text {
   margin: 20px 20px 30px;
 }
 
-.guru .solution-details .technology {
+.guru .technology {
   font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.guru .solution-details .technology .html {
-  margin-right: 5px;
+.guru .html {
+  margin-right: 7px;
   color: #6abced;
 }
 
-.guru .solution-details .technology .css {
-  margin-right: 5px;
+.guru .css {
+  margin-right: 7px;
   color: #3e54a3;
 }
 
-.guru .solution-details .technology .javascript {
-  margin-right: 5px;
+.guru .js {
+  margin-right: 7px;
   color: #e13784;
 }
 
-.guru .solution-details .technology .api {
-  margin-right: 5px;
+.guru .api {
+  margin-right: 7px;
   color: #85c20a;
 }
 
-.guru .solution-details .solution-title {
+.guru .solution-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.guru .solution-details .links {
+.guru .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,7 +683,7 @@ ul li .level-text {
           justify-content: space-between;
 }
 
-.guru .solution-details .links .solution-btn {
+.guru .solution-btn {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -696,16 +696,16 @@ ul li .level-text {
   font-weight: 500;
 }
 
-.guru .solution-details .links .solution-btn:hover {
+.guru .solution-btn:hover {
   color: #fff;
   background-color: #eb5252;
 }
 
-.guru .solution-details .links .repo {
+.guru .repo {
   color: #eb5252;
 }
 
-.guru .solution-details .links .repo:hover {
+.guru .repo:hover {
   color: black;
 }
 

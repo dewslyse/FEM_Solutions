@@ -67,3 +67,38 @@ body {
   margin-top: -32px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 540px;
+    padding: unset;
+  }
+  .advice-card {
+    border-radius: 15px;
+    padding-top: 48px;
+    width: 540px;
+  }
+  .advice-id {
+    font-size: 0.875rem;
+    letter-spacing: 3.4px;
+    margin-bottom: 24px;
+  }
+  .quote {
+    font-size: 1.7125rem;
+    padding: 0 40px;
+  }
+  .line-mobile {
+    display: none;
+  }
+  .line-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 44px 0 72px 0;
+  }
+  .dice:hover {
+    -webkit-box-shadow: 1px 1px 30px 5px #52ffa8;
+            box-shadow: 1px 1px 30px 5px #52ffa8;
+  }
+}

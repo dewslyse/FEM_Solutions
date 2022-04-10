@@ -223,6 +223,11 @@ body {
   position: absolute;
 }
 
+*:focus-visible {
+  outline: 3px solid #6d708d;
+  outline-offset: 2px;
+}
+
 @media (min-width: 1100px) {
   body {
     background: url(./images/bg-bottom.svg), url(./images/bg-top.svg);

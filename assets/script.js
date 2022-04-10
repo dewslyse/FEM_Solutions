@@ -17,6 +17,14 @@ $(document).ready(function () {
 
 //Solutions
 const femSolutions = [
+    {   //Advice generator app
+        title: 'Advice generator app',
+        featuredImg: './advice-generator-app/design/desktop-preview.webp',
+        technologies: ['html', 'css', 'js', 'api'],
+        liveURL: 'https://dewslyse.github.io/FEM_Solutions/advice-generator-app/',
+        sourceURL: 'https://github.com/dewslyse/FEM_Solutions/tree/main/advice-generator-app',
+        level: 'junior'
+    },
     {   //Testimonials grid section
         title: 'Testimonials grid section',
         featuredImg: './testimonials-grid-section/design/desktop-preview.webp',

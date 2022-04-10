@@ -24,7 +24,8 @@ body {
 }
 
 .container {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   padding: 65px 24px;
 }
 
@@ -117,10 +118,6 @@ body {
   background-color: #bdc1f4;
 }
 
-.annual-price {
-  color: red;
-}
-
 .price-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +133,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   height: 454px;
+  width: 100%;
   padding: 34px 30px;
 }
 
@@ -205,6 +203,7 @@ body {
 
 .price-card:nth-of-type(2) .btn {
   background-image: none;
+  background-color: #fff;
   color: #696fdd;
 }
 
@@ -222,4 +221,69 @@ body {
   overflow: hidden;
   padding: 0;
   position: absolute;
+}
+
+@media (min-width: 1100px) {
+  body {
+    background: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
+    background-color: #f6f6fe;
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .container {
+    min-width: 1110px;
+    padding: 70px 30px;
+  }
+  .top-section {
+    margin-bottom: 66px;
+  }
+  .toggler {
+    margin: 0 24px;
+  }
+  .switch {
+    width: 56px;
+  }
+  .checkbox:checked + .slider::before {
+    -webkit-transform: translateX(23px);
+            transform: translateX(23px);
+  }
+  .price-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .price-card .btn:hover {
+    background-image: none;
+    background-color: #fff;
+    color: #696fdd;
+    border: 1px solid #494c5f;
+    cursor: pointer;
+  }
+  .price-card:nth-of-type(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .price-card:nth-of-type(3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .price-card:nth-of-type(2) {
+    padding-top: 56px;
+    height: 500px;
+  }
+  .price-card:nth-of-type(2) .btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
 }

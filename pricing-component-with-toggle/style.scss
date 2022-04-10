@@ -24,7 +24,8 @@ body {
 }
 
 .container {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     padding: 65px 24px;
 }
 
@@ -109,10 +110,6 @@ body {
     }
 }
 
-.annual-price {
-    color: red;
-}
-
 .price-section {
     display: flex;
     flex-direction: column;
@@ -123,6 +120,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     height: 454px;
+    width: 100%;
     padding: 34px 30px;
 
     h2 {
@@ -183,6 +181,7 @@ body {
 
     .btn {
         background-image: none;
+        background-color: #fff;
         color: $gradient-2;
     }
 }
@@ -200,4 +199,72 @@ body {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+@media (min-width: 1100px) {
+    body {
+        background: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
+        background-color: $very-light-grayish-blue;
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        align-items: unset;
+    }
+
+    .container {
+        min-width: 1110px;
+        padding: 70px 30px;
+    }
+
+    .top-section {
+        margin-bottom: 66px;
+    }
+
+    .toggler {
+        margin: 0 24px;
+    }
+
+    .switch {
+        width: 56px;
+    }
+
+    .checkbox:checked+.slider::before {
+        transform: translateX(23px);
+    }
+
+    .price-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price-card {
+        .btn:hover {
+            background-image: none;
+            background-color: #fff;
+            color: $gradient-2;
+            border: 1px solid $dark-grayish-blue;
+            cursor: pointer;
+        }
+    }
+
+    .price-card:nth-of-type(1) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .price-card:nth-of-type(3) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .price-card:nth-of-type(2) {
+        padding-top: 56px;
+        height: 500px;
+
+        .btn:hover {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
 }

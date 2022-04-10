@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: url(./images/bg-top.svg);
+  background-color: #f6f6fe;
+  background-repeat: no-repeat;
+  background-position: right -195px top -40px;
+}
+
+.container {
+  width: 375px;
+  padding: 65px 24px;
+}
+
+.top-section,
+.price-section {
+  text-align: center;
+}
+
+.top-section {
+  margin-bottom: 78px;
+}
+
+.caption {
+  color: #6d708d;
+  font-size: 2rem;
+}
+
+.toggle-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b3b5c6;
+  font-size: 0.9375rem;
+  margin-top: 40px;
+}
+
+.toggler {
+  margin: 0 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider:hover {
+  background-image: none;
+  background-color: #bdc1f4;
+}
+
+.checkbox:checked + .slider {
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.checkbox:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.checkbox:checked + .slider:hover {
+  background-image: none;
+  background-color: #bdc1f4;
+}
+
+.annual-price {
+  color: red;
+}
+
+.price-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 32px;
+}
+
+.price-card {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 454px;
+  padding: 34px 30px;
+}
+
+.price-card h2 {
+  font-size: 1.125rem;
+  color: #6d708d;
+  margin-bottom: 22px;
+}
+
+.price-card h3 {
+  font-size: 4.275rem;
+  color: #494c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+.price-card .dollar {
+  font-size: 2.5rem;
+  margin-right: 5px;
+}
+
+.price-card li {
+  font-size: 0.9375rem;
+  color: #6d708d;
+  list-style: none;
+  padding: 17px 0;
+  border-top: 1px solid #b3b5c6;
+}
+
+.price-card li:nth-of-type(3) {
+  border-bottom: 1px solid #b3b5c6;
+  margin-bottom: 30px;
+}
+
+.price-card .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #fff;
+  letter-spacing: 1.2px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: #fff;
+}
+
+.price-card:nth-of-type(2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+}
+
+.price-card:nth-of-type(2) h2,
+.price-card:nth-of-type(2) h3,
+.price-card:nth-of-type(2) li {
+  color: #fff;
+}
+
+.price-card:nth-of-type(2) .btn {
+  background-image: none;
+  color: #696fdd;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}

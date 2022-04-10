@@ -33,4 +33,4 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/advice-generator-app/](https://dewslyse.github.io/FEM_Solutions/advice-generator-app/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/advice-generator-app](https://github.com/dewslyse/FEM_Solutions/tree/main/advice-generator-app)
-- View [solution on Frontend mentor]() :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/advice-generator-app-solution-BJmon3JN9) :fire:

@@ -113,6 +113,14 @@ const femSolutions = [
         sourceURL: 'https://github.com/dewslyse/FEM_Solutions/tree/main/fylo-data-storage-component',
         level: 'junior'
     },
+    {   //Pricing component with toggle
+        title: 'Pricing component with toggle',
+        featuredImg: './pricing-component-with-toggle/design/desktop-preview.webp',
+        technologies: ['html', 'css', 'js'],
+        liveURL: 'https://dewslyse.github.io/FEM_Solutions/pricing-component-with-toggle/',
+        sourceURL: 'https://github.com/dewslyse/FEM_Solutions/tree/main/pricing-component-with-toggle',
+        level: 'junior'
+    },
     {   //Four card feature section
         title: 'Four card feature section',
         featuredImg: './four-card-feature-section/design/desktop-preview.webp',

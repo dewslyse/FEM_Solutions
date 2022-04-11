@@ -36,6 +36,7 @@ Click on an image to view live site 🚀
 <br>
 
 [<img src="./advice-generator-app/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/advice-generator-app/)
+[<img src="./pricing-component-with-toggle/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/pricing-component-with-toggle/) 
 [<img src="./clipboard-landing-page/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/clipboard-landing-page/) 
 [<img src="./testimonials-grid-section/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/testimonials-grid-section/) 
 [<img src="./fylo-data-storage-component/design/desktop-preview.jpg" width="200"/>](https://dewslyse.github.io/FEM_Solutions/fylo-data-storage-component/) 

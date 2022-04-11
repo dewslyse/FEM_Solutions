@@ -32,4 +32,4 @@ Users should be able to:
 
 - Live Site URL: [https://dewslyse.github.io/FEM_Solutions/pricing-component-with-toggle/](https://dewslyse.github.io/FEM_Solutions/pricing-component-with-toggle/)
 - Solution URL: [https://github.com/dewslyse/FEM_Solutions/tree/main/pricing-component-with-toggle](https://github.com/dewslyse/FEM_Solutions/tree/main/pricing-component-with-toggle)
-- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/advice-generator-app-solution-BJmon3JN9) :fire:
+- View [solution on Frontend mentor](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-H1sIggZE5) :fire:

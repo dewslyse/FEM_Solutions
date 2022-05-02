@@ -111,3 +111,43 @@ h3 {
   border-radius: 7px;
   width: unset;
 }
+
+.statistics {
+  padding: 100px 0 50px;
+}
+
+.cards {
+  margin: 100px 0 50px;
+}
+
+.card {
+  border: 1px solid green;
+  margin: 0 24px 80px;
+  border-radius: 6px;
+  position: relative;
+  padding: 60px 0 30px;
+}
+
+.card-img {
+  background-color: #3b3054;
+  border-radius: 50%;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card-img-3 {
+  padding: 20px;
+}

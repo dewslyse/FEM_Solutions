@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-  border: 1px solid red;
   max-width: 375px;
   padding: 15px;
 }
@@ -109,5 +108,51 @@ article {
 
   span {
     margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 768px;
+    padding: unset;
+  }
+
+  article {
+    display: flex;
+    height: 450px;
+    width: 600px;
+  }
+
+  .img-box {
+    flex-basis: 50%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: unset;
+  }
+
+  .description {
+    flex-basis: 50%;
+    padding: 32px;
+
+    h1 {
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin-bottom: 22px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    .button {
+      margin-top: 26px;
+    }
   }
 }

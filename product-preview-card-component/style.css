@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.container {
+  max-width: 375px;
+  padding: 15px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+article {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.description {
+  padding: 20px 24px;
+}
+.description h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  color: hsl(228deg, 12%, 48%);
+  margin-bottom: 12px;
+}
+.description h2 {
+  color: hsl(212deg, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.description p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.price-new {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158deg, 36%, 37%);
+  margin-right: 20px;
+}
+
+.price-old {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  font-size: 0.8275rem;
+}
+
+.button {
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158deg, 36%, 37%);
+  outline: hsl(158deg, 36%, 37%);
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.button span {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 768px;
+    padding: unset;
+  }
+  article {
+    display: flex;
+    height: 450px;
+    width: 600px;
+  }
+  .img-box {
+    flex-basis: 50%;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: unset;
+  }
+  .description {
+    flex-basis: 50%;
+    padding: 32px;
+  }
+  .description h1 {
+    margin-bottom: 22px;
+  }
+  .description h2 {
+    margin-bottom: 22px;
+  }
+  .description p {
+    margin-bottom: 24px;
+  }
+  .description .button {
+    margin-top: 26px;
+  }
+}

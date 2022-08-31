@@ -1,0 +1,158 @@
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-greyish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+$fraunces: 'Fraunces', serif;
+$montserat: 'Montserrat', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $cream;
+}
+
+.container {
+  max-width: 375px;
+  padding: 15px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+article {
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.description {
+  padding: 20px 24px;
+
+  h1 {
+    font-family: $montserat;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    color: $dark-greyish-blue;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    color: $very-dark-blue;
+    font-family: $fraunces;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-family: $montserat;
+    color: $dark-greyish-blue;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.price-new {
+  font-family: $fraunces;
+  font-size: 2rem;
+  color: $dark-cyan;
+  margin-right: 20px;
+}
+
+.price-old {
+  color: $dark-greyish-blue;
+  font-family: $montserat;
+  text-decoration: line-through;
+  font-size: 0.8275rem;
+}
+
+.button {
+  width: 100%;
+  color: $white;
+  background-color: $dark-cyan;
+  outline: $dark-cyan;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: $montserat;
+  font-weight: bold;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 768px;
+    padding: unset;
+  }
+
+  article {
+    display: flex;
+    height: 450px;
+    width: 600px;
+  }
+
+  .img-box {
+    flex-basis: 50%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: unset;
+  }
+
+  .description {
+    flex-basis: 50%;
+    padding: 32px;
+
+    h1 {
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin-bottom: 22px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    .button {
+      margin-top: 26px;
+    }
+  }
+}

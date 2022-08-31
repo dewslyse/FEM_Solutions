@@ -122,13 +122,16 @@ article {
     padding: 32px;
   }
   .description h1 {
-    margin-bottom: 22px;
+    padding-bottom: 22px;
+    margin: unset;
   }
   .description h2 {
-    margin-bottom: 22px;
+    margin: unset;
+    padding-bottom: 22px;
   }
   .description p {
-    margin-bottom: 24px;
+    margin: unset;
+    padding-bottom: 24px;
   }
   .description .button {
     margin-top: 26px;

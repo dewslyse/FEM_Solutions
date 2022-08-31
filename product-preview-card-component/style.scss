@@ -111,6 +111,7 @@ article {
   }
 }
 
+// Desktop
 @media (min-width: 992px) {
   .container {
     max-width: 768px;
@@ -140,15 +141,18 @@ article {
     padding: 32px;
 
     h1 {
-      margin-bottom: 22px;
+      padding-bottom: 22px;
+      margin: unset;
     }
 
     h2 {
-      margin-bottom: 22px;
+      margin: unset;
+      padding-bottom: 22px;
     }
 
     p {
-      margin-bottom: 24px;
+      margin: unset;
+      padding-bottom: 24px;
     }
 
     .button {

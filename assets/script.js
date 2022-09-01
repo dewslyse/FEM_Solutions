@@ -57,6 +57,14 @@ const femSolutions = [
         sourceURL: 'https://github.com/dewslyse/FEM_Solutions/tree/main/order-summary-component',
         level: 'newbie'
     },
+    {   //Product preview card component
+        title: 'Product preview component',
+        featuredImg: './product-preview-card-component/design/desktop-preview.webp',
+        technologies: ['html', 'css'],
+        liveURL: 'https://dewslyse.github.io/FEM_Solutions/product-preview-card-component/',
+        sourceURL: 'https://github.com/dewslyse/FEM_Solutions/tree/main/product-preview-card-component',
+        level: 'newbie'
+    },
     {   //Stats preview card
         title: 'Stats preview card',
         featuredImg: './stats-preview-card/design/desktop-preview.webp',
